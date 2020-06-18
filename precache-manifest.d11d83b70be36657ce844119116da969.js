@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f59e8198c0e89f4183402f373f534e26",
+    "revision": "fdd2feefa53d6425d84ff290a0930fc9",
     "url": "/portpolio/index.html"
   },
   {
-    "revision": "c21a7bca9685ba938427",
+    "revision": "9e07757581a40ead6431",
     "url": "/portpolio/static/css/main.d1afd985.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portpolio/static/js/2.e81c6c1a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c21a7bca9685ba938427",
-    "url": "/portpolio/static/js/main.1a79d4e5.chunk.js"
+    "revision": "9e07757581a40ead6431",
+    "url": "/portpolio/static/js/main.6666bbe6.chunk.js"
   },
   {
     "revision": "a78bbb0df534843efe60",
