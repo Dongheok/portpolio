@@ -81,7 +81,7 @@ const ProfileSection = () => {
                         })}
                     </ul>
                 </Grid>
-                <Grid container direction="column" className="History">
+                <Grid container className="History">
                     {history_data.map((x, index) => {
                         return (
                             <Grid xs={12} item>
