@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     padding-top: 20px;
     font-size: 24px;
     font-weight: bold;
-    background: url("/images/main_bg.jpg") no-repeat center top 80px;
+    background: url("/portpolio/images/main_bg.jpg") no-repeat center top 80px;
     color: #fff;
     text-align: center;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
       width: 62px;
       height: 40px;
       margin: 0 auto;
-      background: url("/images/logo.png") no-repeat;
+      background: url("/portpolio/images/logo.png") no-repeat;
       text-indent: -99999px;
     }
   }
