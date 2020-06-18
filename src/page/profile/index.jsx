@@ -87,15 +87,15 @@ const ProfileSection = () => {
                             <Grid xs={12} item>
                                 <h2>{x.years}</h2>
                                 <ul>
-                                    <li>{x.history_1}</li>
-                                    <li>{x.history_2}</li>
-                                    <li>{x.history_3}</li>
-                                    <li>{x.history_4}</li>
-                                    <li>{x.history_5}</li>
-                                    <li>{x.history_6}</li>
-                                    <li>{x.history_7}</li>
-                                    <li>{x.history_8}</li>
-                                    <li>{x.history_9}</li>
+                                    {x.history_1 !== null && <li>{x.history_1}</li>}
+                                    {x.history_2 !== null && <li>{x.history_2}</li>}
+                                    {x.history_3 !== null && <li>{x.history_3}</li>}
+                                    {x.history_4 !== null && <li>{x.history_4}</li>}
+                                    {x.history_5 !== null && <li>{x.history_5}</li>}
+                                    {x.history_6 !== null && <li>{x.history_6}</li>}
+                                    {x.history_7 !== null && <li>{x.history_7}</li>}
+                                    {x.history_8 !== null && <li>{x.history_8}</li>}
+                                    {x.history_9 !== null && <li>{x.history_9}</li>}
                                 </ul>
                             </Grid>
                         );
