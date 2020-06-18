@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
-import Slider from 'react-slick';
 import Wrapper from './styles';
 import MainSection from './main';
 import ProjectSection from './project';
@@ -21,6 +20,14 @@ const Portpolio = () => {
     const { currentItem, changeItem } = useTabs(0, state.data);
     const [currentPage, setCurrentPage] = useState('');
     const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch({
+            type: 'IS_LOADING',
+            input: {
+                isLoading: false,
+            },
+        });
+    }, [dispatch]);
     return (
         <Wrapper>
             {state.isLoading === true && (
