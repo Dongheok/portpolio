@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import { Grid, Link } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
+import Layout from './../../layout/';
 
-import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const project_data = [
     // SV VIBA
@@ -128,43 +129,53 @@ const project_data = [
 ];
 
 const ProjectSection = () => {
-    const state = useSelector((state) => state.common);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch({
+            type: 'CURRENT_PAGE',
+            input: {
+                pageKey: 'project',
+            },
+        });
+    }, [dispatch]);
     return (
         <Wrapper>
-            <Grid className="Project_Wrap">
-                <h2 className="Project_Text">Link 클릭 시 해당 프로젝트로 이동합니다.</h2>
-                <Grid container spacing={2} className="Project">
-                    {project_data.map((x, index) => {
-                        return (
-                            <Grid item xs={12} sm={6} md={4} className="Project_Item" key={index}>
-                                <Grid className="Item_Wrap">
-                                    <Grid className="Mask"></Grid>
-                                    <Grid className="Title">
-                                        <h2>{x.project_title}</h2>
-                                        {x.link !== '' && (
-                                            <a href={x.link} className="Link" target="blank">
-                                                Link
-                                            </a>
-                                        )}
-                                    </Grid>
-                                    <Grid container className="Text">
-                                        <Grid item md={3}>
-                                            <h2>작업내용</h2>
+            <Layout>
+                <Grid className="Project_Wrap">
+                    <h2 className="Project_Text">Link 클릭 시 해당 프로젝트로 이동합니다.</h2>
+                    <Grid container spacing={2} className="Project">
+                        {project_data.map((x, index) => {
+                            return (
+                                <Grid item xs={12} sm={6} md={4} className="Project_Item" key={index}>
+                                    <Grid className="Item_Wrap">
+                                        <Grid className="Mask"></Grid>
+                                        <Grid className="Title">
+                                            <h2>{x.project_title}</h2>
+                                            {x.link !== '' && (
+                                                <a href={x.link} className="Link" target="blank">
+                                                    Link
+                                                </a>
+                                            )}
                                         </Grid>
-                                        <Grid item md={9}>
-                                            <h3>
-                                                {x.project_text_1}
-                                                <br />
-                                                {x.project_text_2}
-                                            </h3>
+                                        <Grid container className="Text">
+                                            <Grid item md={3}>
+                                                <h2>작업내용</h2>
+                                            </Grid>
+                                            <Grid item md={9}>
+                                                <h3>
+                                                    {x.project_text_1}
+                                                    <br />
+                                                    {x.project_text_2}
+                                                </h3>
+                                            </Grid>
                                         </Grid>
                                     </Grid>
                                 </Grid>
-                            </Grid>
-                        );
-                    })}
+                            );
+                        })}
+                    </Grid>
                 </Grid>
-            </Grid>
+            </Layout>
         </Wrapper>
     );
 };

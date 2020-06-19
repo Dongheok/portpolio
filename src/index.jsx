@@ -10,8 +10,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './css/reset.css';
 import './css/global.css';
-import './css/slick.css';
-import './css/slick-theme.css';
 // redux init
 import { createStore, applyMiddleware, compose } from 'redux';
 import { rootEpic, rootReducer } from './redux/root';

@@ -7,7 +7,6 @@ const data = [
 const model = {
     pageKey: '',
     data: data,
-    isLoading: false,
 };
 
 export default model;
