@@ -11,6 +11,8 @@ const lang_data = [
     { lang: 'SCSS' },
     { lang: 'Javascript' },
     { lang: 'Jquery' },
+    { lang: 'Responsive-Web' },
+    { lang: 'Cross-Browsing' },
     { lang: 'React' },
     { lang: 'Redux' },
     { lang: 'Styled-components' },
