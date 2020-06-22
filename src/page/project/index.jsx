@@ -6,6 +6,13 @@ import Layout from './../../layout/';
 import { useDispatch } from 'react-redux';
 
 const project_data = [
+    // // Dongflix 개인프로젝트
+    // {
+    //     project_title: 'SV VIBA',
+    //     project_text_1: '홈페이지의 전체 UI 구현',
+    //     project_text_2: '반응형 웹과 크로스 브라우징 완벽 구현',
+    //     link: 'http://www.svviba.com/',
+    // },
     // SV VIBA
     {
         project_title: 'SV VIBA',
