@@ -6,7 +6,7 @@ const Wrapper = styled.div`
         width: 100%;
         height: 100vh;
         padding: 0 32px;
-        background: #fff url('/portpolio/images/pngwing.com.png') no-repeat center center;
+        background: #fff url('/portpolio/images/main_bg.png') no-repeat center center;
         box-sizing: border-box;
         & .Info {
             position: absolute;
