@@ -13,10 +13,7 @@ const Layout = ({ children }) => {
         <Wrapper>
             <Grid className="Header">
                 <span className="Logo">로고</span>
-            </Grid>
-            {children}
-            <Grid className={state.pageKey === 'project' ? 'Pagination On' : 'Pagination '}>
-                <ul>
+                <ul className="Gnb">
                     {state.data.map((x, index) => {
                         return (
                             <li
@@ -32,12 +29,13 @@ const Layout = ({ children }) => {
                                     window.scrollTo(0, 0);
                                 }}
                             >
-                                <span className={x.value === state.pageKey ? 'On' : ''}></span>
+                                <span className={x.value === state.pageKey ? 'On' : ''}>{x.value}</span>
                             </li>
                         );
                     })}
                 </ul>
             </Grid>
+            {children}
         </Wrapper>
     );
 };

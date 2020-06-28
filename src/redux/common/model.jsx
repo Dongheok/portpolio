@@ -1,7 +1,8 @@
 const data = [
-    { key: '/', value: '' },
-    { key: '/project', value: 'project' },
-    { key: '/profile', value: 'profile' },
+    { key: '/', value: 'Home' },
+    { key: '/project', value: 'Project' },
+    { key: '/profile', value: 'Profile' },
+    { key: '/contact-us', value: 'Contact Us' },
 ];
 
 const model = {

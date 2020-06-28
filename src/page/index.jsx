@@ -3,11 +3,12 @@ import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
 import Layout from '../layout';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router';
 
 const Portpolio = () => {
-    const state = useSelector((state) => state.common);
     const dispatch = useDispatch();
+    const history = useHistory();
     useEffect(() => {
         dispatch({
             type: 'CURRENT_PAGE',
@@ -18,16 +19,29 @@ const Portpolio = () => {
     }, [dispatch]);
     return (
         <Wrapper>
-            <Layout>
-                {state.isLoading === true && (
-                    <Grid className="Loading_Bar">
-                        <Grid></Grid>
+            <Grid className="Main">
+                <Grid className="Info">
+                    <h2>PORTPOLIO</h2>
+                    <Grid>
+                        <button
+                            className="Btn_Project"
+                            onClick={() => {
+                                history.push('/project');
+                            }}
+                        >
+                            Project
+                        </button>
+                        <button
+                            className="Btn_Profile"
+                            onClick={() => {
+                                history.push('/profile');
+                            }}
+                        >
+                            Profile
+                        </button>
                     </Grid>
-                )}
-                <Grid container alignItems="center" className="Main">
-                    <Grid className="Title">PORTPOLIO</Grid>
                 </Grid>
-            </Layout>
+            </Grid>
         </Wrapper>
     );
 };

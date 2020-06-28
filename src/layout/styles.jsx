@@ -2,60 +2,42 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     & .Header {
+        overflow: hidden;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 80px;
         line-height: 80px;
-        padding-top: 20px;
-        font-size: 24px;
-        font-weight: bold;
-        background: url('/portpolio/images/main_bg.jpg') no-repeat center top 80px;
-        color: #fff;
-        text-align: center;
+        padding: 0 32px;
+        background: #fff;
         box-sizing: border-box;
         & .Logo {
+            float: left;
             display: block;
             width: 62px;
             height: 40px;
-            margin: 0 auto;
+            margin-top: 20px;
             background: url('/portpolio/images/logo.png') no-repeat;
             text-indent: -99999px;
         }
-    }
-
-    & .Pagination {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 99999;
-        &.On {
-            background: #000;
-        }
-        & ul {
-            width: 100%;
-            height: 30px;
-            padding-top: 6px;
-            text-align: center;
-            box-sizing: border-box;
+        & .Gnb {
+            overflow: hidden;
+            float: right;
             & li {
-                display: inline-block;
-                margin-right: 10px;
-                &::last-child {
-                    margin-right: 0;
+                float: left;
+                margin-left: 10px;
+                &:last-child {
+                    margin-left: 0;
                 }
                 & span {
                     display: block;
-                    width: 60px;
-                    height: 10px;
-                    background: #fff;
-                    opacity: 0.6;
+                    padding: 0 10px;
+                    color: #5f6368;
+                    font-weight: 500;
+                    font-size: 16px;
                     cursor: pointer;
-                    &.On {
-                        opacity: 1;
-                    }
+                    box-sizing: border-box;
                 }
             }
         }
