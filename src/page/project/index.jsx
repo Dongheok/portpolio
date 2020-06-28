@@ -155,7 +155,7 @@ const project_data = [
     },
 ];
 
-const ProjectSection = () => {
+const Project = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch({
@@ -201,4 +201,4 @@ const ProjectSection = () => {
     );
 };
 
-export default ProjectSection;
+export default Project;

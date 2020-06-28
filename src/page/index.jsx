@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
-import Layout from '../layout';
 
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
