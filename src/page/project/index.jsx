@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import { Wrapper, Mask } from './styles';
@@ -164,7 +165,7 @@ const Project = () => {
                 pageKey: 'project',
             },
         });
-    }, [dispatch]);
+    }, []);
     return (
         <Wrapper>
             <Layout>

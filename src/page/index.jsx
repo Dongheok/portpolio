@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
@@ -15,7 +16,7 @@ const Portpolio = () => {
                 pageKey: '',
             },
         });
-    }, [dispatch]);
+    }, []);
     return (
         <Wrapper>
             <Grid className="Main">

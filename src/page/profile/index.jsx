@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
@@ -49,7 +50,7 @@ const Profile = () => {
                 pageKey: 'profile',
             },
         });
-    }, [dispatch]);
+    }, []);
     return (
         <Wrapper>
             <Layout>
