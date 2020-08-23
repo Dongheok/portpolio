@@ -1,43 +1,36 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import Wrapper from './styles';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import Wrapper from "./styles";
 
-import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from 'react-router';
+import { useHistory } from "react-router";
+import { useContext } from "react";
+import { UserContext } from "../context";
 
 const Layout = ({ children }) => {
-    const state = useSelector((state) => state.common);
-    const history = useHistory();
-    const dispatch = useDispatch();
-    return (
-        <Wrapper>
-            <Grid className="Header">
-                <span className="Logo">로고</span>
-                <ul className="Gnb">
-                    {state.data.map((x, index) => {
-                        return (
-                            <li
-                                key={index}
-                                onClick={() => {
-                                    dispatch({
-                                        type: 'MOVE_PAGE',
-                                        input: {
-                                            pageKey: `${x.value}`,
-                                        },
-                                    });
-                                    history.push(x.key);
-                                    window.scrollTo(0, 0);
-                                }}
-                            >
-                                <span className={x.value === state.pageKey ? 'On' : ''}>{x.value}</span>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </Grid>
-            {children}
-        </Wrapper>
-    );
+  const history = useHistory();
+  const { state } = useContext(UserContext);
+  return (
+    <Wrapper>
+      <Grid className="header">
+        <span className="logo">로고</span>
+        <ul className="gnb">
+          {state.sidebar.map((x, index) => {
+            return (
+              <li
+                key={index}
+                onClick={() => {
+                  history.push(`/${x.key}`);
+                }}
+              >
+                <span>{x.value}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </Grid>
+      {children}
+    </Wrapper>
+  );
 };
 
 export default Layout;

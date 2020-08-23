@@ -1,14 +1,23 @@
-import React from 'react';
-import Routes from './Routes';
-// import Portpolio from "./page";
+import React, { useContext } from "react";
+import { createGlobalStyle } from "styled-components";
+import { UserContext } from "./context";
+import Routes from "./Routes";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    overflow:${(props) => `${props.overflow}`};
+  }
+`;
 
 const App = () => {
-    return (
-        <>
-            <Routes />
-            {/* <Portpolio /> */}
-        </>
-    );
+  const { state } = useContext(UserContext);
+
+  return (
+    <>
+      <GlobalStyle overflow={state.modalOverflow ? "hidden" : "visible"} />
+      <Routes />
+    </>
+  );
 };
 
 export default App;

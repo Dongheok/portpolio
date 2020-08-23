@@ -1,57 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@charset "UTF-8";
+/* roboto */
 @font-face {
-    font-family: 'AppleSDGothicNeoR00';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/font/AppleSDGothicNeoR00.eot'); /* IE9 Compat Modes */
-    src: local('AppleSDGothicNeo'), local('AppleSDGothicNeo'), url('/font/AppleSDGothicNeoR00.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */ url('/font/AppleSDGothicNeoR00.woff2') format('woff2'),
-        /* Super Modern Browsers */ url('/font/AppleSDGothicNeoR00.woff') format('woff'),
-        /* Modern Browsers */ url('/font/AppleSDGothicNeoR00.ttf') format('truetype'),
-        /* Safari, Android, iOS */ url('/font/AppleSDGothicNeoR00.svg#AppleSDGothicNeo') format('svg'); /* Legacy iOS */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/roboto/roboto-v20-latin-300.eot");
+  src: url("/font/roboto/roboto-v20-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/roboto/roboto-v20-latin-300.woff2") format("woff2"),
+    url("/font/roboto/roboto-v20-latin-300.woff") format("woff"),
+    url("/font/roboto/roboto-v20-latin-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/roboto/roboto-v20-latin-regular.eot");
+  src: url("/font/roboto/roboto-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/roboto/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("/font/roboto/roboto-v20-latin-regular.woff") format("woff"),
+    url("/font/roboto/roboto-v20-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/roboto/roboto-v20-latin-500.eot");
+  src: url("/font/roboto/roboto-v20-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/roboto/roboto-v20-latin-500.woff2") format("woff2"),
+    url("/font/roboto/roboto-v20-latin-500.woff") format("woff"),
+    url("/font/roboto/roboto-v20-latin-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/roboto/roboto-v20-latin-700.eot");
+  src: url("/font/roboto/roboto-v20-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/roboto/roboto-v20-latin-700.woff2") format("woff2"),
+    url("/font/roboto/roboto-v20-latin-700.woff") format("woff"),
+    url("/font/roboto/roboto-v20-latin-700.ttf") format("truetype");
+}
+/* noto sans */
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot");
+  unicode-range: U+AC00 - U+D7A3;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot");
+  unicode-range: U+AC00 - U+D7A3;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff2")
+      format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff")
+      format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot");
+  unicode-range: U+AC00 - U+D7A3;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot");
+  unicode-range: U+AC00 - U+D7A3;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.ttf") format("truetype");
+}
+html {
+  font-size: 16px;
 }
 html,
 body {
-    height: 100%;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 body::-webkit-scrollbar {
-    display: none;
-}
-html {
-    font-size: 16px;
+  display: none;
 }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', 'AppleSDGothicNeoR00', sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+* {
+  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
 }
-
-/* @media (max-width: 1280px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 960px) {
-  html {
-    font-size: 12px;
-  }
-}
-@media (max-width: 600px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media (max-width: 400px) {
-  html {
-    font-size: 8px;
-  }
-} */
