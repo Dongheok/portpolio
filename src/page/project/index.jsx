@@ -68,91 +68,84 @@ const project_data = [
         project_text_1: '(메인,서브)페이지를 디자인하여 시안을 직접 제작해서 UI를 구현할 수 있습니다.',
         // project_text_2: '',
         project_img: '/portpolio/images/project/project_7.png',
-        link: 'http://sn237x.cafe24.com/web/mobile/10_mcdonald/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/mcdonald/index.html',
     },
     {
         project_title: '서브웨이',
         project_text_1: '(메인,서브)페이지를 디자인하여 시안을 직접 제작해서 UI를 구현할 수 있습니다.',
         // project_text_2: '',
         project_img: '/portpolio/images/project/project_8.png',
-        link: 'http://sn237x.cafe24.com/web/mobile/7_subway(moblie)/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/subway/index.html',
     },
     {
         project_title: 'CJ Hello',
         project_text_1: '메인페이지 시안을 제작하여 구현할 수 있습니다.',
         // project_text_2: '',
         project_img: '/portpolio/images/project/project_9.png',
-        link: 'http://sn237x.cafe24.com/web/mobile/6_cjhello/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/cj-hello/index.html',
     },
     {
         project_title: '현대글로비스',
         project_text_1: '반응형 웹을 직접 구현할 수 있습니다.',
         project_text_2: '비디오 슬라이드를 구현할 수 있고, 모달 팝업을 구현할 수 있습니다.',
         project_img: '/portpolio/images/project/project_10.png',
-        link: 'http://myvtr1000sp1.dothome.co.kr/4_hyundai(rwd)/index.html',
+        link: 'http://myvtr1000sp1.dothome.co.kr/hyundai/index.html',
     },
     {
         project_title: '캐논',
         project_text_1: '(메인,배너)슬라이드 구현,',
         project_text_2: '(재생,일시정지)버튼 구현',
         project_img: '/portpolio/images/project/project_11.jpg',
-        link: 'http://sn237x.cafe24.com/web/css/49_slick_slide_banner/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/canon/index.html',
     },
     {
         project_title: '삼양식품',
         project_text_1: '(메인,배너)슬라이드 구현,',
         project_text_2: '(유튜브)모달팝업 구현',
         project_img: '/portpolio/images/project/project_12.jpg',
-        link: 'http://sn237x.cafe24.com/web/css/13_test/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/samyang/index.html',
     },
     {
         project_title: '넷마블',
         project_text_1: '직접 디자인, (메인,배너)슬라이드 구현,',
         project_text_2: '왼쪽 상단 퀵 메뉴 구현, 탭 메뉴 구현',
         project_img: '/portpolio/images/project/project_13.jpg',
-        link: 'http://sn237x.cafe24.com/web/pc/netmarble/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/netmarble/index.html',
     },
     {
         project_title: '커핀그루나루',
         project_text_1: '(메인,배너)슬라이드 구현,',
         project_text_2: '탭(버튼,메뉴) 구현',
         project_img: '/portpolio/images/project/project_14.jpg',
-        link: 'http://sn237x.cafe24.com/web/css/37_coffine/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/coffine-gurunaru/index.html',
     },
     {
         project_title: '도미노',
         project_text_1: '메인 슬라이더 구현, 퀵 메뉴 버튼 구현',
         // project_text_2: '',
         project_img: '/portpolio/images/project/project_15.jpg',
-        link: 'http://sn237x.cafe24.com/web/css3/13_domino/index.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/domino/index.html',
     },
     {
         project_title: '포스코 사회공헌',
         project_text_1: '원 페이지 스크롤 구현, 슬라이드 구현,',
         project_text_2: '퀵 메뉴 버튼 구현, (유튜브)모달팝업 구현',
         project_img: '/portpolio/images/project/project_16.jpg',
-        link: `http://sn237x.cafe24.com//web/jquery/15_modal(popupyoutube%EC%97%B0%EA%B2%B0%EA%B0%80%EB%B3%80%EB%86%92%EC%9D%B4(vh)%EB%A7%8C%ED%81%BC%EC%9D%B4%EB%8F%99))%ED%8F%AC%EC%8A%A4%EC%BD%94%EC%82%AC%ED%9A%8C%EA%B3%B5%ED%97%8C/index.html`,
+        link: `http://sn237x.cafe24.com//web/personal-project/posco/index.html`,
     },
     {
         project_title: '포도팟',
         project_text_1: '10개 이상의 애니메이션을 제이쿼리로 구현',
         // project_text_2: '',
         project_img: '/portpolio/images/project/project_17.jpg',
-        link: 'http://sn237x.cafe24.com/web/css3/10_animation/indexr.html',
+        link: 'http://sn237x.cafe24.com/web/personal-project/podopod/index.html',
     },
     {
         project_title: '레스포삭',
         project_text_1: '(광고)모달 팝업 구현,',
         project_text_2: '슬라이드 구현, 애니메이션 구현',
         project_img: '/portpolio/images/project/project_18.jpg',
-        link: 'http://sn237x.cafe24.com/web/css/16_respos/index.html',
-    },
-    {
-        project_title: '미스터스트릿',
-        project_text_1: 'Cafe24로 반응형 웹 구현',
-        project_text_2: '슬라이드 구현, 유튜브 구현',
-        project_img: '/portpolio/images/project/project_19.jpg',
-        link: 'http://myvtr1000sp10904.cafe24.com/',
+        link: 'http://sn237x.cafe24.com/web/personal-project/lesportsac/index.html',
     },
 ];
 
@@ -183,6 +176,9 @@ const Project = () => {
                                         <Grid className="Item_Wrap">
                                             <Mask bgUrl={x.project_img} />
                                             <Grid className="Text">
+                                                <a href={x.link} target="blank">
+                                                    Link
+                                                </a>
                                                 <h2>{x.project_title}</h2>
                                                 <h3>
                                                     {x.project_text_1}

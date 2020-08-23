@@ -38,6 +38,8 @@ const history_data = [
         history_6: 'ULTRA PRIVACY CMS UI 구현',
         history_7: 'YOUR CERTY CMS UI 구현',
         history_8: '셔틀비 CMS 프론트엔드 작업',
+        history_9: '에그플레너 UI 구현',
+        history_10: '플레이조커 UI 구현',
     },
 ];
 
