@@ -15,12 +15,10 @@ var settings = {
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
 };
 
 const main_project_data = [
-    // !! 플레이조커 메뉴투어 추가 예정
-
     {
         project_title: 'Donflix',
         project_text_1: 'React를 이용한 외국 영화 사이트 클론 구현',
@@ -28,14 +26,42 @@ const main_project_data = [
     },
     {
         project_title: '플레이 조커',
-        project_text_1: '미정',
-        link: 'https://dongheok.github.io/dongflix/',
+        project_text_1: 'React를 이용한 플랫폼 사이트 구현',
+        link: 'http://www.playjoker.kr',
     },
 ];
 
 const sub_project_data = [
-    // !! 에그 플래너,동네 축구 CMS, 배달의 딜러 CMS, 플레이 조커 CMS 추가 예정
-
+    // 배달의딜러CMS
+    {
+        project_title: '배달의딜러CMS',
+        project_text_1: 'React를 이용한 홈페이지의 전체 UI 완벽 구현',
+        project_text_2: 'Redux를 이용한 전역 상태 관리와 Api 통신 구현',
+        // 임시
+        link: '',
+    },
+    // 동네선수CMS
+    {
+        project_title: '동네선수CMS',
+        project_text_1: 'React를 이용한 홈페이지의 전체 UI 완벽 구현',
+        project_text_2: 'Redux를 이용한 전역 상태 관리와 Api 통신 구현',
+        // 임시
+        link: 'http://as-prod-cms.s3-website-ap-northeast-1.amazonaws.com/post-list',
+    },
+    // 손사찾기
+    {
+        project_title: '손사찾기',
+        project_text_1: 'Nextjs를 이용한 홈페이지의 전체 UI 완벽 구현',
+        project_text_2: '반응형 웹과 크로스 브라우징 완벽 구현',
+        link: 'https://www.sonsafind.com',
+    },
+    // 에그플래너
+    {
+        project_title: '애그플래너',
+        project_text_1: '홈페이지의 전체 UI 구현',
+        project_text_2: '반응형 웹과 크로스 브라우징 완벽 구현',
+        link: 'https://www.eggteachers.com',
+    },
     // SV VIBA
     {
         project_title: 'SV VIBA',
