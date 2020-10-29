@@ -29,9 +29,11 @@ const main_project_data = [
         project_text_1: 'React를 이용한 플랫폼 사이트 구현',
         link: 'http://www.playjoker.kr',
     },
+    // 애플 클론 CMS
 ];
 
 const sub_project_data = [
+    // 플레이조커 CMS
     // 배달의딜러CMS
     {
         project_title: '배달의딜러CMS',
