@@ -3,24 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 html {
-    font-size: 16px;
+   font-size: 16px;
 }
 html,
 body {
-    height: 100%;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+   height: 100%;
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
 }
 body::-webkit-scrollbar {
-    display: none;
+   display: none;
 }
 body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+   margin: 0;
+   padding: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+   font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+   word-break: keep-all;
 }
