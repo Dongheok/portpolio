@@ -20,6 +20,26 @@ var settings = {
 
 const Profile = () => {
    const { state } = useContext(UserContext);
+
+   let kakao = window;
+
+   const script = document.createElement('script');
+   script.async = true;
+   script.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=appkey=e1bdda230bef0190f4e29c21d94325a5';
+   document.head.appendChild(script);
+
+   script.onload = () => {
+      kakao.maps.load(() => {
+         let container = document.getElementById('map');
+         let options = {
+            center: new kakao.maps.LatLng(37.506502, 127.053617),
+            level: 7,
+         };
+
+         const map = new window.kakao.maps.Map(container, options);
+      });
+   };
+
    return (
       <Wrapper>
          <Layout>
