@@ -169,7 +169,9 @@ const Profile = () => {
                   <Grid className="title">
                      <span>Contact Us</span>
                   </Grid>
-                  <Grid className="contact"></Grid>
+                  <Grid className="contact">
+                     <div id="map" style={{ width: 500, height: 400 }}></div>
+                  </Grid>
                </Grid>
             </Grid>
          </Layout>

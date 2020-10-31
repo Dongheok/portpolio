@@ -19,6 +19,7 @@ const Wrapper = styled.div`
          margin-top: 20px;
          background: url('/portpolio/images/logo.png') no-repeat;
          text-indent: -99999px;
+         cursor: pointer;
       }
       & .gnb {
          overflow: hidden;
