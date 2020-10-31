@@ -1,9 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import Slider from 'react-slick';
+import { UserContext } from '../../context';
+
 import { Wrapper, SkillItem } from './styles';
 import Layout from './../../layout/';
-import Slider from 'react-slick';
 
 var settings = {
    dots: false,
@@ -15,127 +18,19 @@ var settings = {
    swipeToSlide: true,
 };
 
-const picture_data = [
-   { key: 0, value: '/portpolio/images/profile/profile_picture_1.jpg' },
-   { key: 1, value: '/portpolio/images/profile/profile_picture_2.jpg' },
-];
-
-const skill_data = [
-   { keyword: 'HM', lang: 'HTML5', color: 'green', explanation: 'HTML5등 DOCTYPE을 이해하고 문서에 맞춰 작업이 가능합니다.' },
-   { keyword: 'CS', lang: 'CSS3', color: 'blue', explanation: '어떤 디자인 시안이 와도 CSS3를 이용하여 100% 퀄리티로 구현할 수 있습니다.' },
-   {
-      keyword: 'SC',
-      lang: 'SCSS',
-      color: 'blue',
-      explanation: 'SCSS를 이용하여 효율적이며 코드의 재사용성을 높고 가독성이 높은 CSS를 작성할 수 있습니다.',
-   },
-   {
-      keyword: 'JS',
-      lang: 'Javascript',
-      color: 'green',
-      explanation: 'Javascript 언어의 기본문법과 사용법, 함수, 객체 등의 개념을 이해하여 동적인 프로그래밍을 할 수 있습니다.',
-   },
-   { keyword: 'JQ', lang: 'Jquery', color: 'red', explanation: '다양한 메소드를 사용해 기능을 구현할 수 있습니다..' },
-   { keyword: 'ES', lang: 'ES6', color: 'green', explanation: 'let, const, 스프레드 연산자, Arrow Function과 같은 ES6 기초를 이해합니다.' },
-   {
-      keyword: 'NJ',
-      lang: 'Node Js',
-      color: 'yellow',
-      explanation: 'Node JS의 기초를 이해하고, Node JS를 이용하여 프론트엔드 개발환경을 구축해 코로나맵 클론을 만들 수 있습니다.',
-   },
-   {
-      keyword: 'EX',
-      lang: 'Express',
-      color: 'red',
-      explanation: 'Express의 기초를 이해하고, Express를 이용하여 코로나맵 클론을 만들 수 있습니다.',
-   },
-   {
-      keyword: 'WP',
-      lang: 'Webpack',
-      color: 'yellow',
-      explanation: '웹팩의 동작 원리를 이해하고 직접 개발환경을 구성해봤습니다. 로더를 직접 구현해 보았습니다.',
-   },
-   {
-      keyword: 'BB',
-      lang: 'Babel',
-      color: 'yellow',
-      explanation: '바벨의 원리를 이해하고 직접 사용해 보아 프로젝트에 최적화된 환경을 구축해봤습니다.',
-   },
-   {
-      keyword: 'RT',
-      lang: 'React',
-      color: 'green',
-      explanation: 'React를 이용하여 정적페이지, CMS페이지, 플랫폼 등 여러 React 프로젝트 경험이 있습니다.',
-   },
-   { keyword: 'RD', lang: 'Redux', color: 'red', explanation: 'Redux를 이용하여 효율적으로 형상관리를 할 수 있습니다.' },
-   {
-      keyword: 'TS',
-      lang: 'Typescript',
-      color: 'yellow',
-      explanation: 'Typescript 기초를 이해하여 넷플릭스 클론 사이트를 만들 수 있습니다.',
-   },
-   { keyword: 'NJ', lang: 'Next Js', color: 'green', explanation: 'Next JS를 이용하여 프로젝트를 구현할 수 있습니다.' },
-   {
-      keyword: 'ST',
-      lang: 'Styled components',
-      color: 'blue',
-      explanation: 'Styled Component를 주로 사용하며, 보다 효율적으로 CSS를 작성할 수 있습니다.',
-   },
-   { keyword: 'MU', lang: 'Material UI', color: 'blue', explanation: 'Material UI라는 UI 프레임워크를 자주 씁니다.' },
-   { keyword: 'RW', lang: 'Responsive Web', color: 'red', explanation: '반응형 웹을 구현할 수 있습니다.' },
-   { keyword: 'RW', lang: 'Interactive Web', color: 'green', explanation: 'Javascript를 이용하여 애플 클론 페이지를 구현할 수 있습니다.' },
-   { keyword: 'WS', lang: 'Web Standards', color: 'yellow', explanation: '웹 표준을 지키며 코딩할 수 있습니다.' },
-   {
-      keyword: 'CB',
-      lang: 'Cross Browsing',
-      color: 'red',
-      explanation: '모든 브라우저에서 제가 맡은 프로젝트가 크로스 브라우징이 잘 되게 할 수 있습니다.',
-   },
-   { keyword: 'GT', lang: 'Git', color: 'yellow', explanation: 'Git을 이용하여 형상관리를 할 수 있습니다.' },
-   {
-      keyword: 'JR',
-      lang: 'Jira',
-      color: 'yellow',
-      explanation: '칸반과 스크럼을 이해하고 Jira를 이용하여 프로젝트 관리를 할 수 있습니다.',
-   },
-   { keyword: 'PS', lang: 'Photoshop', color: 'blue', explanation: '포토샵을 이용하여 프로젝트 시안을 만들 수 있습니다.' },
-   { keyword: 'IL', lang: 'Illustrator', color: 'red', explanation: '일러스트를 이용하여 간단한 아이콘, 로고 등을 만들 수 있습니다.' },
-];
-
-const history_data = [
-   { years: '2018', history_1: '송곡고등학교 졸업', history_2: '' },
-   {
-      years: '2019',
-      history_1: '이젠컴퓨터학원(상봉) - 하이브리드 UI UI 웹 퍼블리셔 교육 이수',
-      history_2: 'SV GROUP 입사',
-   },
-   {
-      years: '2020',
-      history_1: 'SV VIBA 홈페이지 UI 구현',
-      history_2: 'SV DATA UI 구현',
-      history_3: 'SV DATA UI 구현',
-      history_4: 'SAMSUNG SSAFY UI구현',
-      history_5: '파이어니 이벤트 페이지 UI 구현',
-      history_6: 'XY UI 구현',
-      history_7: 'ULTRA PRIVACY CMS UI 구현',
-      history_8: 'YOUR CERTY CMS UI 구현',
-      history_9: '셔틀비 CMS 프론트엔드 작업',
-      history_10: '에그플레너 UI 구현',
-      history_11: '플레이조커 UI 구현',
-   },
-];
-
 const Profile = () => {
+   const { state } = useContext(UserContext);
    return (
       <Wrapper>
          <Layout>
             <Grid className="profile">
-               <Grid className="about">
+               {/* About */}
+               <Grid className="about_wrap">
                   <Grid className="title">
                      <span>About</span>
                   </Grid>
-                  <Grid container className="info">
-                     <Grid item xs={12} sm={5} md={3} className="picture_wrap">
+                  <Grid container justify="space-between" direction="row" className="about">
+                     <Grid item className="picture_wrap">
                         <Slider {...settings}>
                            <Grid className="slide text">
                               <span>
@@ -144,16 +39,16 @@ const Profile = () => {
                                  옆으로 넘겨주세요.
                               </span>
                            </Grid>
-                           {picture_data.map((x, index) => {
+                           {state.picture_data.map((x, index) => {
                               return (
-                                 <Grid className="slide picture">
+                                 <Grid key={index} className="slide picture">
                                     <img src={`${x.value}`} alt="" />
                                  </Grid>
                               );
                            })}
                         </Slider>
                      </Grid>
-                     <Grid item xs={12} sm={7} md={9} className="info">
+                     <Grid item className="info">
                         {/* 이름 */}
                         <Grid container direction="column" className="">
                            <Grid item className="title">
@@ -166,7 +61,7 @@ const Profile = () => {
                         {/* 생년월일 */}
                         <Grid container direction="column" className="">
                            <Grid item className="title">
-                              생년월일
+                              #생년월일
                            </Grid>
                            <Grid item className="text">
                               1999.06.27
@@ -175,7 +70,7 @@ const Profile = () => {
                         {/* 간단소개 */}
                         <Grid container direction="column" className="">
                            <Grid item className="title">
-                              간단소개
+                              #간단소개
                            </Grid>
                            <Grid item className="text">
                               안녕하세요! 산업기능요원 보충역(시력이슈)으로 편입을 준비하는 신입 프론트엔드 개발자 김동혁입니다.
@@ -184,12 +79,13 @@ const Profile = () => {
                      </Grid>
                   </Grid>
                </Grid>
-               <Grid className="skill">
+               {/* Skill */}
+               <Grid className="skill_wrap">
                   <Grid className="title">
                      <span>Ability</span>
                   </Grid>
-                  <Grid className="skill_item_wrap">
-                     {skill_data.map((x, index) => {
+                  <Grid className="skill">
+                     {state.skill_data.map((x, index) => {
                         return (
                            <SkillItem key={index} className={x.color}>
                               {/*  */}
@@ -203,15 +99,77 @@ const Profile = () => {
                      })}
                   </Grid>
                </Grid>
-               <Grid className="education">
+               {/* Education */}
+               <Grid className="education_wrap">
                   <Grid className="title">
                      <span>Education</span>
                   </Grid>
+                  <Grid container className="education">
+                     <Grid item xs={12} className="certificate_wrap">
+                        <h2>#자격증</h2>
+                        <Grid container justify="center" direction="row">
+                           {state.certificate_data.map((x, index) => {
+                              return (
+                                 <Grid item key={index}>
+                                    <Grid className="mask">
+                                       <img src={`${x.img}`} alt="" />
+                                    </Grid>
+                                    <h3>{x.title}</h3>
+                                    <h4>{x.date}</h4>
+                                 </Grid>
+                              );
+                           })}
+                        </Grid>
+                     </Grid>
+                     <Grid item xs={12} className="academy">
+                        <h2>#교육수료</h2>
+                        <h3>
+                           <span className="icon">
+                              <CheckCircleIcon />
+                           </span>
+                           <span className="text">2019.04 ~ 2019.09 이젠컴퓨터학원(상봉) - 하이브리드 UIUX 웹 퍼블리셔 교육 이수</span>
+                        </h3>
+                        <p>
+                           - 기획 및 Pt -≫PowerPoint
+                           <br />
+                           - 포토샵 , 일러스트
+                           <br />
+                           - 웹표준 기반 HTML5.0 & CSS3전반, 텍스트와 하이퍼링크, 멀티미디어, 폼 태그
+                           <br />
+                           - 웹접근성 기반 Javascript & jQuery (정적, 동적, 반응형 그리드 시스템)
+                           <br />
+                           - 디자인 콘셉트 전략을 기획, 개발, 디자인하여 제작
+                           <br />- 반응형 웹사이트의 메인/서브페이지 작업, 스타일 코드 분리, 메뉴 영역 작업
+                        </p>
+                     </Grid>
+                  </Grid>
                </Grid>
-               <Grid className="career">
+               {/* Career */}
+               <Grid className="career_wrap">
                   <Grid className="title">
                      <span>Career</span>
                   </Grid>
+                  <Grid className="career">
+                     {state.history_data.map((x, index) => {
+                        return (
+                           <Grid key={index}>
+                              <h2>{x.years}</h2>
+                              <ul>
+                                 {x.history.map((x, i) => {
+                                    return <li key={i}>- {x}</li>;
+                                 })}
+                              </ul>
+                           </Grid>
+                        );
+                     })}
+                  </Grid>
+               </Grid>
+               {/* Contact Us */}
+               <Grid className="contact_wrap">
+                  <Grid className="title">
+                     <span>Contact Us</span>
+                  </Grid>
+                  <Grid className="contact"></Grid>
                </Grid>
             </Grid>
          </Layout>

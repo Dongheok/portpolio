@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
-import { createGlobalStyle } from "styled-components";
-import { UserContext } from "./context";
-import Routes from "./Routes";
+import React, { useContext } from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { UserContext } from './context';
+import Routes from './Routes';
+import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -10,14 +11,14 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
-  const { state } = useContext(UserContext);
+   const { state } = useContext(UserContext);
 
-  return (
-    <>
-      <GlobalStyle overflow={state.modalOverflow ? "hidden" : "visible"} />
-      <Routes />
-    </>
-  );
+   return (
+      <ThemeProvider theme={theme}>
+         <GlobalStyle overflow={state.modalOverflow ? 'hidden' : 'visible'} />
+         <Routes />
+      </ThemeProvider>
+   );
 };
 
 export default App;

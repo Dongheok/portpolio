@@ -6,4 +6,6 @@
 
 ## 10/30 프로필 Ability 구현
 
-## 10/31 프로필 Carrer 구현
+## 10/31 프로필 Carrer, Education 구현
+
+## 11/1 프로필 Contact Us 까지 구현하고 일단 락

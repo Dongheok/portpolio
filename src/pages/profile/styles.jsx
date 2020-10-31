@@ -128,7 +128,7 @@ export const Wrapper = styled.div`
       & > div {
          width: 100%;
          padding: 32px;
-         margin-bottom: 48px;
+         margin-bottom: 64px;
          transition: all 0.4s;
          & > .title {
             text-align: center;
@@ -138,7 +138,7 @@ export const Wrapper = styled.div`
                padding: 24px 0;
                font-size: 36px;
                font-weight: 500;
-               color: #444;
+               color: ${(props) => props.theme.main};
                text-align: center;
                &::before {
                   content: '';
@@ -148,7 +148,7 @@ export const Wrapper = styled.div`
                   width: 0;
                   bottom: 0;
                   height: 4px;
-                  background: #444;
+                  background: ${(props) => props.theme.main};
                   transition: all 0.4s;
                }
             }
@@ -160,17 +160,16 @@ export const Wrapper = styled.div`
             width: 100%;
          }
       }
-      & .about {
-         & .info {
-            padding-top: 24px;
+      & .about_wrap {
+         & .about {
+            padding: 48px 0;
             /* 사진 슬라이더 부분 */
             & .picture_wrap {
-               padding-right: 104px;
+               width: 200px;
                & .slide {
                   position: relative;
-                  max-width: 200px;
                   width: 100%;
-                  height: 200px;
+                  height: 250px;
                   &.picture {
                      & img {
                         width: 100%;
@@ -179,7 +178,7 @@ export const Wrapper = styled.div`
                      }
                   }
                   &.text {
-                     background: #444;
+                     background: ${(props) => props.theme.main};
                      & span {
                         display: inline-block;
                         position: absolute;
@@ -196,9 +195,14 @@ export const Wrapper = styled.div`
                }
             }
             & > .info {
+               padding-left: 60px;
+               max-width: calc(100% - 200px);
                & > div {
                   padding-bottom: 40px;
-                  color: #141414;
+                  color: ${(props) => props.theme.black};
+                  &:last-child {
+                     padding-bottom: 0;
+                  }
                   & .title {
                      padding-bottom: 8px;
                      font-size: 20px;
@@ -212,22 +216,115 @@ export const Wrapper = styled.div`
             }
          }
       }
-      & .skill {
-         & .skill_item_wrap {
-            padding: 24px 0;
+      & .skill_wrap {
+         & .skill {
+            padding: 48px 0;
             text-align: center;
+         }
+      }
+      & .education_wrap {
+         & .education {
+            padding: 48px 0;
+            & > div {
+               & > h2 {
+                  padding-bottom: 48px;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: ${(props) => props.theme.black};
+               }
+               & > div {
+               }
+               &.certificate_wrap {
+                  padding-bottom: 48px;
+                  & > div {
+                     & > div {
+                        margin-right: 32px;
+                        text-align: center;
+                        color: ${(props) => props.theme.black};
+                        & .mask {
+                           margin: 0 auto;
+                           width: 160px;
+                           height: 160px;
+                           border-radius: 160px;
+                           background: ${(props) => props.theme.main};
+                           & img {
+                              width: 100px;
+                              height: 100px;
+                              margin-top: 30px;
+                           }
+                        }
+                        & h3 {
+                           margin-top: 16px;
+                           font-size: 18px;
+                           font-weight: bold;
+                        }
+                        & h4 {
+                           margin-top: 8px;
+                        }
+                     }
+                  }
+               }
+               &.academy {
+                  color: ${(props) => props.theme.black};
+                  & h3 {
+                     & span {
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: 1.3;
+                        vertical-align: middle;
+                        &.icon {
+                           margin-right: 8px;
+                        }
+                        &.text {
+                           font-weight: 500;
+                        }
+                     }
+                  }
+                  & p {
+                     padding-top: 16px;
+                     line-height: 1.6;
+                     & span {
+                        &.icon {
+                           margin-right: 8px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      & .career_wrap {
+         & .career {
+            padding: 48px 0;
+            & > div {
+               margin-bottom: 24px;
+               color: ${(props) => props.theme.black};
+               & h2 {
+                  font-size: 20px;
+                  font-weight: bold;
+               }
+               & ul {
+                  & li {
+                     margin-top: 16px;
+                  }
+               }
+            }
          }
       }
    }
    @media (max-width: 600px) {
       & .profile {
-         & .about {
-            & .info {
+         & .about_wrap {
+            & .about {
                /* 사진 슬라이더 부분 */
                & .picture_wrap {
-                  padding-right: 0;
                   max-width: 200px;
                   margin: 0 auto;
+               }
+               & .info {
+                  padding: 48px 0 0;
+                  max-width: 100%;
+                  width: 100%;
                }
             }
          }
