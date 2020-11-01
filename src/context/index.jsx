@@ -6,6 +6,7 @@ const UserContextProvider = ({ children }) => {
    const [state, setState] = useState({
       isLoading: false,
       modalOverflow: false,
+      modeDark: false,
       // 사이드 바
       sidebar: [
          { key: 'profile', value: 'Profile' },
@@ -152,6 +153,11 @@ const UserContextProvider = ({ children }) => {
       certificate_data: [
          { title: '웹디자인 기능사', date: '2019.09', img: '/portpolio/images/profile/design_icon.png' },
          { title: '정보처리 기능사', date: '2020.07', img: '/portpolio/images/profile/code_icon.png' },
+      ],
+      contact_data: [
+         { key: 'Phone', value: '010-3395-4623' },
+         { key: 'Email', value: 'piouy_@naver.com' },
+         { key: 'Git', value: 'https://github.com/Dongheok' },
       ],
       // 프로젝트
       main_project_data: [
@@ -302,11 +308,14 @@ const UserContextProvider = ({ children }) => {
          },
       ],
    });
-
+   const modeDarkFunction = (boolen) => {
+      setState({ ...state, modeDark: boolen });
+   };
    return (
       <UserContext.Provider
          value={{
             state,
+            modeDarkFunction,
          }}
       >
          {children}

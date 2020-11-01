@@ -19,59 +19,76 @@ var settings = {
    autoplaySpeed: 5000,
 };
 
-const Project = () => {
+const SubProjectComponent = () => {
    const { state } = useContext(UserContext);
+
    return (
-      <Wrapper>
-         <Layout>
-            <Grid className="project_wrap">
-               <Grid className="main_project">
-                  <Slider {...settings}>
-                     {state.main_project_data.map((x, index) => {
-                        return (
-                           <Grid className="slide">
-                              <Mask height="600px" bgUrl={`/portpolio/images/project/main_project_${index + 1}.png`} />
-                              <Grid className="link">
+      <Grid className="sub_project">
+         <Grid container className="project">
+            {state.sub_project_data.map((x, index) => {
+               return (
+                  <Grid item xs={12} sm={6} className="project_item" key={index}>
+                     <Grid className="item_wrap">
+                        <Mask height="380px" bgUrl={`/portpolio/images/project/project_${state.sub_project_data.length - index}.png`} />
+                        <Grid className="text">
+                           {x.link !== '' && (
+                              <Grid className={state.modeDark ? 'link on' : 'link'}>
                                  <a href={x.link} target="blank">
                                     &nbsp;
                                  </a>
                               </Grid>
-                              <Grid className="title">{x.project_title}</Grid>
-                              <Grid className="text">{x.project_text_1}</Grid>
-                           </Grid>
-                        );
-                     })}
-                  </Slider>
-               </Grid>
-               <Grid className="sub_project">
-                  <Grid container className="project">
-                     {state.sub_project_data.map((x, index) => {
-                        return (
-                           <Grid item xs={12} sm={6} className="project_item" key={index}>
-                              <Grid className="item_wrap">
-                                 <Mask
-                                    height="380px"
-                                    bgUrl={`/portpolio/images/project/project_${state.sub_project_data.length - index}.png`}
-                                 />
-                                 <Grid className="text">
-                                    <Grid className="link">
-                                       <a href={x.link} target="blank">
-                                          &nbsp;
-                                       </a>
-                                    </Grid>
-                                    <h2>{x.project_title}</h2>
-                                    <h3>
-                                       {x.project_text_1}
-                                       <br />
-                                       {x.project_text_2}
-                                    </h3>
-                                 </Grid>
-                              </Grid>
-                           </Grid>
-                        );
-                     })}
+                           )}
+                           <h2>{x.project_title}</h2>
+                           <h3>
+                              {x.project_text_1}
+                              <br />
+                              {x.project_text_2}
+                           </h3>
+                        </Grid>
+                     </Grid>
                   </Grid>
-               </Grid>
+               );
+            })}
+         </Grid>
+      </Grid>
+   );
+};
+
+const MainProjectComponent = () => {
+   const { state } = useContext(UserContext);
+   return (
+      <Grid className="main_project">
+         <Slider {...settings}>
+            {state.main_project_data.map((x, index) => {
+               return (
+                  <Grid className="slide">
+                     <Mask height="600px" bgUrl={`/portpolio/images/project/main_project_${index + 1}.png`} />
+                     {x.link !== '' && (
+                        <Grid className={state.modeDark ? 'link on' : 'link'}>
+                           <a href={x.link} target="blank">
+                              &nbsp;
+                           </a>
+                        </Grid>
+                     )}
+                     <Grid className="title">{x.project_title}</Grid>
+                     <Grid className="text">{x.project_text_1}</Grid>
+                  </Grid>
+               );
+            })}
+         </Slider>
+      </Grid>
+   );
+};
+
+const Project = () => {
+   return (
+      <Wrapper>
+         <Layout>
+            <Grid className="project_wrap">
+               {/* 메인프로젝트 */}
+               <MainProjectComponent />
+               {/* 서브프로젝트 */}
+               <SubProjectComponent />
             </Grid>
          </Layout>
       </Wrapper>

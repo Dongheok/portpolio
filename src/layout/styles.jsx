@@ -10,33 +10,54 @@ const Wrapper = styled.div`
       height: 80px;
       line-height: 80px;
       padding: 0 32px;
-      background: #fff;
-      & .logo {
-         float: left;
-         display: block;
-         width: 62px;
-         height: 40px;
-         margin-top: 20px;
-         background: url('/portpolio/images/logo.png') no-repeat;
-         text-indent: -99999px;
-         cursor: pointer;
-      }
-      & .gnb {
-         overflow: hidden;
-         float: right;
-         & li {
-            float: left;
-            margin-left: 10px;
-            &:last-child {
-               margin-left: 0;
+      background: ${(props) => props.theme.bg};
+      & > div {
+         &.logo {
+            width: 62px;
+            height: 40px;
+            margin-top: 20px;
+            background: url('/portpolio/images/logo.png') no-repeat;
+            text-indent: -99999px;
+            cursor: pointer;
+            &.on {
+               background: url('/portpolio/images/logo_w.png') no-repeat;
             }
-            & span {
-               display: block;
-               padding: 0 10px;
-               color: ${(props) => props.theme.gray};
-               font-weight: 500;
-               font-size: 18px;
-               cursor: pointer;
+         }
+         &.nav {
+            & > ul {
+               display: inline-block;
+               &.gnb {
+                  & li {
+                     display: inline-block;
+                     margin-left: 24px;
+                     & span {
+                        display: block;
+                        color: ${(props) => props.theme.gray};
+                        font-weight: 500;
+                        font-size: 18px;
+                        cursor: pointer;
+                     }
+                  }
+               }
+               &.util {
+                  margin-top: 11px;
+                  & li {
+                     display: inline-block;
+                     margin-left: 24px;
+                     & button {
+                        & svg {
+                           color: ${(props) => props.theme.main};
+                           font-size: 32px;
+                        }
+                     }
+                     & a {
+                        & svg {
+                           color: ${(props) => props.theme.main};
+                           font-size: 32px;
+                        }
+                     }
+                  }
+               }
             }
          }
       }

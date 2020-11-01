@@ -6,7 +6,7 @@ const Wrapper = styled.div`
       width: 100%;
       height: 100vh;
       padding: 0 32px;
-      background: #fff url('/portpolio/images/main_bg.png') no-repeat center center;
+      background: ${(props) => props.theme.bg} url('/portpolio/images/main_bg.png') no-repeat center center;
 
       & .info {
          position: absolute;
@@ -14,7 +14,8 @@ const Wrapper = styled.div`
          top: 50%;
          transform: translate(-50%, -50%);
          & h2 {
-            color: #fff;
+            color: ${(props) => props.theme.bg};
+
             font-size: 48px;
             letter-spacing: 2px;
             text-align: center;
@@ -24,10 +25,10 @@ const Wrapper = styled.div`
             & button {
                width: 200px;
                height: 50px;
-               color: #fff;
+               color: ${(props) => props.theme.bg};
                font-size: 14px;
                font-family: 'Noto Sans KR', 'AppleSDGothicNeoR00', sans-serif !important;
-               border: 2px solid #fff;
+               border: 2px solid ${(props) => props.theme.bg};
                background: none;
                outline: none;
                cursor: pointer;

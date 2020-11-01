@@ -47,10 +47,10 @@ export const SkillItem = styled.div`
       padding: 10px;
       text-align: center;
       font-size: 12px;
-      color: #333;
+      color: ${(props) => props.theme.black};
       border-radius: 6px;
-      border: 1px solid #eee;
-      background: #fff;
+      border: 1px solid ${(props) => props.theme.gray};
+      background: ${(props) => props.theme.bg};
       opacity: 0;
       transition: opacity 0.3s ease 0.3s, top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
    }
@@ -116,7 +116,7 @@ export const SkillItem = styled.div`
 export const Wrapper = styled.div`
    width: 100%;
    height: 100vh;
-   background: #fff;
+   background: ${(props) => props.theme.bg};
    background-size: cover;
    padding: 80px 20px 40px;
 
@@ -154,7 +154,7 @@ export const Wrapper = styled.div`
             }
          }
          &:hover {
-            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 3px 3px -2px ${(props) => props.theme.shadow};
          }
          &:hover .title span::before {
             width: 100%;
@@ -188,7 +188,7 @@ export const Wrapper = styled.div`
                         line-height: 22px;
                         text-align: center;
                         font-size: 14px;
-                        color: #fff;
+                        color: ${(props) => props.theme.bg};
                         transform: translate(-50%, -50%);
                      }
                   }
@@ -235,10 +235,10 @@ export const Wrapper = styled.div`
                & > div {
                }
                &.certificate_wrap {
-                  padding-bottom: 48px;
+                  padding-bottom: 32px;
                   & > div {
                      & > div {
-                        margin-right: 32px;
+                        margin: 0 16px 16px;
                         text-align: center;
                         color: ${(props) => props.theme.black};
                         & .mask {
@@ -246,7 +246,7 @@ export const Wrapper = styled.div`
                            width: 160px;
                            height: 160px;
                            border-radius: 160px;
-                           background: ${(props) => props.theme.main};
+                           background: ${(props) => props.theme.img_mask};
                            & img {
                               width: 100px;
                               height: 100px;
@@ -311,6 +311,35 @@ export const Wrapper = styled.div`
             }
          }
       }
+      & .contact_wrap {
+         & .contact {
+            padding: 48px 0;
+            & .info {
+               text-align: center;
+               word-wrap: break-word;
+               & > div {
+                  padding: 0 8px;
+                  & .icon {
+                     padding-bottom: 16px;
+                     &.git {
+                        cursor: pointer;
+                     }
+                     & svg {
+                        font-size: 48px;
+                        color: ${(props) => props.theme.main};
+                     }
+                  }
+                  & .text {
+                     font-size: 20px;
+                     color: ${(props) => props.theme.main};
+                  }
+               }
+            }
+            & .map {
+               margin-top: 48px;
+            }
+         }
+      }
    }
    @media (max-width: 600px) {
       & .profile {
@@ -325,6 +354,23 @@ export const Wrapper = styled.div`
                   padding: 48px 0 0;
                   max-width: 100%;
                   width: 100%;
+               }
+            }
+         }
+         & .contact_wrap {
+            & .contact {
+               & .info {
+                  & > div {
+                     padding-bottom: 16px;
+                     &:last-child {
+                        padding-bottom: 0;
+                     }
+                     & .icon {
+                     }
+                  }
+               }
+               & .map {
+                  margin-top: 32px;
                }
             }
          }

@@ -1,39 +1,61 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Grid } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Wrapper from './styles';
 
 import { useHistory } from 'react-router';
-import { useContext } from 'react';
 import { UserContext } from '../context';
 
 const Layout = ({ children }) => {
    const history = useHistory();
-   const { state } = useContext(UserContext);
+   const { state, modeDarkFunction } = useContext(UserContext);
+   const [modeDark, setModeDark] = useState(false);
    return (
       <Wrapper>
-         <Grid className="header">
-            <span
-               className="logo"
+         <Grid container justify="space-between" className="header">
+            <Grid
+               item
+               className={state.modeDark ? 'logo on' : 'logo'}
                onClick={() => {
                   history.push('/');
                }}
             >
                로고
-            </span>
-            <ul className="gnb">
-               {state.sidebar.map((x, index) => {
-                  return (
-                     <li
-                        key={index}
+            </Grid>
+            <Grid item className="nav">
+               <ul className="gnb">
+                  {state.sidebar.map((x, index) => {
+                     return (
+                        <li
+                           key={index}
+                           onClick={() => {
+                              history.push(`/${x.key}`);
+                           }}
+                        >
+                           <span>{x.value}</span>
+                        </li>
+                     );
+                  })}
+               </ul>
+               <ul className="util">
+                  <li>
+                     <button
                         onClick={() => {
-                           history.push(`/${x.key}`);
+                           modeDarkFunction(!modeDark);
+                           setModeDark(!modeDark);
                         }}
                      >
-                        <span>{x.value}</span>
-                     </li>
-                  );
-               })}
-            </ul>
+                        <Brightness4Icon />
+                     </button>
+                  </li>
+                  <li>
+                     <a href="https://github.com/Dongheok" target="_blank">
+                        <GitHubIcon />
+                     </a>
+                  </li>
+               </ul>
+            </Grid>
          </Grid>
          {children}
       </Wrapper>
