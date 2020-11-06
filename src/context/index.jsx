@@ -136,7 +136,6 @@ const UserContextProvider = ({ children }) => {
             years: '#2020',
             history: [
                'SV DATA 정적페이지 개발',
-
                'XY UI 정적페이지 개발',
                'ULTRA PRIVACY CMS UI 구현',
                'YOUR CERTY CMS UI 구현',
@@ -264,7 +263,7 @@ const UserContextProvider = ({ children }) => {
          {
             project_title: '현대글로비스',
             project_text_1: 'HTML5, CSS3 , Jquery, JS를 이용한 반응형 웹 구현',
-            link: 'http://myvtr1000sp1.dothome.co.kr/hyundai/index.html',
+            link: 'http://sn237x.cafe24.com/web/personal-project/hyundai/index.html',
          },
          {
             project_title: '캐논',

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { UserContext } from './context';
 import Routes from './Routes';
-import { darkTheme, theme } from './theme';
+import { dangunTheme, darkTheme, theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   body {
