@@ -204,8 +204,8 @@ const Portpolio = () => {
                      currentYOffset
                   )}%, 0)`;
                   // 백그라운드 세팅
-                  // sceneInfo[1].objs.container.current.style.background = `${(props) => props.theme.real_black}`;
-                  sceneInfo[1].objs.container.current.style.background = `#000`;
+                  sceneInfo[1].objs.container.current.style.background = `#ff8a3d`;
+                  // sceneInfo[1].objs.container.current.style.background = `#000`;
                }
 
                if (scrollRatio <= 0.62) {
@@ -241,11 +241,11 @@ const Portpolio = () => {
                }
                break;
             case 1:
-               if (scrollRatio > 0.1) {
+               if (scrollRatio > 0.01) {
                   objs.container.current.style.background = '#fff';
                } else {
-                  // objs.container.current.style.background = `${(props) => props.theme.real_black}`;
-                  objs.container.current.style.background = `#000`;
+                  objs.container.current.style.background = `#ff8a3d`;
+                  // objs.container.current.style.background = `#000`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -384,7 +384,7 @@ const Portpolio = () => {
             {/*  */}
             <Grid ref={containerRef_1} className="scroll_section scroll_section_1">
                <h2>김동혁</h2>
-               <object ref={logoRef_1} className="sticky_elem logo" data="/portpolio/images/dg_logo.svg" type="image/svg+xml">
+               <object ref={logoRef_1} className="sticky_elem logo" data="/portpolio/images/orange_dg_logo.svg" type="image/svg+xml">
                   당근이랑 당근마켓
                </object>
                {/* 메세지 A */}

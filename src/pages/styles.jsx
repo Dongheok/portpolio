@@ -18,10 +18,12 @@ const Wrapper = styled.div`
                font-weight: bold;
                text-align: center;
             }
-            background: ${(props) => props.theme.real_black};
+            /* background: ${(props) => props.theme.real_black}; */
+            background: ${(props) => props.theme.real_orange};
          }
          &.scroll_section_1 {
-            background: ${(props) => props.theme.real_black};
+            /* background: ${(props) => props.theme.real_black}; */
+            background: ${(props) => props.theme.real_orange};
             & h2 {
                position: relative;
                top: -10vh;
@@ -46,7 +48,8 @@ const Wrapper = styled.div`
                & svg {
                   & path {
                      fill: none;
-                     stroke: ${(props) => props.theme.real_orange};
+                     /* stroke: ${(props) => props.theme.real_orange}; */
+                     stroke: #56c271;
                      stroke-width: 62;
                      stroke-linecap: round;
                      stroke-linejoin: round;
