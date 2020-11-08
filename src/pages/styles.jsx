@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-   /* Wrapper에 before-load 붙으면 transition만 끝내고 천천히 사라지는 처리 */
    /* 메인 */
    & .main {
       overflow-x: hidden;
@@ -19,10 +18,10 @@ const Wrapper = styled.div`
                font-weight: bold;
                text-align: center;
             }
-            background: #000;
+            background: ${(props) => props.theme.real_black};
          }
          &.scroll_section_1 {
-            background: #000;
+            background: ${(props) => props.theme.real_black};
             & h2 {
                position: relative;
                top: -10vh;
@@ -47,7 +46,7 @@ const Wrapper = styled.div`
                & svg {
                   & path {
                      fill: none;
-                     stroke: #ff8a3d;
+                     stroke: ${(props) => props.theme.real_orange};
                      stroke-width: 62;
                      stroke-linecap: round;
                      stroke-linejoin: round;
@@ -58,9 +57,6 @@ const Wrapper = styled.div`
             }
          }
          &.scroll_section_2 {
-            * {
-               color: #000;
-            }
          }
          /* scroll_section 컨텐츠들 */
          /* 이벤트 메세지 */

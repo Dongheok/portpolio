@@ -7,7 +7,7 @@ import { useHistory } from 'react-router';
 import { UserContext } from './../context';
 
 const Portpolio = () => {
-   const { state } = useContext(UserContext);
+   const { state, isLoadingFunction } = useContext(UserContext);
    const history = useHistory();
 
    // DOM을 사용하기 위한 Ref
@@ -204,7 +204,8 @@ const Portpolio = () => {
                      currentYOffset
                   )}%, 0)`;
                   // 백그라운드 세팅
-                  sceneInfo[1].objs.container.current.style.background = '#000';
+                  // sceneInfo[1].objs.container.current.style.background = `${(props) => props.theme.real_black}`;
+                  sceneInfo[1].objs.container.current.style.background = `#000`;
                }
 
                if (scrollRatio <= 0.62) {
@@ -243,7 +244,8 @@ const Portpolio = () => {
                if (scrollRatio > 0.1) {
                   objs.container.current.style.background = '#fff';
                } else {
-                  objs.container.current.style.background = '#000';
+                  // objs.container.current.style.background = `${(props) => props.theme.real_black}`;
+                  objs.container.current.style.background = `#000`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -268,12 +270,7 @@ const Portpolio = () => {
                   // out
                   objs.messageB.current.style.opacity = calcValues(values.messageB_opacity_out, currentYOffset);
                }
-               // 백그라운드 미리 세팅
-               // if (scrollRatio <= 0.15) {
-               //    objs.container.current.style.background = '#000';
-               // } else {
-               //    objs.container.current.style.background = '#fff';
-               // }
+
                // 크기가 커져도 깨지지 않는 SVG의 장점을 살리기 위해 transform scale 대신 width를 조정
                if (scrollRatio <= 0.4) {
                   objs.logo.current.style.width = `${calcValues(values.logo_width_in, currentYOffset)}vw`;
@@ -334,6 +331,7 @@ const Portpolio = () => {
       // 렌더되면 세팅 처리
       window.addEventListener('load', () => {
          // 렌더되면 로딩 끝
+         isLoadingFunction(false);
          setLayout();
          // 이벤트들
          window.addEventListener('resize', () => {
@@ -349,7 +347,7 @@ const Portpolio = () => {
    }, []);
 
    return (
-      <Wrapper ref={wrapRef}>
+      <Wrapper ref={wrapRef} id={state.isLoading ? 'on' : ''}>
          <Grid className="main">
             {/*  */}
             <Grid ref={containerRef_0} className="scroll_section scroll_section_0">
