@@ -5,7 +5,7 @@ export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
    const [state, setState] = useState({
-      isLoading: false,
+      isLoading: true,
       modalOverflow: false,
       modeDark: false,
       // 사이드 바

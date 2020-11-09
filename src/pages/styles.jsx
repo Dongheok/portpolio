@@ -63,8 +63,22 @@ const Wrapper = styled.div`
             width: 100%;
             margin: 0 auto;
             padding: 20px;
+            &::before {
+               content: '';
+               position: absolute;
+               left: 0;
+               bottom: 0;
+               z-index: -2;
+               width: 100%;
+               height: 433px;
+               background: url('/portpolio/images/dg_bg.png') no-repeat center bottom;
+               /* background: url('/portpolio/images/dg_icon.png') no-repeat right bottom;
+               background-size: 25%; */
+            }
             & > .btn_wrap {
+               width: auto;
                height: 100%;
+               margin: 0 auto;
                & > div {
                   display: inline-block;
                   & button {
@@ -186,7 +200,7 @@ const Wrapper = styled.div`
                top: 50%;
                transform: translate3D(-50%, -50%, 0);
                max-width: 440px;
-               width: 100%;
+               width: 100% !important;
                height: auto !important;
                margin: 0 auto;
             }
