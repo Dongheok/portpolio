@@ -96,12 +96,7 @@ const Wrapper = styled.div`
     }
   }
   /* 해당 애니메이션 씬일 때, 해당 컨텐츠 보이게 처리 */
-  &#show_scene_0 {
-  }
-  &#show_scene_1 {
-  }
-  &#show_scene_2 {
-  }
+
   &#show_scene_0 .scroll_section_0 .sticky_elem {
     display: block;
     will-change: transform, opacity;
