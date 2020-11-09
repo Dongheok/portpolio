@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portpolio/static/css/main.98a4a189.chunk.css",
-    "main.js": "/portpolio/static/js/main.566e4f36.chunk.js",
-    "main.js.map": "/portpolio/static/js/main.566e4f36.chunk.js.map",
-    "runtime-main.js": "/portpolio/static/js/runtime-main.d244588b.js",
-    "runtime-main.js.map": "/portpolio/static/js/runtime-main.d244588b.js.map",
+    "main.css": "/portpolio/static/css/main.31fbd2f2.chunk.css",
+    "main.js": "/portpolio/static/js/main.21dfaedf.chunk.js",
+    "main.js.map": "/portpolio/static/js/main.21dfaedf.chunk.js.map",
+    "runtime-main.js": "/portpolio/static/js/runtime-main.c225a7ab.js",
+    "runtime-main.js.map": "/portpolio/static/js/runtime-main.c225a7ab.js.map",
     "static/css/2.2c395745.chunk.css": "/portpolio/static/css/2.2c395745.chunk.css",
-    "static/js/2.ee376211.chunk.js": "/portpolio/static/js/2.ee376211.chunk.js",
-    "static/js/2.ee376211.chunk.js.map": "/portpolio/static/js/2.ee376211.chunk.js.map",
+    "static/js/2.9667dc15.chunk.js": "/portpolio/static/js/2.9667dc15.chunk.js",
+    "static/js/2.9667dc15.chunk.js.map": "/portpolio/static/js/2.9667dc15.chunk.js.map",
     "index.html": "/portpolio/index.html",
-    "precache-manifest.512c332ff54349fca7a392910f1640cf.js": "/portpolio/precache-manifest.512c332ff54349fca7a392910f1640cf.js",
+    "precache-manifest.63d83b6c09db893b7d78c8b481e4ef53.js": "/portpolio/precache-manifest.63d83b6c09db893b7d78c8b481e4ef53.js",
     "service-worker.js": "/portpolio/service-worker.js",
     "static/css/2.2c395745.chunk.css.map": "/portpolio/static/css/2.2c395745.chunk.css.map",
-    "static/css/main.98a4a189.chunk.css.map": "/portpolio/static/css/main.98a4a189.chunk.css.map",
-    "static/js/2.ee376211.chunk.js.LICENSE.txt": "/portpolio/static/js/2.ee376211.chunk.js.LICENSE.txt",
+    "static/css/main.31fbd2f2.chunk.css.map": "/portpolio/static/css/main.31fbd2f2.chunk.css.map",
+    "static/js/2.9667dc15.chunk.js.LICENSE.txt": "/portpolio/static/js/2.9667dc15.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/portpolio/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d244588b.js",
+    "static/js/runtime-main.c225a7ab.js",
     "static/css/2.2c395745.chunk.css",
-    "static/js/2.ee376211.chunk.js",
-    "static/css/main.98a4a189.chunk.css",
-    "static/js/main.566e4f36.chunk.js"
+    "static/js/2.9667dc15.chunk.js",
+    "static/css/main.31fbd2f2.chunk.css",
+    "static/js/main.21dfaedf.chunk.js"
   ]
 }
