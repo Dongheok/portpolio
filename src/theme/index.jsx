@@ -7,6 +7,7 @@ export const theme = {
    img_mask: '#444',
    real_black: '#000',
    real_orange: '#ff8a3d',
+   real_green: '#56c271',
 };
 
 export const darkTheme = {
@@ -18,6 +19,7 @@ export const darkTheme = {
    img_mask: 'none',
    real_black: '#000',
    real_orange: '#ff8a3d',
+   real_green: '#56c271',
 };
 
 export const dangunTheme = {
@@ -29,4 +31,5 @@ export const dangunTheme = {
    img_mask: '#ff8a3d',
    real_black: '#000',
    real_orange: '#ff8a3d',
+   real_green: '#56c271',
 };

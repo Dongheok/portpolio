@@ -27,7 +27,7 @@ const SubProjectComponent = () => {
          <Grid container className="project">
             {state.sub_project_data.map((x, index) => {
                return (
-                  <Grid item xs={12} sm={6} className="project_item" key={index}>
+                  <Grid key={index} item xs={12} sm={6} className="project_item" key={index}>
                      <Grid className="item_wrap">
                         <Mask height="380px" bgUrl={`/portpolio/images/project/project_${state.sub_project_data.length - index}.png`} />
                         <Grid className="text">
@@ -61,7 +61,7 @@ const MainProjectComponent = () => {
          <Slider {...settings}>
             {state.main_project_data.map((x, index) => {
                return (
-                  <Grid className="slide">
+                  <Grid key={index} className="slide">
                      <Mask height="600px" bgUrl={`/portpolio/images/project/main_project_${index + 1}.png`} />
                      {x.link !== '' && (
                         <Grid className={state.modeDark ? 'link on' : 'link'}>

@@ -9,6 +9,8 @@ const UserContextProvider = ({ children }) => {
       modalOverflow: false,
       modeDark: false,
       // 사이드 바
+      btn_wrap: portPolioData.btn_wrap,
+      // 사이드 바
       sidebar: portPolioData.sidebar,
       // 프로필
       picture_data: portPolioData.picture_data,
