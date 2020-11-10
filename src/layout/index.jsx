@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           item
           className={state.modeDark ? "logo on" : "logo"}
           onClick={() => {
-            history.push("/portpolio");
+            history.push("/");
             window.scrollTo(0, 0);
             window.location.reload();
           }}
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
                 <li
                   key={index}
                   onClick={() => {
-                    history.push(`${x.key}`);
+                    history.push(x.key);
                   }}
                 >
                   <span>{x.value}</span>
