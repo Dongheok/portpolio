@@ -1,7 +1,7 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
 /* roboto */
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -45,9 +45,9 @@
     url("/portpolio/font/roboto/roboto-v20-latin-700.woff2") format("woff2"),
     url("/portpolio/font/roboto/roboto-v20-latin-700.woff") format("woff"),
     url("/portpolio/font/roboto/roboto-v20-latin-700.ttf") format("truetype");
-}
+} */
 /* noto sans */
-@font-face {
+/* @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
   font-weight: 300;
@@ -106,33 +106,33 @@
       format("woff"),
     url("/portpolio/font/noto-sans-kr/noto-sans-kr-v12-korean-700.ttf")
       format("truetype");
-}
+} */
 
 html {
-  font-size: 16px;
+   font-size: 16px;
 }
 html,
 body {
-  height: 100%;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+   height: 100%;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
 body::-webkit-scrollbar {
-  display: none;
+   display: none;
 }
 body {
-  margin: 0;
-  padding: 0;
-  letter-spacing: -0.05em;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   margin: 0;
+   padding: 0;
+   letter-spacing: -0.05em;
+   overflow-x: hidden;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
-  word-break: keep-all;
+   font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+   word-break: keep-all;
 }
 p {
-  line-height: 1.6;
+   line-height: 1.6;
 }
