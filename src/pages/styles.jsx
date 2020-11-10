@@ -23,7 +23,7 @@ const Wrapper = styled.div`
          }
          &.scroll_section_1 {
             background: ${(props) => props.theme.real_orange};
-            transition: all 0.1s;
+            transition: all 0.2s;
             & h2 {
                position: relative;
                top: -10vh;
