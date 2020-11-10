@@ -23,7 +23,7 @@ const Wrapper = styled.div`
          }
          &.scroll_section_1 {
             background: ${(props) => props.theme.real_orange};
-            /* transition: all 0.1s; */
+            transition: all 0.01s;
             & h2 {
                position: relative;
                top: -10vh;
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
             &::before {
                content: '';
                position: absolute;
@@ -155,7 +155,7 @@ const Wrapper = styled.div`
          & .sticky_elem {
             display: none;
             position: fixed;
-            z-index: 4;
+            /* z-index: 4; */
             left: 0;
             width: 100%;
          }
