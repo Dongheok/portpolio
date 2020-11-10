@@ -40,17 +40,19 @@ const Wrapper = styled.div`
                   }
                }
                &.util {
-                  margin-top: 11px;
+                  padding-top: 11px;
                   & li {
                      display: inline-block;
-                     margin-left: 24px;
+                     padding: 0 0 0 24px;
                      & button {
+                        position: relative;
                         & svg {
                            color: ${(props) => props.theme.main};
                            font-size: 32px;
                         }
                      }
                      & a {
+                        display: block;
                         & svg {
                            color: ${(props) => props.theme.main};
                            font-size: 32px;

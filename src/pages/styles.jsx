@@ -148,7 +148,6 @@ const Wrapper = styled.div`
             & p {
                font-weight: bold;
                text-align: center;
-               line-height: 1.2;
             }
          }
          /* 고정 메세지 속성 */

@@ -349,33 +349,29 @@ const Portpolio = () => {
          <Grid className="main">
             {/*  */}
             <Grid ref={containerRef_0} className="scroll_section scroll_section_0">
-               <h2>AirMug Pro</h2>
+               <h2>DongHyuk Portpolio</h2>
                <Grid ref={messageARef_0} className="sticky_elem main_message">
-                  <p>
-                     온전히 빠져들게하는
-                     <br />
-                     최고급 세라믹
-                  </p>
+                  <p>안녕하세요.</p>
                </Grid>
                <Grid ref={messageBRef_0} className="sticky_elem main_message">
                   <p>
-                     주변 맛을 느끼게 해주는
+                     코딩을 좋아하고
                      <br />
-                     주변 맛 허용모드
+                     즐거운 분위기에서 일을 하고싶어
                   </p>
                </Grid>
                <Grid ref={messageCRef_0} className="sticky_elem main_message">
                   <p>
-                     온종일 편안한
+                     당신 근처에
                      <br />
-                     맞춤형 손잡이
+                     당근마켓의
                   </p>
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
                   <p>
-                     새롭게 입가를
+                     보충역 산업기능요원
                      <br />
-                     찾아온 매혹
+                     신입 프론트엔드 개발자로 지원한
                   </p>
                </Grid>
             </Grid>
@@ -387,7 +383,7 @@ const Portpolio = () => {
                </object>
                {/* 메세지 A */}
                <Grid ref={messageARef_1} className="sticky_elem main_message a">
-                  <p>텍스트_1</p>
+                  <p>!!!</p>
                </Grid>
                {/* 메세지 끝난 후 나오는 path 이미지 */}
                <span className="sticky_elem ribbon_path">
@@ -400,7 +396,7 @@ const Portpolio = () => {
                   </svg>
                </span>
                <Grid ref={messageBRef_1} className="sticky_elem main_message b">
-                  <p>옵션으로</p>
+                  <p>입니다!</p>
                </Grid>
             </Grid>
             {/*  */}
