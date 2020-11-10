@@ -23,8 +23,8 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/portpolio/" exact component={Portpolio} />
-        <Route path="/portpolio/project" exact component={Project} />
-        <Route path="/portpolio/profile" exact component={Profile} />
+        <Route path="/portpolio/project/" exact component={Project} />
+        <Route path="/portpolio/profile/" exact component={Profile} />
 
         <Redirect path="*" to="/portpolio/" />
       </Switch>
