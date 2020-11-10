@@ -133,3 +133,6 @@ body {
   font-family: "Roboto", "Noto Sans KR", sans-serif !important;
   word-break: keep-all;
 }
+p {
+  line-height: 1.6;
+}
