@@ -492,7 +492,7 @@ const Portpolio = () => {
                     type="button"
                     onClick={() => {
                       if (x.value !== "Git") {
-                        history.push(x.key);
+                        history.push(`${x.key}`);
                         window.scrollTo(0, 0);
                         // // 브라우저가 이전 코드데이터를 기억하고있는 경우 때문에 어쩔 수 없음
                         window.location.reload();

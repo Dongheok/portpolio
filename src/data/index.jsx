@@ -1,14 +1,14 @@
 export const portPolioData = {
   // 메인 버튼 데이터
   btn_wrap: [
-    { key: "/profile", value: "Profile" },
-    { key: "/project", value: "Project" },
+    { key: "/portpolio/profile/", value: "Profile" },
+    { key: "/portpolio/project/", value: "Project" },
     { key: "git", value: "Git" },
   ],
   // 사이드 바
   sidebar: [
-    { key: "/profile", value: "Profile" },
-    { key: "/project", value: "Project" },
+    { key: "/portpolio/profile/", value: "Profile" },
+    { key: "/portpolio/project/", value: "Project" },
   ],
   // 프로필
   picture_data: [

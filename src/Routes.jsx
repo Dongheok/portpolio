@@ -22,11 +22,11 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Portpolio} />
-        <Route path="/project" exact component={Project} />
-        <Route path="/profile" exact component={Profile} />
+        <Route path="/portpolio/" exact component={Portpolio} />
+        <Route path="/portpolio/project" exact component={Project} />
+        <Route path="/portpolio/profile" exact component={Profile} />
 
-        <Redirect path="*" to="/" exact />
+        <Redirect path="*" to="/portpolio/" exact />
       </Switch>
     </BrowserRouter>
   );
