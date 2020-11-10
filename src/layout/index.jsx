@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           item
           className={state.modeDark ? "logo on" : "logo"}
           onClick={() => {
-            history.push("/portpolio");
+            history.push("/");
             window.scrollTo(0, 0);
             window.location.reload();
           }}
