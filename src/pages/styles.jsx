@@ -155,6 +155,7 @@ const Wrapper = styled.div`
          & .sticky_elem {
             display: none;
             position: fixed;
+            z-index:99999
             left: 0;
             width: 100%;
          }
