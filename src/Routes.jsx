@@ -20,13 +20,13 @@ const Routes = () => {
     });
   }, [history]);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portpolio">
       <Switch>
-        <Route path="/portpolio" exact component={Portpolio} />
+        <Route path="/" exact component={Portpolio} />
         <Route path="/project" exact component={Project} />
         <Route path="/profile" exact component={Profile} />
 
-        <Redirect path="*" to="/portpolio" />
+        <Redirect from="*" to="/" />
       </Switch>
     </BrowserRouter>
   );
