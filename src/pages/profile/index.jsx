@@ -7,8 +7,9 @@ import MailIcon from "@material-ui/icons/Mail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Slider from "react-slick";
-import { UserContext } from "../../context";
+import { Helmet } from "react-helmet";
 
+import { UserContext } from "../../context";
 import { Wrapper, SkillItem } from "./styles";
 import Layout from "./../../layout/";
 import { MapApiComponent } from "../../common";
@@ -28,6 +29,9 @@ const AboutComponent = () => {
   const { state } = useContext(UserContext);
   return (
     <Grid className="about_wrap">
+      <Helmet>
+        <title>DongHyuk Profile</title>
+      </Helmet>
       <Grid className="title">
         <span>About</span>
       </Grid>
