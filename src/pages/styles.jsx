@@ -23,7 +23,7 @@ const Wrapper = styled.div`
          }
          &.scroll_section_1 {
             background: ${(props) => props.theme.real_orange};
-            transition: all 0.01s;
+            transition: all 0.1s;
             & h2 {
                position: relative;
                top: -10vh;
@@ -141,7 +141,7 @@ const Wrapper = styled.div`
             &.b {
                top: 50%;
                transform: translate3D(0, -50%, 0);
-               margin-top: -22px;
+               margin-top: -28px;
                font-size: 3.5rem;
             }
             /* 메인 메세지 안에 텍스트 */
