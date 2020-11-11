@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { UserContext } from './context';
 import Routes from './Routes';
-import { dangunTheme, darkTheme, theme } from './theme';
+import { darkTheme, theme } from './theme';
+import LoadingBar from './components/loading-bar';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -13,10 +14,11 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
    const { state } = useContext(UserContext);
-
    return (
       <ThemeProvider theme={state.modeDark ? darkTheme : theme}>
-         <GlobalStyle overflow={state.modalOverflow ? 'hidden' : 'visible'} />
+         {state.isLoading && <LoadingBar className={state.isLoading && 'on'} />}
+
+         <GlobalStyle overflow={state.isLoading ? 'hidden' : 'visible'} />
          <Routes />
       </ThemeProvider>
    );
