@@ -27,7 +27,7 @@ const Wrapper = styled.div`
    top: 0;
    width: 100%;
    height: 100%;
-   background: #fff;
+   background: rgba(255, 255, 255, 0.7);
    z-index: 1600;
    opacity: 0;
    transition: all 0.5s;
