@@ -108,4 +108,18 @@ export const Wrapper = styled.div`
          }
       }
    }
+   @media (max-width: 960px) {
+      & .project_wrap {
+         & .main_project {
+            & .slide {
+               & .title {
+                  font-size: 24px;
+               }
+               & .text {
+                  font-size: 16px;
+               }
+            }
+         }
+      }
+   }
 `;
