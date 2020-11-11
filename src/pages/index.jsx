@@ -339,6 +339,7 @@ const Portpolio = () => {
    };
 
    useEffect(() => {
+      isLoadingFunction(true);
       mainAnimation();
       setTimeout(() => {
          isLoadingFunction(false);

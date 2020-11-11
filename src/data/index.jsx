@@ -234,7 +234,7 @@ export const portPolioData = {
       // 배달의딜러CMS
       {
          project_title: '배달의딜러CMS',
-         project_text_1: 'React를 이용한 홈페이지의 전체 UI 완벽 구현',
+         project_text_1: '사용언어 : React, Styled-Components, Material-UI, Redux',
          project_text_2: 'Redux를 이용한 전역 상태 관리와 Api 통신 구현',
          // 임시
          img: '/portpolio/images/project/project_delivery.webp',

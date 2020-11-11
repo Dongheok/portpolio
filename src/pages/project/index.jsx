@@ -24,6 +24,8 @@ const MainProjectComponent = () => {
    const { state, isLoadingFunction } = useContext(UserContext);
 
    useEffect(() => {
+      isLoadingFunction(true);
+
       setTimeout(() => {
          isLoadingFunction(false);
       }, 1000);

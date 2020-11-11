@@ -210,7 +210,7 @@ export const Wrapper = styled.div`
                   }
                   & .text {
                      font-size: 18px;
-                     line-height: 22px;
+                     line-height: 26px;
                   }
                }
             }
@@ -306,6 +306,7 @@ export const Wrapper = styled.div`
                & ul {
                   & li {
                      margin-top: 16px;
+                     line-height: 1.3;
                   }
                }
             }

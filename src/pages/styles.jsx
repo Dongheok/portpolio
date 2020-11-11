@@ -15,6 +15,7 @@ const Wrapper = styled.div`
                top: -10vh;
                z-index: 5;
                font-size: 4rem;
+               line-height: 1.3;
                font-weight: bold;
                text-align: center;
             }

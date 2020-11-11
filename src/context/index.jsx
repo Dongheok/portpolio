@@ -5,7 +5,7 @@ export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
    const [state, setState] = useState({
-      isLoading: true,
+      isLoading: false,
       modeDark: false,
       // 사이드 바
       btn_wrap: portPolioData.btn_wrap,

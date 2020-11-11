@@ -29,6 +29,8 @@ const AboutComponent = () => {
    const { state, isLoadingFunction } = useContext(UserContext);
 
    useEffect(() => {
+      isLoadingFunction(true);
+
       setTimeout(() => {
          isLoadingFunction(false);
       }, 1000);
@@ -65,7 +67,7 @@ const AboutComponent = () => {
                {/* 이름 */}
                <Grid container direction="column" className="">
                   <Grid item className="title">
-                     #이름
+                     # 이름
                   </Grid>
                   <Grid item className="text">
                      김동혁
@@ -74,7 +76,7 @@ const AboutComponent = () => {
                {/* 생년월일 */}
                <Grid container direction="column" className="">
                   <Grid item className="title">
-                     #생년월일
+                     # 생년월일
                   </Grid>
                   <Grid item className="text">
                      1999.06.27
@@ -83,7 +85,7 @@ const AboutComponent = () => {
                {/* 간단소개 */}
                <Grid container direction="column" className="">
                   <Grid item className="title">
-                     #간단소개
+                     # 간단소개
                   </Grid>
                   <Grid item className="text">
                      안녕하세요! 산업기능요원 보충역(시력이슈)으로 편입을 준비하는 신입 프론트엔드 개발자 김동혁입니다.
@@ -129,7 +131,7 @@ const EducationComponent = () => {
          </Grid>
          <Grid container className="education">
             <Grid item xs={12} className="certificate_wrap">
-               <h2>#자격증</h2>
+               <h2># 자격증</h2>
                <Grid container justify="center" direction="row">
                   {state.certificate_data.map((x, index) => {
                      return (
@@ -145,7 +147,7 @@ const EducationComponent = () => {
                </Grid>
             </Grid>
             <Grid item xs={12} className="academy">
-               <h2>#교육수료</h2>
+               <h2># 교육수료</h2>
                <h3>
                   <span className="icon">
                      <CheckCircleIcon />
