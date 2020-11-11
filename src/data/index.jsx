@@ -222,6 +222,12 @@ export const portPolioData = {
          img: '/portpolio/images/project/project_dongflix.webp',
          link: 'https://dev-donghyuk.github.io/dongflix/',
       },
+      {
+         project_title: 'Apple Clone',
+         project_text_1: '사용언어 : HTML5, CSS3, Javascript',
+         img: '/portpolio/images/project/project_appleclone.webp',
+         link: 'http://sn237x.cafe24.com/web/personal-project/apple_clone/index.html',
+      },
       // {
       //   project_title: "플레이 조커",
       //   project_text_1: "React와 Typescript를 이용한 플랫폼 사이트 구현",
@@ -233,7 +239,7 @@ export const portPolioData = {
    sub_project_data: [
       // 배달의딜러CMS
       {
-         project_title: '배달의딜러CMS',
+         project_title: '배달의딜러 CMS',
          project_text_1: '사용언어 : React, Styled-Components, Material-UI, Redux',
          project_text_2: 'Redux를 이용한 전역 상태 관리와 Api 통신 구현',
          // 임시
@@ -242,7 +248,7 @@ export const portPolioData = {
       },
       // 동네선수CMS
       {
-         project_title: '동네선수CMS',
+         project_title: '동네선수 CMS',
          project_text_1: '사용언어 : React, Styled-Components, Material-UI, Redux',
          project_text_2: `["사용언어"]를 이용하여 구현한 스포츠 모임 앱 서비스 관리자 페이지 입니다. 프로젝트를 하는 과정에서 이미지 업로드, 다음 주소API로 가져온 주소를 카카오주소API를 이용하여 주소의 위,경도를 가져오기, 컴포넌트 분리, Redux를 이용하여 사용자가 등록, 수정, 삭제를 했을 시 새로고침 없이 반영시키기 등등 React를 보다 더 똑똑하게 사용할 수 있게 되었습니다.`,
          img: '/portpolio/images/project/project_plant.webp',
@@ -336,7 +342,7 @@ export const portPolioData = {
          link: 'http://sn237x.cafe24.com/web/personal-project/cj-hello/index.html',
       },
       {
-         project_title: '현대글로비스',
+         project_title: '현대 글로비스',
          project_text_1: '사용언어 : HTML, CSS3, Javascript, Jquery',
          project_text_2: '정적페이지를 유연하게 다루기 위해 구현한 대기업 웹사이트입니다.',
          img: '/portpolio/images/project/project_hyundai.webp',
