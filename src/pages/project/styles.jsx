@@ -31,14 +31,21 @@ export const Wrapper = styled.div`
          & .slide {
             padding-bottom: 20px;
             & .title {
+               position: relative;
                padding: 24px 0;
                font-size: 36px;
                font-weight: 500;
                color: ${(props) => props.theme.main};
             }
-            & .text {
+            & .text_1 {
                line-height: 1.3;
                font-size: 24px;
+               color: ${(props) => props.theme.main};
+            }
+            & .text_2 {
+               line-height: 1.3;
+               margin-top: 16px;
+               font-size: 16px;
                color: ${(props) => props.theme.main};
             }
          }
@@ -70,6 +77,7 @@ export const Wrapper = styled.div`
                }
                & > .item_wrap {
                   & .text {
+                     position: relative;
                      & h2 {
                         padding: 24px 0;
                         font-size: 24px;
@@ -93,12 +101,13 @@ export const Wrapper = styled.div`
    }
 
    & .link {
-      text-align: right;
+      position: absolute;
+      right: 0;
+      top: 24px;
       & a {
          display: inline-block;
          width: 24px;
          height: 24px;
-         margin-top: 24px;
          text-indent: -99999px;
          background: url('/portpolio/images/link_icon.png') no-repeat;
       }
