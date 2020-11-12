@@ -27,7 +27,9 @@ const MainProjectComponent = () => {
   useEffect(() => {
     isLoadingFunction(true);
 
-    setTimeout(() => {}, 1000);
+    setTimeout(() => {
+      isLoadingFunction(false);
+    }, 1000);
   }, []);
   return (
     <Grid className="main_project">
