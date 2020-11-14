@@ -4,7 +4,7 @@ export const Mask = styled.div`
    height: ${(props) => `${props.height}`};
    background: url(${(props) => `${props.bgUrl}`}) no-repeat center top;
    background-size: cover;
-   transition: all 10s;
+   transition: all ${(props) => props.speed}s;
    &:hover {
       background-position: center bottom;
    }

@@ -37,7 +37,7 @@ const MainProjectComponent = () => {
             {state.main_project_data.map((x, index) => {
                return (
                   <Grid key={index} className="slide">
-                     <Mask height="600px" bgUrl={`${x.img}`} />
+                     <Mask height="600px" speed={x.speed} bgUrl={`${x.img}`} />
                      <Grid className="title">
                         {x.project_title}{' '}
                         {x.link !== '' && (
@@ -71,7 +71,7 @@ const SubProjectComponent = () => {
                return (
                   <Grid key={index} item sm={12} md={6} className="project_item">
                      <Grid className="item_wrap">
-                        <Mask height="300px" bgUrl={`${x.img}`} />
+                        <Mask height="300px" speed={x.speed} bgUrl={`${x.img}`} />
                         <Grid className="text">
                            {x.link !== '' && (
                               <Grid className={state.modeDark ? 'link on' : 'link'}>
