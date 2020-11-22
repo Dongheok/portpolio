@@ -249,11 +249,20 @@ export const portPolioData = {
          link: '',
          speed: 20,
       },
+      // SSAFY CMS
+      {
+         project_title: 'SSAFY CMS',
+         project_text_1: '사용언어 : React, Axios, Styled-Components, Material-UI',
+         project_text_2: `["사용언어"]를 이용하여 구현한 삼성 청년 SW 아카데미에서 외주를 받은 투표 서비스 플랫폼의 관리자 페이지입니다. 프로젝트를 하는 과정에서 투표 플랫폼의 데이터를 통신하여 가져온 후, 그래프 라이브러리 Recharts를 이용하여 데이터 통계 UI를 구현할 수 있었고 테이블UI를 컴포넌트화하여 더 유연하게 커스터 마이징 할 수 있게 되었습니다..`,
+         img: '/portpolio/images/project/project_ssafy_cms.webp',
+         link: '',
+         speed: 20,
+      },
       // SHUTTLEB
       {
          project_title: 'SHUTTLEB CMS',
          project_text_1: '사용언어 : React, Redux, Axios Styled-Components, Material-UI',
-         project_text_2: `["사용언어"]를 이용하여 만든 서버와 통신하는 첫 동적 페이지인 학원 통학 서비스앱 서비스 관리자 페이지입니다. 프로젝트를 하는 과정에서 동기/비동기, Redux, 공통 UI 컴포넌트화, To Do List 구현을 할 수 있게 되었습니다.`,
+         project_text_2: `["사용언어"]를 이용하여 구현한 서버와 통신하는 첫 동적 페이지인 학원 통학 서비스앱 서비스 관리자 페이지입니다. 프로젝트를 하는 과정에서 동기/비동기, Redux, 공통 UI 컴포넌트화, To Do List 구현을 할 수 있게 되었습니다.`,
          img: '/portpolio/images/project/project_shuttleb.webp',
          link: '',
          speed: 20,
@@ -268,6 +277,15 @@ export const portPolioData = {
          link: 'https://www.sonsafind.com',
          speed: 30,
       },
+      // SSAFY
+      {
+         project_title: 'SSAFY',
+         project_text_1: '사용언어 : React, Styled-Components, Material-UI',
+         project_text_2: `페이지에 전체적인 UI를 ["사용언어"]를 이용하여 구현한 삼성 청년 SW 아카데미에서 외주를 받은 투표 서비스 플랫폼입니다. 프로젝트를 하는 과정에서 React환경에서의 퀄리티 있는 UI 구현능력을 더 키울 수 있게 되었습니다.`,
+         img: '/portpolio/images/project/project_ssafy.webp',
+         link: '',
+         speed: 20,
+      },
       // XY
       {
          project_title: 'XY Web',
@@ -276,15 +294,6 @@ export const portPolioData = {
          img: '/portpolio/images/project/project_xy.webp',
          link: 'https://www.xydating.app/',
          speed: 30,
-      },
-      // SSAFY
-      {
-         project_title: 'SSAFY',
-         project_text_1: '사용언어 : React, Styled-Components, Material-UI',
-         project_text_2: `페이지에 전체적인 UI를 ["사용언어"]를 이용하여 구현한 삼성 청년 SW 아카데미에서 외주를 받은 투표 서비스 플랫폼입니다. 프로젝트를 하는 과정에서 React환경에서의 퀄리티 있는 UI 구현능력을 더 키울 수 있게 되었습니다.`,
-         img: '/portpolio/images/project/project_ssafy.webp',
-         link: '',
-         speed: 5,
       },
       // SV Data
       {
