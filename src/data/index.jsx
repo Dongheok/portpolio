@@ -234,7 +234,7 @@ export const portPolioData = {
          project_title: '배달의딜러 CMS',
          project_text_1: '사용언어 : React, Redux, Axios, Styled-Components, Material-UI',
          project_text_2:
-            '["사용언어"]를 이용하여 구현한 비대면 중고차 플랫폼 앱 서비스 관리자 페이지 입니다. 프로젝트를 하는 과정에서 엠플리파이 환경세팅 없이 로그인 기능을 구현할 수 있었고 앱 서비스와 원활하게 통신이 가능한 관리자 페이지를 만들 수 있었습니다.',
+            '["사용언어"]를 이용하여 구현한 비대면 중고차 플랫폼 앱 서비스 관리자 페이지 입니다. 프로젝트를 하는 과정에서 엠플리파이 환경세팅 없이 로그인 기능을 구현할 수 있었고, React Route의 NavLink를 이용하여 레이아웃의 사이드바 UI를 보다 효율적으로 처리할 수 있게 되었으며, Axios Interceptor를 이용하여 더 똑똑하게 통신처리를 할 수 있게 되었습니다.',
          // 임시
          img: '/portpolio/images/project/project_delivery.webp',
          link: '',
