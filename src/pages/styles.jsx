@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   /* 메인 */
-  transition: all 0.3s;
   & .main {
     overflow-x: hidden;
     & .scroll_section {
@@ -20,9 +19,11 @@ const Wrapper = styled.div`
           font-weight: bold;
           text-align: center;
         }
-        background: ${(props) => props.theme.real_orange};
+        background: ${(props) => props.theme.main_orange};
       }
       &.scroll_section_1 {
+        background: ${(props) => props.theme.main_orange};
+        transition: all 0.3s;
         & h2 {
           position: relative;
           top: -10vh;
@@ -47,8 +48,8 @@ const Wrapper = styled.div`
           & svg {
             & path {
               fill: none;
-              stroke: ${(props) => props.theme.real_green};
-              stroke-width: 62;
+              stroke: ${(props) => props.theme.main_green};
+              stroke-width: 70;
               stroke-linecap: round;
               stroke-linejoin: round;
               stroke-dasharray: 1401;
@@ -87,8 +88,8 @@ const Wrapper = styled.div`
               text-transform: uppercase;
               font-weight: bold;
               font-size: 24px;
-              color: ${(props) => props.theme.real_green};
-              border: 4px solid ${(props) => props.theme.real_green};
+              color: ${(props) => props.theme.main_green};
+              border: 4px solid ${(props) => props.theme.main_green};
               border-radius: 8px;
               transition: 0.5s;
               & span {
@@ -97,7 +98,7 @@ const Wrapper = styled.div`
                 width: 25%;
                 height: 100%;
                 border-radius: 50%;
-                background: ${(props) => props.theme.real_green};
+                background: ${(props) => props.theme.main_green};
                 transition: 0.5s;
                 transform: translateY(150%);
                 &:nth-child(1) {

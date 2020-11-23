@@ -273,9 +273,9 @@ const Portpolio = () => {
           break;
         case 1:
           if (scrollRatio > 0.2) {
-            wrap.style.background = `#fff`;
+            objs.container.current.style.background = `#fff`;
           } else {
-            wrap.style.background = `#ff7e36`;
+            objs.container.current.style.background = `#ff7e36`;
             // wrap.style.background = `#000`;
           }
           if (scrollRatio <= 0.25) {

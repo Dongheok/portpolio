@@ -20,163 +20,163 @@ export const portPolioData = {
     {
       keyword: "HM",
       lang: "HTML5",
-      color: "green",
+      color: "main",
       explanation:
         "HTML5 시맨틱 태그, 메타 태그 등 기본문법을 이해하고 웹 표준에 맞춰 작업이 가능합니다.",
     },
     {
       keyword: "CS",
       lang: "CSS3",
-      color: "blue",
+      color: "sub",
       explanation:
         "어떤 디자인 시안이 와도 CSS3를 이용하여 100% 퀄리티로 구현할 수 있습니다.",
     },
     {
       keyword: "SC",
       lang: "SCSS",
-      color: "blue",
+      color: "main",
       explanation:
         "SCSS를 이용하여 효율적이며 코드의 재사용성을 높고 가독성이 높은 CSS를 작성할 수 있습니다.",
     },
     {
       keyword: "JS",
       lang: "Javascript",
-      color: "green",
+      color: "sub",
       explanation:
         "Javascript 언어의 기본문법과 사용법, 함수, 객체 등의 개념을 이해하여 동적인 프로그래밍을 할 수 있습니다.",
     },
     {
       keyword: "JQ",
       lang: "Jquery",
-      color: "red",
+      color: "main",
       explanation: "Jquery의 다양한 메소드를 사용해 기능을 구현할 수 있습니다.",
     },
     {
       keyword: "ES",
       lang: "ES6",
-      color: "green",
+      color: "sub",
       explanation:
         "let, const, 스프레드 연산자, Arrow Function과 같은 ES6 기초를 이해하고 ES6의 함수형 프로그래밍을 할 수 있습니다.",
     },
     {
       keyword: "NJ",
       lang: "Node Js",
-      color: "yellow",
+      color: "main",
       explanation:
         "Node JS의 기초을 이해하고, Node JS를 이용하여 프론트엔드 개발환경을 구축해 코로나맵 클론을 만들 수 있습니다.",
     },
     {
       keyword: "EX",
       lang: "Express",
-      color: "red",
+      color: "sub",
       explanation:
         "Express의 기초를 이해하고, Express를 이용하여 코로나맵 클론을 만들 수 있습니다.",
     },
     {
       keyword: "WP",
       lang: "Webpack",
-      color: "blue",
+      color: "main",
       explanation:
         "웹팩의 동작 원리를 이해하고 직접 개발환경을 구성해봤습니다. 로더를 직접 구현해 보았습니다.",
     },
     {
       keyword: "BB",
       lang: "Babel",
-      color: "yellow",
+      color: "sub",
       explanation:
         "바벨의 원리를 이해하고 직접 사용해 보아 프로젝트에 최적화된 환경을 구축해봤습니다.",
     },
     {
       keyword: "RT",
       lang: "React",
-      color: "green",
+      color: "main",
       explanation:
         "React를 이용하여 정적페이지, CMS페이지, 플랫폼 등 여러 React 프로젝트 경험이 있습니다.",
     },
     {
       keyword: "RD",
       lang: "Redux",
-      color: "red",
+      color: "sub",
       explanation:
         "Redux를 이용하여 효율적으로 형상관리를 할 수 있고, 엠플리파이어 환경 세팅없이 웹에 로그인 기능을 구현할 수 있습니다.",
     },
     {
       keyword: "TS",
       lang: "Typescript",
-      color: "yellow",
+      color: "main",
       explanation:
         "Typescript 기초를 이해하여 영화 웹 사이트를 React와 Typescript를 사용하여 만들 수 있습니다.",
     },
     {
       keyword: "NJ",
       lang: "Next Js",
-      color: "green",
+      color: "sub",
       explanation:
         "Next JS를 이용하여 SEO가 된 정적 페이지를 구현할 수 있습니다.",
     },
     {
       keyword: "ST",
       lang: "Styled components",
-      color: "blue",
+      color: "main",
       explanation:
         "React프로젝트를 진행할 때, Styled Component를 사용하여, 보다 효율적으로 CSS를 작성할 수 있습니다.",
     },
     {
       keyword: "MU",
       lang: "Material UI",
-      color: "blue",
+      color: "sub",
       explanation:
         "React프로젝트를 진행할 때, Material UI라는 UI 프레임워크를 사용합니다.",
     },
     {
       keyword: "RW",
       lang: "Responsive Web",
-      color: "red",
+      color: "main",
       explanation: "반응형 웹을 구현할 수 있습니다.",
     },
     {
       keyword: "IW",
       lang: "Interactive Web",
-      color: "green",
+      color: "sub",
       explanation:
         "Javascript를 이용하여 애플 클론 페이지를 구현할 수 있습니다.",
     },
     {
       keyword: "WS",
       lang: "Web Standards",
-      color: "yellow",
+      color: "main",
       explanation: "웹 표준 이해하며, 웹 표준을 지키며 코딩할 수 있습니다.",
     },
     {
       keyword: "CB",
       lang: "Cross Browsing",
-      color: "red",
+      color: "sub",
       explanation:
         "진행하는 프로젝트가 모든 브라우저에서  크로스 브라우징이 잘 되게 할 수 있습니다.",
     },
     {
       keyword: "GT",
       lang: "Git",
-      color: "green",
+      color: "main",
       explanation: "Git을 이용하여 형상관리를 할 수 있습니다.",
     },
     {
       keyword: "JR",
       lang: "Jira",
-      color: "yellow",
+      color: "sub",
       explanation:
         "칸반과 스크럼을 이해하고 Jira를 이용하여 프로젝트 관리를 할 수 있습니다.",
     },
     {
       keyword: "PS",
       lang: "Photoshop",
-      color: "blue",
+      color: "main",
       explanation: "포토샵을 이용하여 프로젝트 시안을 만들 수 있습니다.",
     },
     {
       keyword: "IL",
       lang: "Illustrator",
-      color: "red",
+      color: "sub",
       explanation:
         "일러스트를 이용하여 간단한 아이콘, 로고 등을 만들 수 있습니다.",
     },
