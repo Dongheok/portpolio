@@ -29,7 +29,7 @@ const MainProjectComponent = () => {
 
     setTimeout(() => {
       isLoadingFunction(false);
-    }, 1000);
+    }, 2000);
   }, []);
   return (
     <Grid className="main_project">
