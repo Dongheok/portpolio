@@ -76,20 +76,21 @@ export const Wrapper = styled.div`
                   box-shadow: 0 3px 3px -2px ${(props) => props.theme.shadow};
                }
                & > .item_wrap {
-                  & .text {
-                     position: relative;
-                     & h2 {
-                        padding: 24px 0;
-                        font-size: 24px;
-                        color: ${(props) => props.theme.main};
+                  & > div {
+                     &.title {
+                        & > div {
+                           padding: 24px 0;
+                           font-size: 24px;
+                           color: ${(props) => props.theme.main};
+                        }
                      }
-                     & p {
+                     &.text {
                         font-size: 16px;
                         color: ${(props) => props.theme.main};
-                        &.lang {
+                        &.text_1 {
                            padding-bottom: 8px;
                         }
-                        &.text {
+                        &.text_2 {
                            line-height: 1.6;
                         }
                      }
@@ -101,9 +102,6 @@ export const Wrapper = styled.div`
    }
 
    & .link {
-      position: absolute;
-      right: 0;
-      top: 24px;
       & a {
          display: inline-block;
          width: 24px;
