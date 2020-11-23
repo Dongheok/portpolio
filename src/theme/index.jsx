@@ -15,7 +15,7 @@ export const darkTheme = {
    main: '#FFFFFF',
    black: 'rgba(255,255,255,0.8)',
    gray: 'rgba(255,255,255,0.8)',
-   shadow: 'rgba(255, 255, 255, 0.5), 0px 0px 2px 0 rgba(255, 255, 255, 0.44), 0 1px 4px 0 rgba(255, 255, 255, 0.45)',
+   shadow: 'rgba(255, 255, 255, 0.5) 0px 0px 2px 0px, rgba(255, 255, 255, 0.44) 0px 0px 2px 0px, rgba(255, 255, 255, 0.45) 0px 0px 2px 0px',
    img_mask: 'none',
    real_black: '#000',
    real_orange: '#ff8a3d',

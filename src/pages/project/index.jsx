@@ -21,7 +21,7 @@ const MainProjectComponent = () => {
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    fade: true,
+    // fade: true,
   };
 
   useEffect(() => {
@@ -37,16 +37,19 @@ const MainProjectComponent = () => {
         {state.main_project_data.map((x, index) => {
           return (
             <Grid key={index} className="slide">
-              <Mask height="600px" bgUrl={`${x.img}`} />
-              {x.link !== "" && (
-                <Grid className={state.modeDark ? "link on" : "link"}>
-                  <a href={x.link} target="blank">
-                    &nbsp;
-                  </a>
-                </Grid>
-              )}
-              <Grid className="title">{x.project_title}</Grid>
-              <Grid className="text">{x.project_text_1}</Grid>
+              <Mask height="600px" speed={x.speed} bgUrl={`${x.img}`} />
+              <Grid className="title">
+                {x.project_title}{" "}
+                {x.link !== "" && (
+                  <Grid className={state.modeDark ? "link on" : "link"}>
+                    <a href={x.link} target="blank">
+                      &nbsp;
+                    </a>
+                  </Grid>
+                )}
+              </Grid>
+              <Grid className="text_1">{x.project_text_1}</Grid>
+              <Grid className="text_2">{x.project_text_2}</Grid>
             </Grid>
           );
         })}
@@ -68,7 +71,7 @@ const SubProjectComponent = () => {
           return (
             <Grid key={index} item sm={12} md={6} className="project_item">
               <Grid className="item_wrap">
-                <Mask height="300px" bgUrl={`${x.img}`} />
+                <Mask height="300px" speed={x.speed} bgUrl={`${x.img}`} />
                 <Grid className="text">
                   {x.link !== "" && (
                     <Grid className={state.modeDark ? "link on" : "link"}>
