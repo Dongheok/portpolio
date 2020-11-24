@@ -3,6 +3,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import { Helmet } from 'react-helmet';
 import { Skeleton } from '@material-ui/lab';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 // import Slider from 'react-slick';
 import BackgroundImageOnLoad from 'background-image-on-load';
 
@@ -65,9 +67,9 @@ const MainProjectComponent = (props) => {
                         <Grid item>{x.project_title}</Grid>
                         <Grid item>
                            {x.link !== '' && (
-                              <Grid className={state.modeDark ? 'link on' : 'link'}>
+                              <Grid className="link">
                                  <a href={x.link} target="blank">
-                                    &nbsp;
+                                    <FontAwesomeIcon icon={faLink} />
                                  </a>
                               </Grid>
                            )}
@@ -141,9 +143,9 @@ const SubProjectComponent = (props) => {
                               <Grid item>{x.project_title}</Grid>
                               <Grid item>
                                  {x.link !== '' && (
-                                    <Grid className={state.modeDark ? 'link on' : 'link'}>
+                                    <Grid className="link">
                                        <a href={x.link} target="blank">
-                                          &nbsp;
+                                          <FontAwesomeIcon icon={faLink} />
                                        </a>
                                     </Grid>
                                  )}

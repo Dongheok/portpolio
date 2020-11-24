@@ -72,6 +72,14 @@ export const Wrapper = styled.div`
                }
             }
          }
+         & .link {
+            & a {
+               font-size: 36px;
+               color: ${(props) => props.theme.main};
+               & i {
+               }
+            }
+         }
       }
       & .sub_project {
          width: 100%;
@@ -90,6 +98,7 @@ export const Wrapper = styled.div`
                         & > div {
                            padding: 24px 0;
                            font-size: 24px;
+                           font-weight: 500;
                            color: ${(props) => props.theme.main};
                         }
                      }
@@ -108,18 +117,12 @@ export const Wrapper = styled.div`
                }
             }
          }
-      }
-      & .link {
-         & a {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            text-indent: -99999px;
-            background: url('/portpolio/images/link_icon.png') no-repeat;
-         }
-         &.on {
+         & .link {
             & a {
-               background: url('/portpolio/images/link_icon_w.png') no-repeat;
+               font-size: 24px;
+               color: ${(props) => props.theme.main};
+               & i {
+               }
             }
          }
       }
@@ -141,6 +144,11 @@ export const Wrapper = styled.div`
                      margin-top: 16px;
                      font-size: 14px;
                   }
+               }
+            }
+            & .link {
+               & a {
+                  font-size: 24px;
                }
             }
          }
@@ -200,17 +208,7 @@ export const Wrapper = styled.div`
          }
          & .link {
             & a {
-               display: inline-block;
-               width: 18px;
-               height: 18px;
-               text-indent: -99999px;
-               background: url('/portpolio/images/link_icon.png') no-repeat;
-               background-size: cover;
-            }
-            &.on {
-               & a {
-                  background: url('/portpolio/images/link_icon_w.png') no-repeat;
-               }
+               font-size: 18px;
             }
          }
       }
