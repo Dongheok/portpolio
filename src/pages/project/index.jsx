@@ -114,7 +114,7 @@ const SubProjectComponent = (props) => {
                      <Grid className="item_wrap">
                         <Mask className={x.loading ? '' : 'on'} height="300px" speed={x.speed} bgUrl={`${x.img}`}>
                            <BackgroundImageOnLoad
-                              src={mainLoading === false && x.img}
+                              src={!mainLoading ? x.img : ''}
                               onLoadBg={() => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
