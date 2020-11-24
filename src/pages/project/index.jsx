@@ -45,6 +45,7 @@ const MainProjectComponent = () => {
                            let tempData = [...mainProjectData];
                            tempData[index].loading = false;
                            setMainProjectData(tempData);
+                           console.log('메인 프로젝트 로드 완료');
                         }}
                      />
                   </Mask>
@@ -113,6 +114,7 @@ const SubProjectComponent = () => {
                               onLoadBg={() => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
+                                 console.log('서브 프로젝트 로드 완료');
                                  cnt += 1;
                                  setSubProjectData(tempData);
                                  // if (cnt === tempData.length) {
