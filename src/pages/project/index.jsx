@@ -45,7 +45,7 @@ const MainProjectComponent = () => {
                 bgUrl={`${x.img}`}
               >
                 <BackgroundImageOnLoad
-                  src={"https://unsplash.it/1200/600?random"}
+                  src={x.img}
                   onLoadBg={() => {
                     let tempData = [...mainProjectData];
                     tempData[index].loading = false;
@@ -119,10 +119,11 @@ const SubProjectComponent = () => {
                   bgUrl={`${x.img}`}
                 >
                   <BackgroundImageOnLoad
-                    src={"https://unsplash.it/1200/600?random"}
+                    src={x.img}
                     onLoadBg={() => {
                       let tempData = [...subProjectData];
                       tempData[index].loading = false;
+                      console.log("완료");
                       setSubProjectData(tempData);
                     }}
                   />
