@@ -101,7 +101,7 @@ const MainProjectComponent = () => {
 const SubProjectComponent = () => {
   const { state } = useContext(UserContext);
   const [subProjectData, setSubProjectData] = useState([]);
-
+  let cnt = 0;
   useEffect(() => {
     setSubProjectData(state.sub_project_data);
   }, []);
@@ -123,8 +123,10 @@ const SubProjectComponent = () => {
                     onLoadBg={() => {
                       let tempData = [...subProjectData];
                       tempData[index].loading = false;
-                      console.log("완료");
-                      setSubProjectData(tempData);
+                      cnt += 1;
+                      if (cnt === tempData.length) {
+                        setSubProjectData(tempData);
+                      }
                     }}
                   />
                 </Mask>
