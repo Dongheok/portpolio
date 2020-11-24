@@ -119,11 +119,10 @@ const SubProjectComponent = (props) => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
                                  console.log(`서브 프로젝트${index} 로드 완료`);
-                                 setSubProjectData(tempData);
-                                 // cnt += 1;
-                                 // if (cnt === tempData.length) {
-                                 // setSubProjectData(tempData);
-                                 // }
+                                 cnt += 1;
+                                 if (cnt === tempData.length) {
+                                    setSubProjectData(tempData);
+                                 }
                               }}
                            />
                         </Mask>
