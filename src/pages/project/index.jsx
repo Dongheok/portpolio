@@ -113,10 +113,10 @@ const SubProjectComponent = () => {
                               onLoadBg={() => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
-                                 cnt += 1;
-                                 if (cnt === tempData.length) {
-                                    setSubProjectData(tempData);
-                                 }
+                                 setSubProjectData(tempData);
+                                 //  cnt += 1;
+                                 //  if (cnt === tempData.length) {
+                                 //  }
                               }}
                            />
                         </Mask>
