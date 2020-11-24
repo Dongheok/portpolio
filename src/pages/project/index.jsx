@@ -23,7 +23,8 @@ import Layout from '../../layout';
 //    // fade: true,
 // };
 
-const MainProjectComponent = () => {
+const MainProjectComponent = (props) => {
+   const { setMainLoading } = props;
    const { state } = useContext(UserContext);
 
    const [mainProjectData, setMainProjectData] = useState([]);
@@ -45,6 +46,7 @@ const MainProjectComponent = () => {
                            let tempData = [...mainProjectData];
                            tempData[index].loading = false;
                            setMainProjectData(tempData);
+                           setMainLoading(false);
                            console.log('메인 프로젝트 로드 완료');
                         }}
                      />
@@ -94,7 +96,9 @@ const MainProjectComponent = () => {
    );
 };
 
-const SubProjectComponent = () => {
+const SubProjectComponent = (props) => {
+   const { mainLoading } = props;
+
    const { state } = useContext(UserContext);
    const [subProjectData, setSubProjectData] = useState([]);
    let cnt = 0;
@@ -110,15 +114,16 @@ const SubProjectComponent = () => {
                      <Grid className="item_wrap">
                         <Mask className={x.loading ? '' : 'on'} height="300px" speed={x.speed} bgUrl={`${x.img}`}>
                            <BackgroundImageOnLoad
-                              src={x.img}
+                              src={mainLoading === false && x.img}
                               onLoadBg={() => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
                                  console.log(`서브 프로젝트${index} 로드 완료`);
-                                 cnt += 1;
-                                 if (cnt === tempData.length) {
-                                    setSubProjectData(tempData);
-                                 }
+                                 setSubProjectData(tempData);
+                                 // cnt += 1;
+                                 // if (cnt === tempData.length) {
+                                 // setSubProjectData(tempData);
+                                 // }
                               }}
                            />
                         </Mask>
@@ -169,6 +174,7 @@ const SubProjectComponent = () => {
 };
 
 const Project = () => {
+   const [mainLoading, setMainLoading] = useState(true);
    return (
       <Wrapper>
          <Helmet>
@@ -177,9 +183,9 @@ const Project = () => {
          <Layout>
             <Grid className="project_wrap">
                {/* 메인프로젝트 */}
-               <MainProjectComponent />
+               <MainProjectComponent setMainLoading={setMainLoading} />
                {/* 서브프로젝트 */}
-               <SubProjectComponent />
+               <SubProjectComponent mainLoading={mainLoading} />
             </Grid>
          </Layout>
       </Wrapper>
