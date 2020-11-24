@@ -28,9 +28,9 @@ const Wrapper = styled.div`
   z-index: 1600;
   width: 100%;
   height: 100%;
-  /* background: rgba(255, 255, 255, 0.7) url('/portpolio/images/dg_icon.png') no-repeat center center; */
-  background: rgba(255, 255, 255, 0.7);
-  background-size: 50%;
+  background: rgba(255, 255, 255, 0.7) url("/portpolio/images/dg_icon.png")
+    no-repeat center center;
+  background-size: 35%;
   /* background-size: 100vh; */
   opacity: 0;
   transition: all 0.5s;

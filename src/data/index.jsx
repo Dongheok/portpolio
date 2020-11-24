@@ -237,6 +237,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_dongflix.webp",
       link: "https://dev-donghyuk.github.io/dongflix/",
       speed: 20,
+      loading: true,
     },
     {
       project_title: "Apple Clone",
@@ -246,6 +247,7 @@ export const portPolioData = {
       link:
         "http://sn237x.cafe24.com/web/personal-project/apple_clone/index.html",
       speed: 5,
+      loading: true,
     },
   ],
   sub_project_data: [
@@ -260,6 +262,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_delivery.webp",
       link: "",
       speed: 20,
+      loading: true,
     },
     // 동네선수CMS
     {
@@ -270,6 +273,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_plant.webp",
       link: "",
       speed: 20,
+      loading: true,
     },
     // SSAFY CMS
     {
@@ -279,6 +283,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_ssafy_cms.webp",
       link: "",
       speed: 20,
+      loading: true,
     },
     // SHUTTLEB
     {
@@ -289,6 +294,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_shuttleb.webp",
       link: "",
       speed: 20,
+      loading: true,
     },
     // 손사찾기
     {
@@ -300,6 +306,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_sonsa.webp",
       link: "https://www.sonsafind.com",
       speed: 30,
+      loading: true,
     },
     // SSAFY
     {
@@ -309,6 +316,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_ssafy.webp",
       link: "",
       speed: 20,
+      loading: true,
     },
     // XY
     {
@@ -319,6 +327,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_xy.webp",
       link: "https://www.xydating.app/",
       speed: 30,
+      loading: true,
     },
     // SV Data
     {
@@ -329,6 +338,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_svdata.webp",
       link: "http://www.sv-data.com/",
       speed: 30,
+      loading: true,
     },
     // SV VIBA
     {
@@ -338,6 +348,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_svviba.webp",
       link: "http://www.svviba.com/",
       speed: 15,
+      loading: true,
     },
     // 에그플래너
     {
@@ -347,6 +358,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_egg.webp",
       link: "https://www.eggteachers.com",
       speed: 30,
+      loading: true,
     },
     // 파이어니
     {
@@ -356,6 +368,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_piony.webp",
       link: "",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "맥도날드",
@@ -366,6 +379,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_mcdonald.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/mcdonald/index.html",
       speed: 15,
+      loading: true,
     },
     {
       project_title: "서브웨이",
@@ -375,6 +389,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_subway.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/subway/index.html",
       speed: 15,
+      loading: true,
     },
     {
       project_title: "CJ Hello",
@@ -384,6 +399,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_cj.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/cj-hello/index.html",
       speed: 15,
+      loading: true,
     },
     {
       project_title: "현대 글로비스",
@@ -393,6 +409,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_hyundai.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/hyundai/index.html",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "캐논",
@@ -402,6 +419,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_canon.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/canon/index.html",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "삼양식품",
@@ -411,6 +429,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_samyang.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/samyang/index.html",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "넷마블",
@@ -422,6 +441,7 @@ export const portPolioData = {
       link:
         "http://sn237x.cafe24.com/web/personal-project/netmarble/index.html",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "커핀그루나루",
@@ -432,6 +452,7 @@ export const portPolioData = {
       link:
         "http://sn237x.cafe24.com/web/personal-project/coffine-gurunaru/index.html",
       speed: 10,
+      loading: true,
     },
     {
       project_title: "도미노",
@@ -441,6 +462,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_domino.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/domino/index.html",
       speed: 5,
+      loading: true,
     },
     {
       project_title: "포스코 사회공헌",
@@ -450,6 +472,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_posco.webp",
       link: `http://sn237x.cafe24.com//web/personal-project/posco/index.html`,
       speed: 5,
+      loading: true,
     },
     {
       project_title: "포도팟",
@@ -459,6 +482,7 @@ export const portPolioData = {
       img: "/portpolio/images/project/project_podopot.webp",
       link: "http://sn237x.cafe24.com/web/personal-project/podopod/index.html",
       speed: 30,
+      loading: true,
     },
     {
       project_title: "레스포삭",
@@ -469,6 +493,7 @@ export const portPolioData = {
       link:
         "http://sn237x.cafe24.com/web/personal-project/lesportsac/index.html",
       speed: 10,
+      loading: true,
     },
   ],
 };

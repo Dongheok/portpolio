@@ -26,21 +26,10 @@ var settings = {
 };
 
 const AboutComponent = () => {
-  const { state, isLoadingFunction } = useContext(UserContext);
-
-  useEffect(() => {
-    isLoadingFunction(true);
-
-    setTimeout(() => {
-      isLoadingFunction(false);
-    }, 1000);
-  }, []);
+  const { state } = useContext(UserContext);
 
   return (
     <Grid className="about_wrap">
-      <Helmet>
-        <title>DongHyuk Profile</title>
-      </Helmet>
       <Grid className="title">
         <span>About</span>
       </Grid>
@@ -249,6 +238,9 @@ const Profile = () => {
     <Wrapper>
       <Layout>
         <Grid className="profile">
+          <Helmet>
+            <title>DongHyuk Profile</title>
+          </Helmet>
           {/* About */}
           <AboutComponent />
           {/* Skill */}
