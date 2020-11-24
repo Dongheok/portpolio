@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Grid } from "@material-ui/core";
 // import { CallIcon, MailIcon, GitHubIcon, CheckCircleIcon } from '@material-ui/icons';
 import CallIcon from "@material-ui/icons/Call";
@@ -13,7 +13,6 @@ import { UserContext } from "../../context";
 import { Wrapper, SkillItem } from "./styles";
 import Layout from "./../../layout/";
 import { MapApiComponent } from "../../common";
-import { useHistory } from "react-router";
 
 var settings = {
   dots: false,
@@ -233,7 +232,6 @@ const ContactComponent = () => {
 };
 
 const Profile = () => {
-  const { state } = useContext(UserContext);
   return (
     <Wrapper>
       <Layout>
