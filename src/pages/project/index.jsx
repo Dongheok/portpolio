@@ -39,7 +39,7 @@ const MainProjectComponent = () => {
             return (
                <Grid key={index} className="slide">
                   <Mask className={x.loading ? '' : 'on'} height="600px" speed={x.speed} bgUrl={`${x.img}`}>
-                     <BackgroundImageOnLoad
+                     {/* <BackgroundImageOnLoad
                         src={x.img}
                         onLoadBg={() => {
                            let tempData = [...mainProjectData];
@@ -47,7 +47,7 @@ const MainProjectComponent = () => {
                            setMainProjectData(tempData);
                            console.log('메인 프로젝트 로드 완료');
                         }}
-                     />
+                     /> */}
                   </Mask>
                   {x.loading && (
                      <SkeletonWrap>
