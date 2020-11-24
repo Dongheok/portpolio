@@ -213,7 +213,7 @@ export const portPolioData = {
    main_project_data: [
       {
          project_title: 'Donflix',
-         project_text_1: '사용언어 : TypeScript, React, Redux, Axios Styled-Components, Material-UI',
+         project_text_1: '사용언어 : TypeScript, React, Redux, Axios, Styled-Components, Material-UI',
          project_text_2: `["사용언어"]를 이용하여 구현한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화페이지 링크, 유튜브 영화 예고편까지 한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다. Axios를 더 효율적으로 쓴 오픈 API를 이용한 React + TypeScript 프로젝트입니다.`,
          img: '/portpolio/images/project/project_dongflix.webp',
          link: 'https://dev-donghyuk.github.io/dongflix/',
