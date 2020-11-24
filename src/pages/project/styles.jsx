@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
          margin-bottom: 60px;
          transition: all 0.4s;
          &:hover {
-            box-shadow: 0 3px 3px -2px ${(props) => props.theme.shadow};
+            box-shadow: ${(props) => props.theme.shadow};
          }
          & .slide {
             padding-bottom: 20px;
@@ -83,7 +83,7 @@ export const Wrapper = styled.div`
                padding: 32px;
                transition: all 0.4s;
                &:hover {
-                  box-shadow: 0 3px 3px -2px ${(props) => props.theme.shadow};
+                  box-shadow: ${(props) => props.theme.shadow};
                }
                & > .item_wrap {
                   & > div {
