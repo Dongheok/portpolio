@@ -101,7 +101,7 @@ const SubProjectComponent = (props) => {
 
    const { state } = useContext(UserContext);
    const [subProjectData, setSubProjectData] = useState([]);
-   let cnt = 0;
+   // let cnt = 0;
    useEffect(() => {
       setSubProjectData(state.sub_project_data);
    }, []);
@@ -119,10 +119,11 @@ const SubProjectComponent = (props) => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
                                  console.log(`서브 프로젝트${index} 로드 완료`);
-                                 cnt += 1;
-                                 if (cnt === tempData.length) {
-                                    setSubProjectData(tempData);
-                                 }
+                                 setSubProjectData(tempData);
+                                 // cnt += 1;
+                                 // if (cnt === tempData.length) {
+                                 // setSubProjectData(tempData);
+                                 // }
                               }}
                            />
                         </Mask>
