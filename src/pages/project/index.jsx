@@ -29,10 +29,17 @@ const MainProjectComponent = (props) => {
    const { setMainLoading } = props;
    const { state } = useContext(UserContext);
 
+   // 메인 프로젝트 이미지
    const [mainProjectData, setMainProjectData] = useState([]);
+
+   // 메인 프로젝트 딜레이
+   const [mainProjectDelay, setMainProjectDelay] = useState(false);
 
    useEffect(() => {
       setMainProjectData(state.main_project_data);
+      setTimeout(() => {
+         setMainProjectDelay(true);
+      }, 2000);
    }, []);
 
    return (
@@ -43,7 +50,7 @@ const MainProjectComponent = (props) => {
                <Grid key={index} className="slide">
                   <Mask className={x.loading ? '' : 'on'} height="600px" speed={x.speed} bgUrl={`${x.img}`}>
                      <BackgroundImageOnLoad
-                        src={x.img}
+                        src={mainProjectDelay ? x.img : ''}
                         onLoadBg={() => {
                            let tempData = [...mainProjectData];
                            tempData[index].loading = false;
@@ -102,10 +109,17 @@ const SubProjectComponent = (props) => {
    const { mainLoading } = props;
 
    const { state } = useContext(UserContext);
+   // 서브 프로젝트 데이터
    const [subProjectData, setSubProjectData] = useState([]);
-   // let cnt = 0;
+
+   // 서브 프로젝트 딜레이
+   const [subProjectDelay, setSubProjectDelay] = useState(false);
+
    useEffect(() => {
       setSubProjectData(state.sub_project_data);
+      setTimeout(() => {
+         setSubProjectDelay(true);
+      }, 4000);
    }, []);
    return (
       <Grid className="sub_project">
@@ -116,16 +130,12 @@ const SubProjectComponent = (props) => {
                      <Grid className="item_wrap">
                         <Mask className={x.loading ? '' : 'on'} height="300px" speed={x.speed} bgUrl={`${x.img}`}>
                            <BackgroundImageOnLoad
-                              src={!mainLoading ? x.img : ''}
+                              src={!mainLoading && subProjectDelay ? x.img : ''}
                               onLoadBg={() => {
                                  let tempData = [...subProjectData];
                                  tempData[index].loading = false;
                                  console.log(`서브 프로젝트${index} 로드 완료`);
                                  setSubProjectData(tempData);
-                                 // cnt += 1;
-                                 // if (cnt === tempData.length) {
-                                 // setSubProjectData(tempData);
-                                 // }
                               }}
                            />
                         </Mask>
