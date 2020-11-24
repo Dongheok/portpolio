@@ -16,11 +16,11 @@ const Wrapper = styled.div`
             width: 62px;
             height: 40px;
             margin-top: 20px;
-            background: url('/portpolio/images/logo.png') no-repeat;
+            background: url('http://sn237x.cafe24.com/web/portpolio_img/project/logo.png') no-repeat;
             text-indent: -99999px;
             cursor: pointer;
             &.on {
-               background: url('/portpolio/images/logo_w.png') no-repeat;
+               background: url('http://sn237x.cafe24.com/web/portpolio_img/project/logo_w.png') no-repeat;
             }
          }
          &.nav {

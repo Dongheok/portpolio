@@ -12,9 +12,9 @@ export const portPolioData = {
    ],
    // 프로필
    picture_data: [
-      { key: 0, value: '/portpolio/images/profile/profile_picture_1.jpg' },
-      { key: 1, value: '/portpolio/images/profile/profile_picture_2.jpg' },
-      { key: 1, value: '/portpolio/images/profile/profile_picture_3.jpg' },
+      { key: 0, value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_1.jpg' },
+      { key: 1, value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_2.jpg' },
+      { key: 1, value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_3.jpg' },
    ],
    skill_data: [
       {
@@ -197,12 +197,12 @@ export const portPolioData = {
       {
          title: '웹디자인 기능사',
          date: '2019.09',
-         img: '/portpolio/images/profile/design_icon.png',
+         img: 'http://sn237x.cafe24.com/web/portpolio_img/profile/design_icon.png',
       },
       {
          title: '정보처리 기능사',
          date: '2020.07',
-         img: '/portpolio/images/profile/code_icon.png',
+         img: 'http://sn237x.cafe24.com/web/portpolio_img/profile/code_icon.png',
       },
    ],
    contact_data: [

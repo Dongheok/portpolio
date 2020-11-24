@@ -63,7 +63,7 @@ const Wrapper = styled.div`
             width: 100%;
             margin: 0 auto;
             padding: 0 20px;
-            background: url('/portpolio/images/dg_bg.png') no-repeat center bottom;
+            background: url('http://sn237x.cafe24.com/web/portpolio_img/dg_bg.png') no-repeat center bottom;
             & > .btn_wrap {
                width: auto;
                height: 100%;
