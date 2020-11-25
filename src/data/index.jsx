@@ -82,21 +82,24 @@ export const portPolioData = {
       lang: "Express",
       color: "sub",
       explanation:
-        "Express의 기초를 이해하고, Express를 이용하여 코로나맵 클론을 만들 수 있습니다.",
+        // !!!!!
+        "(학습 예정)Express의 기초를 이해하고, Express를 이용하여 코로나맵 클론을 만들 수 있습니다.",
     },
     {
       keyword: "WP",
       lang: "pngack",
       color: "main",
       explanation:
-        "웹팩의 동작 원리를 이해하고 직접 개발환경을 구성해봤습니다. 로더를 직접 구현해 보았습니다.",
+        // !!!!!
+        "(학습 예정)웹팩의 동작 원리를 이해하고 직접 개발환경을 구성해봤습니다. 로더를 직접 구현해 보았습니다.",
     },
     {
       keyword: "BB",
       lang: "Babel",
       color: "sub",
       explanation:
-        "바벨의 원리를 이해하고 직접 사용해 보아 프로젝트에 최적화된 환경을 구축해봤습니다.",
+        // !!!!!
+        "(학습 예정)바벨의 원리를 이해하고 직접 사용해 보아 프로젝트에 최적화된 환경을 구축해봤습니다.",
     },
     {
       keyword: "RT",
@@ -210,16 +213,14 @@ export const portPolioData = {
       history: [
         "SV DATA 반응형 정적페이지 개발",
         "XY UI 정적페이지 개발",
-        // 'ULTRA PRIVACY CMS UI 구현',
-        // 'YOUR CERTY CMS UI 구현',
         "셔틀비 CMS 프론트엔드 개발",
         "에그플레너 반응형 정적페이지 개발",
-        // '플레이조커 프론트엔드 개발',
+        "플레이조커 프론트엔드 개발",
         "손사찾기 반응형 정적페이지 프론트엔드 개발",
         "SSAFYCMS 프론트엔드 개발",
         "동네선수CMS 프론트엔드 개발",
         "배달의딜러CMS 프론트엔드 개발",
-        // '플레이조커CMS UI 구현',
+        "플레이조커CMS UI 구현",
       ],
     },
   ],
@@ -242,8 +243,9 @@ export const portPolioData = {
   ],
   // 프로젝트
   main_project_data: [
+    // !!!!!
     {
-      project_title: "Donflix",
+      project_title: "Donflix (TypeScript로 변환예정)",
       project_text_1:
         "사용언어 : TypeScript, React, Redux, Axios, Styled-Components, Material-UI",
       project_text_2: `["사용언어"]를 이용하여 구현한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화페이지 링크, 유튜브 영화 예고편까지 한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다. Axios를 더 효율적으로 쓴 오픈 API를 이용한 React + TypeScript 프로젝트입니다.`,
@@ -256,6 +258,21 @@ export const portPolioData = {
     },
   ],
   sub_project_data: [
+    // 코로나맵
+    // !!!!!
+    {
+      project_title: "코로나맵 클론 (추가 예정)",
+      project_text_1: "사용언어 : HTML5, CSS3, Javascript, Node.Js, Express",
+      project_text_2:
+        '["사용언어"]를 이용하여 구현한 코로나맵 클론 웹 사이트 입니다. 프로젝트를 하는 과정에서...',
+      // 임시
+      img:
+        "https://www.sphinfo.com/wp-content/uploads/2020/02/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA-2020-02-04-%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE-5.04.31-1024x503.png",
+      link: "",
+      git: "",
+      speed: 5,
+      loading: true,
+    },
     // 배달의딜러CMS
     {
       project_title: "배달의딜러 CMS",
@@ -263,7 +280,6 @@ export const portPolioData = {
         "사용언어 : React, Redux, Axios, Styled-Components, Material-UI",
       project_text_2:
         '["사용언어"]를 이용하여 구현한 비대면 중고차 플랫폼 앱 서비스 관리자 페이지 입니다. 프로젝트를 하는 과정에서 엠플리파이 환경세팅 없이 로그인 기능을 구현할 수 있었고, React Route의 NavLink를 이용하여 레이아웃의 사이드바 UI를 보다 효율적으로 처리할 수 있게 되었으며, Axios Interceptor를 이용하여 더 똑똑하게 통신처리를 할 수 있게 되었습니다.',
-      // 임시
       img:
         "http://sn237x.cafe24.com/web/portpolio_img/project/project_delivery.png",
       link: "",
