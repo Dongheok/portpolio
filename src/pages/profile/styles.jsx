@@ -152,9 +152,6 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.bg};
   background-size: cover;
   padding: 80px 20px 40px;
-  * {
-    transition: all 0.3s;
-  }
   & .profile {
     max-width: 1280px;
     height: 100%;
