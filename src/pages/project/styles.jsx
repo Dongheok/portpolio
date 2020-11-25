@@ -24,9 +24,6 @@ export const Wrapper = styled.div`
   padding: 80px 32px;
   background: ${(props) => props.theme.bg};
   word-break: keep-all;
-  * {
-    transition: all 0.3s;
-  }
   & .project_wrap {
     max-width: 1280px;
     width: 100%;
