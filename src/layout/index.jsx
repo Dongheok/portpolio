@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Grid } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
+import Brightness7Icon from "@material-ui/icons/Brightness7";
 import Wrapper from "./styles";
 
 import { useHistory } from "react-router";
@@ -48,7 +49,7 @@ const Layout = ({ children }) => {
                   setModeDark(!modeDark);
                 }}
               >
-                <Brightness4Icon />
+                {state.modeDark ? <Brightness7Icon /> : <Brightness4Icon />}
               </button>
             </li>
             <li>

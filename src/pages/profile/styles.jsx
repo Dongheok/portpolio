@@ -49,7 +49,7 @@ export const SkillItem = styled.div`
     font-size: 12px;
     color: ${(props) => props.theme.black};
     border-radius: 6px;
-    border: 1px solid ${(props) => props.theme.gray};
+    border: 1px solid ${(props) => props.theme.main};
     background: ${(props) => props.theme.bg};
     opacity: 0;
     transition: opacity 0.3s ease 0.3s,
