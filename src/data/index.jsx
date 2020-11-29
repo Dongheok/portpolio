@@ -203,7 +203,12 @@ export const portPolioData = {
             '동네선수CMS 프론트엔드 개발',
             '배달의딜러CMS 프론트엔드 개발',
             '플레이조커CMS UI 구현',
+            'SV GROUP 퇴사',
          ],
+      },
+      {
+         years: '# 2021',
+         history: [''],
       },
    ],
    certificate_data: [
