@@ -6,9 +6,9 @@ import {
   Redirect,
   useHistory,
 } from "react-router-dom";
-import Portpolio from "./pages";
-import Project from "./pages/project/";
-import Profile from "./pages/profile/";
+import Portpolio from "pages";
+import Project from "pages/project/";
+import Profile from "pages/profile/";
 
 const Routes = () => {
   const history = useHistory();

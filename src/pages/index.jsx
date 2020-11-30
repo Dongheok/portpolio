@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useRef } from "react";
 import { Grid } from "@material-ui/core";
-import Wrapper from "./styles";
 import { useHistory } from "react-router";
+import Wrapper from "./styles";
 
-import { UserContext } from "./../context";
+import { UserContext } from "context";
 
 const Portpolio = () => {
   const { state, isLoadingFunction } = useContext(UserContext);

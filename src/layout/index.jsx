@@ -6,7 +6,7 @@ import Brightness7Icon from "@material-ui/icons/Brightness7";
 import Wrapper from "./styles";
 
 import { useHistory } from "react-router";
-import { UserContext } from "../context";
+import { UserContext } from "context";
 
 const Layout = ({ children }) => {
   const history = useHistory();

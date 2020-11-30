@@ -11,8 +11,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import BackgroundImageOnLoad from "background-image-on-load";
 
 import { Wrapper, Mask, SkeletonWrap } from "./styles";
-import { UserContext } from "../../context";
-import Layout from "../../layout";
+import { UserContext } from "context";
+import Layout from "layout";
 
 // var settings = {
 //    dots: true,

@@ -1,43 +1,46 @@
-import React, { createContext, useState } from 'react';
-import { portPolioData } from '../data';
+import React, { createContext, useState } from "react";
+import { mainData } from "data/main";
+import { layoutData } from "data/layout";
+import { profileData } from "data/profile";
+import { projectData } from "data/project";
 
 export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
-   const [state, setState] = useState({
-      isLoading: false,
-      modeDark: false,
-      // 사이드 바
-      btn_wrap: portPolioData.btn_wrap,
-      // 사이드 바
-      sidebar: portPolioData.sidebar,
-      // 프로필
-      picture_data: portPolioData.picture_data,
-      skill_data: portPolioData.skill_data,
-      history_data: portPolioData.history_data,
-      certificate_data: portPolioData.certificate_data,
-      contact_data: portPolioData.contact_data,
-      // 프로젝트
-      main_project_data: portPolioData.main_project_data,
-      sub_project_data: portPolioData.sub_project_data,
-   });
-   const modeDarkFunction = (boolen) => {
-      setState({ ...state, modeDark: boolen });
-   };
-   const isLoadingFunction = (boolen) => {
-      setState({ ...state, isLoading: boolen });
-   };
-   return (
-      <UserContext.Provider
-         value={{
-            state,
-            modeDarkFunction,
-            isLoadingFunction,
-         }}
-      >
-         {children}
-      </UserContext.Provider>
-   );
+  const [state, setState] = useState({
+    isLoading: false,
+    modeDark: false,
+    // 메인
+    btn_wrap: mainData.btn_wrap,
+    // 레이아웃
+    sidebar: layoutData.nav,
+    // 프로필
+    picture_data: profileData.picture_data,
+    skill_data: profileData.skill_data,
+    history_data: profileData.history_data,
+    certificate_data: profileData.certificate_data,
+    contact_data: profileData.contact_data,
+    // 프로젝트
+    main_project_data: projectData.main_project_data,
+    sub_project_data: projectData.sub_project_data,
+  });
+  const modeDarkFunction = (boolen) => {
+    setState({ ...state, modeDark: boolen });
+  };
+  const isLoadingFunction = (boolen) => {
+    setState({ ...state, isLoading: boolen });
+  };
+  return (
+    <UserContext.Provider
+      value={{
+        state,
+        modeDarkFunction,
+        isLoadingFunction,
+      }}
+    >
+      {children}
+    </UserContext.Provider>
+  );
 };
 
 export default UserContextProvider;

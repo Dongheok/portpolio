@@ -9,10 +9,10 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Slider from "react-slick";
 import { Helmet } from "react-helmet";
 
-import { UserContext } from "../../context";
 import { Wrapper, SkillItem } from "./styles";
-import Layout from "./../../layout/";
-import { MapApiComponent } from "../../common";
+import { UserContext } from "context";
+import Layout from "layout";
+import { MapApiComponent } from "common";
 
 var settings = {
   dots: false,
