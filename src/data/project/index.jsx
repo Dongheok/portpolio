@@ -16,20 +16,6 @@ export const projectData = {
    ],
    //  - 서브 프로젝트
    sub_project_data: [
-      // 코로나맵
-      // !!!!!
-      {
-         project_title: '코로나맵 클론 (추가 예정)',
-         project_text_1: '사용언어 : HTML5, CSS3, Javascript, Node.Js, Express',
-         project_text_2: '["사용언어"]를 이용하여 구현한 코로나맵 클론 웹 사이트 입니다. 프로젝트를 하는 과정에서...',
-         // 임시
-         img:
-            'https://www.sphinfo.com/wp-content/uploads/2020/02/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA-2020-02-04-%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE-5.04.31-1024x503.png',
-         link: '',
-         git: 'https://github.com/dev-donghyuk/corona_map_clone',
-         speed: 5,
-         loading: true,
-      },
       // 배달의딜러CMS
       {
          project_title: '배달의딜러 CMS',
@@ -151,6 +137,18 @@ export const projectData = {
          link: '',
          git: '',
          speed: 10,
+         loading: true,
+      },
+      // 코로나맵
+      {
+         project_title: '코로나맵 클론',
+         project_text_1: '사용언어 : HTML5, CSS3, Javascript, Node.Js, Express',
+         project_text_2:
+            '["사용언어"]를 이용하여 구현한 코로나맵 클론 웹 사이트 입니다. 프로젝트를 하는 과정에서 Naver지도 API와 카카오 지도 API를 이용하여 마커표시, 검색표시 등등 공용지도API를 더 유연하게 쓸 수 있게 되었습니다.',
+         img: 'http://sn237x.cafe24.com/web/portpolio_img/project/project_corona_map.png',
+         link: '',
+         git: 'https://github.com/dev-donghyuk/corona_map_clone',
+         speed: 5,
          loading: true,
       },
       {

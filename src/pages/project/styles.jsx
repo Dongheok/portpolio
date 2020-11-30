@@ -75,8 +75,8 @@ export const Wrapper = styled.div`
          & .link {
             display: inline-block;
             vertical-align: middle;
-            &.git {
-               margin-right: 24px;
+            &.url {
+               margin-left: 24px;
             }
             & svg {
                width: 36px;
@@ -127,8 +127,8 @@ export const Wrapper = styled.div`
          }
          & .link {
             display: inline-block;
-            &.git {
-               margin-right: 24px;
+            &.url {
+               margin-left: 24px;
             }
             & svg {
                width: 24px;
@@ -223,8 +223,8 @@ export const Wrapper = styled.div`
             }
          }
          & .link {
-            &.git {
-               margin-right: 16px !important;
+            &.url {
+               margin-left: 16px !important;
             }
             & svg {
                width: 18px;
