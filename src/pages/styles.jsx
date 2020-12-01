@@ -65,7 +65,6 @@ const Wrapper = styled.div`
         padding: 0 20px;
         background: url("http://sn237x.cafe24.com/web/portpolio_img/dg_bg.png")
           no-repeat center bottom;
-        background-size: 100%;
         & > .btn_wrap {
           width: auto;
           height: 100%;
