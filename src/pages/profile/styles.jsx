@@ -20,7 +20,6 @@ export const SkillItem = styled.div`
     width: 100%;
     height: 100%;
     transition: inherit !important;
-
     & > div {
       text-align: left;
       &.title {
@@ -41,9 +40,9 @@ export const SkillItem = styled.div`
     top: 80%;
     z-index: 10;
     transform: translateX(-50%);
-    width: 180px;
+    width: 240px;
     height: auto;
-    line-height: 1.4;
+    line-height: 1.3;
     padding: 10px;
     text-align: center;
     font-size: 12px;
@@ -142,6 +141,11 @@ export const SkillItem = styled.div`
     & .skill_text {
       top: 105%;
       opacity: 1 !important;
+    }
+  }
+  @media (max-width: 600px) {
+    & .skill_text {
+      width: 180px !important;
     }
   }
 `;

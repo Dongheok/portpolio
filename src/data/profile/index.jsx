@@ -32,42 +32,42 @@ export const profileData = {
       lang: "CSS",
       color: "sub",
       explanation:
-        "CSS의 기초를 이해하고, 어떤 디자인 시안이 와도 CSS3를 이용하여 100% 퀄리티로 구현할 수 있습니다.",
+        "CSS의 기초를 이해하며, 어떤 디자인 시안이 와도 CSS3를 이용하여 100% 퀄리티로 구현할 수 있습니다.",
     },
     {
       keyword: "SC",
       lang: "SCSS",
       color: "main",
       explanation:
-        "SCSS의 변수, Nesting, Mixin등 기초를 이해하고, SCSS를 이용하여 코드의 재사용성을 높이고 가독성이 높은 CSS를 작성할 수 있습니다.",
+        "SCSS의 변수, Nesting, Mixin등 기초를 이해하며, SCSS를 이용하여 코드의 재사용성을 높이고 가독성이 높은 CSS를 작성할 수 있습니다.",
     },
     {
       keyword: "JS",
       lang: "Javascript",
       color: "sub",
       explanation:
-        "Javascript 언어의 기본문법과 함수, 객체, 스코프, 실행환경, 클로저, 이벤트 등의 개념을 이해하여 동적인 프로그래밍을 할 수 있습니다.",
+        "Javascript 언어의 기본문법과 함수, 객체, 스코프, 실행환경, 클로저, 이벤트 등의 개념을 이해하며, 동적인 프로그래밍을 할 수 있습니다.",
     },
     {
       keyword: "E6",
       lang: "ES6+",
       color: "sub",
       explanation:
-        "ES6의 let, const, 스프레드 연산자, Arrow Function 등 기초를 이해하고 map/filter/reduce, 파이프라인, 제너레이터를 통한 지연 평가, Promise 합성, 동시성/병렬성, async/await와 비동기 에러 핸들링를 이용해 이터러블/이터레이터/제너레이터 프로토콜을 응용하여 ES6의 함수형 프로그래밍을 할 수 있습니다.",
+        "ES6의 let, const, 스프레드 연산자, Arrow Function 등 기초를 이해하며, map/filter/reduce, 파이프라인, 제너레이터를 통한 지연 평가, Promise 합성, 동시성/병렬성, async/await와 비동기 에러 핸들링를 이용해 이터러블/이터레이터/제너레이터 프로토콜을 응용하여 ES6의 함수형 프로그래밍을 한 경험이 있습니다.",
     },
     {
       keyword: "JQ",
       lang: "Jquery",
       color: "main",
       explanation:
-        "Jquery의 기초를 이해하여, CSS 스타일의 Selector을 이용한 DOM API를 이용하여 이벤트 처리나 애니메이션 효과를 유연하게 다룰 수 있다. Jquery를 이용하여 반응형 정적 페이지 배포한 경험이 있습니다.",
+        "Jquery의 기초를 이해하며, CSS 스타일의 Selector을 이용한 DOM API를 이용하여 이벤트 처리나 애니메이션 효과를 유연하게 다룰 수 있다. Jquery를 이용하여 반응형 정적 페이지 배포한 경험이 있습니다.",
     },
     {
       keyword: "NJ",
       lang: "Node Js",
       color: "main",
       explanation:
-        "Node JS의 기초을 이해하고, Node JS를 이용하여 프론트엔드 개발환경을 구축할 수 있습니다.",
+        "Node JS의 기초을 이해하며, Node JS를 이용하여 프론트엔드 개발환경을 구축할 수 있습니다.",
     },
     {
       keyword: "EX",
@@ -82,7 +82,7 @@ export const profileData = {
       color: "main",
       explanation:
         // !!!!!
-        "(학습 예정)Webpack의 동작 원리를 이해하고 기초를 이해하여, 로더를 직접 구현해 본 경험이 있습니다.",
+        "(학습 예정)Webpack의 동작 원리를 이해하고 기초를 이해하며, 로더를 직접 구현해 본 경험이 있습니다.",
     },
     {
       keyword: "BB",
@@ -90,7 +90,7 @@ export const profileData = {
       color: "sub",
       explanation:
         // !!!!!
-        "(학습 예정)바벨의 원리를 이해하고 기초를 이해하여, 직접 바벨을 사용해 프로젝트에 최적화된 환경을 구축해 본 경험이 있습니다..",
+        "(학습 예정)바벨의 원리를 이해하고 기초를 이해하며, 직접 바벨을 사용해 프로젝트에 최적화된 환경을 구축해 본 경험이 있습니다..",
     },
     {
       keyword: "RC",
@@ -111,7 +111,7 @@ export const profileData = {
       lang: "Typescript",
       color: "main",
       explanation:
-        "Typescript 기초를 이해하여 React와 Typescript를 사용하여 반응형 영화 웹 애플리케이션 만들어 배포한 경험이 있습니다.",
+        "Typescript 기초를 이해하며, React와 Typescript를 사용하여 반응형 영화 웹 애플리케이션 만들어 배포한 경험이 있습니다.",
     },
     {
       keyword: "NJ",
@@ -153,7 +153,7 @@ export const profileData = {
       lang: "Web Standards",
       color: "main",
       explanation:
-        "웹 표준 이해하여, 웹 표준을 지키며 프로젝트를 구현하여 W3C 웹표준 검사기에 통과한 경험이 있습니다.",
+        "웹 표준 이해하며, 웹 표준을 지키며 프로젝트를 구현하여 W3C 웹표준 검사기에 통과한 경험이 있습니다.",
     },
     {
       keyword: "CB",
@@ -173,7 +173,7 @@ export const profileData = {
       lang: "Jira",
       color: "sub",
       explanation:
-        "칸반과 스크럼을 이해하고, 애자일 방법론 기반의 프로젝트 관리 도구 Jira를 설명하는 PPT를 만들어 발표한 경험이 있으며, Jira를 이용하여 프로젝트 관리를 할 수 있습니다.",
+        "칸반과 스크럼을 이해하며, 애자일 방법론 기반의 프로젝트 관리 도구 Jira를 설명하는 PPT를 만들어 발표한 경험이 있고, Jira를 이용하여 프로젝트 관리를 할 수 있습니다.",
     },
     {
       keyword: "PS",
