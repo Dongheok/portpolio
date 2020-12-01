@@ -51,14 +51,14 @@ export const profileData = {
     {
       keyword: "E6",
       lang: "ES6+",
-      color: "sub",
+      color: "main",
       explanation:
         "ES6의 let, const, 스프레드 연산자, Arrow Function 등 기초를 이해하며, map/filter/reduce, 파이프라인, 제너레이터를 통한 지연 평가, Promise 합성, 동시성/병렬성, async/await와 비동기 에러 핸들링를 이용해 이터러블/이터레이터/제너레이터 프로토콜을 응용하여 ES6의 함수형 프로그래밍을 한 경험이 있습니다.",
     },
     {
       keyword: "JQ",
       lang: "Jquery",
-      color: "main",
+      color: "sub",
       explanation:
         "Jquery의 기초를 이해하며, CSS 스타일의 Selector을 이용한 DOM API를 이용하여 이벤트 처리나 애니메이션 효과를 유연하게 다룰 수 있다. Jquery를 이용하여 반응형 정적 페이지 배포한 경험이 있습니다.",
     },
