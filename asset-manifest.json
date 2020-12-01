@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portpolio/static/css/main.504fa86a.chunk.css",
-    "main.js": "/portpolio/static/js/main.8fc1864f.chunk.js",
-    "main.js.map": "/portpolio/static/js/main.8fc1864f.chunk.js.map",
+    "main.js": "/portpolio/static/js/main.25b45480.chunk.js",
+    "main.js.map": "/portpolio/static/js/main.25b45480.chunk.js.map",
     "runtime-main.js": "/portpolio/static/js/runtime-main.c225a7ab.js",
     "runtime-main.js.map": "/portpolio/static/js/runtime-main.c225a7ab.js.map",
     "static/css/2.2c395745.chunk.css": "/portpolio/static/css/2.2c395745.chunk.css",
     "static/js/2.31ca2b62.chunk.js": "/portpolio/static/js/2.31ca2b62.chunk.js",
     "static/js/2.31ca2b62.chunk.js.map": "/portpolio/static/js/2.31ca2b62.chunk.js.map",
     "index.html": "/portpolio/index.html",
-    "precache-manifest.bf6b33c5550fa0c29cd56b07ae84f981.js": "/portpolio/precache-manifest.bf6b33c5550fa0c29cd56b07ae84f981.js",
+    "precache-manifest.a423a7c7ffebc72a0abd15ebbf713664.js": "/portpolio/precache-manifest.a423a7c7ffebc72a0abd15ebbf713664.js",
     "service-worker.js": "/portpolio/service-worker.js",
     "static/css/2.2c395745.chunk.css.map": "/portpolio/static/css/2.2c395745.chunk.css.map",
     "static/css/main.504fa86a.chunk.css.map": "/portpolio/static/css/main.504fa86a.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.2c395745.chunk.css",
     "static/js/2.31ca2b62.chunk.js",
     "static/css/main.504fa86a.chunk.css",
-    "static/js/main.8fc1864f.chunk.js"
+    "static/js/main.25b45480.chunk.js"
   ]
 }
