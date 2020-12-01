@@ -198,7 +198,7 @@ const Wrapper = styled.div`
           left: 50%;
           top: 50%;
           transform: translate3D(-50%, -50%, 0);
-          max-width: 440px;
+          max-width: 320px;
           width: 100% !important;
           height: auto !important;
           margin: 0 auto;
