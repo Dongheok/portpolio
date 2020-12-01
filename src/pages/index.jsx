@@ -10,6 +10,7 @@ const Portpolio = () => {
   const { state, isLoadingFunction } = useContext(UserContext);
   const history = useHistory();
 
+  // setLayout() 체크 변수
   // DOM을 사용하기 위한 Ref
   const wrapRef = useRef();
 

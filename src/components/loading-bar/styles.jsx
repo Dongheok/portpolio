@@ -28,14 +28,14 @@ const Wrapper = styled.div`
   z-index: 1600;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.7)
-    url("http://sn237x.cafe24.com/web/portpolio_img/dg_icon.png") no-repeat
-    center center;
+  background: #fff url("http://sn237x.cafe24.com/web/portpolio_img/dg_icon.png")
+    no-repeat center center;
   background-size: 50%;
-  /* background-size: 100vh; */
+  visibility: hidden;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.3s;
   &.on {
+    visibility: visible;
     opacity: 1;
   }
   & .loading_circle {
