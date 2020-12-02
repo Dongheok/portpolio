@@ -10,25 +10,24 @@ const Portpolio = () => {
   const { state, isLoadingFunction } = useContext(UserContext);
   const history = useHistory();
 
-  // setLayout() 체크 변수
   // DOM을 사용하기 위한 Ref
-  const wrapRef = useRef();
+  const wrapRef = useRef(null);
 
   // 0번째 애니메이션
-  const containerRef_0 = useRef();
-  const messageARef_0 = useRef();
-  const messageBRef_0 = useRef();
-  const messageCRef_0 = useRef();
-  const messageDRef_0 = useRef();
+  const containerRef_0 = useRef(null);
+  const messageARef_0 = useRef(null);
+  const messageBRef_0 = useRef(null);
+  const messageCRef_0 = useRef(null);
+  const messageDRef_0 = useRef(null);
 
   // 1번째 애니메이션
-  const containerRef_1 = useRef();
-  const messageARef_1 = useRef();
-  const messageBRef_1 = useRef();
-  const logoRef_1 = useRef();
-  const ribbonPathRef_1 = useRef();
+  const containerRef_1 = useRef(null);
+  const messageARef_1 = useRef(null);
+  const messageBRef_1 = useRef(null);
+  const logoRef_1 = useRef(null);
+  const ribbonPathRef_1 = useRef(null);
   // 2번째
-  const containerRef_2 = useRef();
+  const containerRef_2 = useRef(null);
 
   const sceneInfo = [
     {
@@ -489,9 +488,9 @@ const Portpolio = () => {
                     onClick={() => {
                       if (x.value !== "Git") {
                         history.push(x.key);
-                        window.scrollTo(0, 0);
-                        // 브라우저가 이전 코드데이터를 기억하고있는 경우 때문에 어쩔 수 없음
+                        // 라우팅 할 때, 브라우저가 이전 데이터를 기억하고있는 경우 에러가 나기 때문에 어쩔 수 없음
                         window.location.reload();
+                        window.scrollTo(0, 0);
                       } else {
                         window.location.href =
                           "https://github.com/dev-donghyuk";

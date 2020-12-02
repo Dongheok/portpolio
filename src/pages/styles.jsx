@@ -69,6 +69,7 @@ const Wrapper = styled.div`
         background: url("http://sn237x.cafe24.com/web/portpolio_img/dg_bg.png")
           no-repeat center bottom;
         background-size: 100%;
+        transition: all 0.3s;
         & > .btn_wrap {
           width: auto;
           height: 100%;
@@ -199,6 +200,7 @@ const Wrapper = styled.div`
     & .main {
       /* 섹션 2 */
       & .scroll_section_2 {
+        background-size: 200% !important;
         & .btn_wrap {
           position: absolute;
           left: 50%;
@@ -208,6 +210,11 @@ const Wrapper = styled.div`
           width: 100% !important;
           height: auto !important;
           margin: 0 auto;
+          & > div {
+            & .button {
+              height: 80px;
+            }
+          }
         }
       }
     }
