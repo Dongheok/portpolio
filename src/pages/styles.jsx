@@ -210,11 +210,6 @@ const Wrapper = styled.div`
           width: 100% !important;
           height: auto !important;
           margin: 0 auto;
-          & > div {
-            & .button {
-              height: 80px;
-            }
-          }
         }
       }
     }

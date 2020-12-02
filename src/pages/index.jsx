@@ -393,15 +393,12 @@ const Portpolio = () => {
         playAnimation();
       }
     };
+
     // 렌더되면 세팅 처리
     setLayout();
     // 이벤트들
-    window.addEventListener("resize", () => {
-      setLayout();
-    });
-    window.addEventListener("scroll", () => {
-      scrollLoop();
-    });
+    window.addEventListener("resize", setLayout);
+    window.addEventListener("scroll", scrollLoop);
   };
 
   useEffect(() => {
