@@ -396,9 +396,14 @@ const Portpolio = () => {
 
     // 렌더되면 세팅 처리
     setLayout();
-    // 이벤트들
-    window.addEventListener("resize", setLayout);
-    window.addEventListener("scroll", scrollLoop);
+    if (history.location.pathname === "/") {
+      // 이벤트들
+      window.addEventListener("resize", setLayout);
+      window.addEventListener("scroll", scrollLoop);
+    } else {
+      window.removeEventListener("resize", setLayout);
+      window.removeEventListener("scroll", scrollLoop);
+    }
   };
 
   useEffect(() => {
