@@ -1,4 +1,4 @@
-// ie 보기 위함
+// IE11 보기 위함
 import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
 

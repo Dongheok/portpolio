@@ -5299,13 +5299,6 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-env@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.2.tgz#bd5ed31339a93a3418ac4f3ca9ca3403082ae5f9"
-  integrity sha512-KZP/bMEOJEDCkDQAyRhu3RL2ZO/SUVrxQVI0G3YEQ+OLbRA3c6zgixe8Mq8a/z7+HKlNEjo8oiLUs8iRijY2Rw==
-  dependencies:
-    cross-spawn "^7.0.1"
-
 cross-spawn@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.1.tgz#0ab56286e0f7c24e153d04cc2aa027e43a9a5d14"
@@ -5334,15 +5327,6 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
-
-cross-spawn@^7.0.1:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
-  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
-  dependencies:
-    path-key "^3.1.0"
-    shebang-command "^2.0.0"
-    which "^2.0.1"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -12579,14 +12563,6 @@ react-data-export@^0.6.0:
     file-saver "1.3.3"
     tempa-xlsx "0.0.1"
 
-react-daum-postcode@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/react-daum-postcode/-/react-daum-postcode-1.9.0.tgz#06e48b728c52ba1adf844099588e91b9315ffdd0"
-  integrity sha512-D7qnAru17daxcN7hEHJvz+Qew6FN8KHtRqz5+QDnlQ7zdhh4tdHScHmZScUPdz1CWDYGEIeoWKb8IFGHgIFckA==
-  dependencies:
-    prop-types "^15.6.2"
-    react "^16.4.2"
-
 react-dev-utils@^10.2.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-10.2.1.tgz#f6de325ae25fa4d546d09df4bb1befdc6dd19c19"
@@ -12661,13 +12637,6 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-i
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-on-images-loaded@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/react-on-images-loaded/-/react-on-images-loaded-2.2.5.tgz#177d2f064ce647b248e59fc4af3250f81de70c0e"
-  integrity sha512-9p5hDxBBpyl/Z6RgJNZipnswUFzX/QfMaEHAioSfZy/hm8iFlxoBchuXqqdZlRxQ6Xd2HPR3hAusB+6yeM0cXA==
-  dependencies:
-    prop-types "^15.6.2"
 
 react-redux@^7.2.0:
   version "7.2.0"
@@ -12795,7 +12764,7 @@ react-transition-group@^4.4.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@^16.13.1, react@^16.4.2:
+react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
