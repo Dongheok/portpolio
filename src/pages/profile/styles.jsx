@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components";
-
+// 공통 텍스트 그라디언트 CSS 변수화
 const FnText = css`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
+// 스킬 애니메이션 아이템
 export const SkillItem = styled.div`
   display: inline-block;
   position: relative;
@@ -14,6 +15,7 @@ export const SkillItem = styled.div`
   margin: 0 5px 10px;
   z-index: 1;
   transition: all 0.3s ease !important;
+  /* 스킬 아이템 */
   & .skill_item {
     background: #202e38;
     padding: 10px 15px;
@@ -34,6 +36,7 @@ export const SkillItem = styled.div`
       }
     }
   }
+  /* 스킬 메세지 */
   & .skill_text {
     position: absolute;
     left: 50%;
@@ -156,11 +159,13 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.bg};
   background-size: cover;
   padding: 80px 20px 40px;
+  /* 프로필 전체 */
   & .profile {
     max-width: 1280px;
     height: 100%;
     margin: 0 auto;
     padding: 40px 0 60px;
+    /* 프로필 공통 */
     & > div {
       width: 100%;
       padding: 32px;
@@ -196,6 +201,7 @@ export const Wrapper = styled.div`
         width: 100%;
       }
     }
+    /* 소개 */
     & .about_wrap {
       & .about {
         padding: 48px 0;
@@ -252,12 +258,14 @@ export const Wrapper = styled.div`
         }
       }
     }
+    /* 스킬 */
     & .skill_wrap {
       & .skill {
         padding: 48px 0;
         text-align: center;
       }
     }
+    /* 교육 */
     & .education_wrap {
       & .education {
         padding: 48px 0;
@@ -329,6 +337,7 @@ export const Wrapper = styled.div`
         }
       }
     }
+    /* 커리어 */
     & .career_wrap {
       & .career {
         padding: 48px 0;
@@ -348,6 +357,7 @@ export const Wrapper = styled.div`
         }
       }
     }
+    /* 문의 */
     & .contact_wrap {
       & .contact {
         padding: 48px 0;
@@ -379,7 +389,9 @@ export const Wrapper = styled.div`
     }
   }
   @media (max-width: 600px) {
+    /* 프로필 전체 */
     & .profile {
+      /* 소개 */
       & .about_wrap {
         & .about {
           /* 사진 슬라이더 부분 */
@@ -394,6 +406,7 @@ export const Wrapper = styled.div`
           }
         }
       }
+      /* 문의 */
       & .contact_wrap {
         & .contact {
           & .info {

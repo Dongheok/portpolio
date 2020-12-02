@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  /* 헤더 */
   & .header {
     overflow: hidden;
     position: absolute;
@@ -12,6 +13,7 @@ const Wrapper = styled.div`
     padding: 0 32px;
     background: ${(props) => props.theme.bg};
     & > div {
+      /* 로고 */
       &.logo {
         width: 62px;
         height: 40px;
@@ -25,9 +27,11 @@ const Wrapper = styled.div`
             no-repeat;
         }
       }
+      /* 네비게이션 */
       &.nav {
         & > ul {
           display: inline-block;
+          /* 글로벌 네비게이션 바 */
           &.gnb {
             & li {
               display: inline-block;
@@ -41,6 +45,7 @@ const Wrapper = styled.div`
               }
             }
           }
+          /* 유틸 */
           &.util {
             padding-top: 11px;
             & li {

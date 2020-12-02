@@ -11,10 +11,14 @@ import { UserContext } from "context";
 const Layout = ({ children }) => {
   const history = useHistory();
   const { state, modeDarkFunction } = useContext(UserContext);
+  // 다크모드 상태 값
   const [modeDark, setModeDark] = useState(false);
+
   return (
     <Wrapper>
+      {/* 헤더 */}
       <Grid container justify="space-between" className="header">
+        {/* 로고 */}
         <Grid
           item
           className={state.modeDark ? "logo on" : "logo"}
@@ -26,7 +30,9 @@ const Layout = ({ children }) => {
         >
           로고
         </Grid>
+        {/* 네비게이션 */}
         <Grid item className="nav">
+          {/* 글로벌 네비게이션 바 */}
           <ul className="gnb">
             {state.sidebar.map((x, index) => {
               return (
@@ -41,6 +47,7 @@ const Layout = ({ children }) => {
               );
             })}
           </ul>
+          {/* 유틸 */}
           <ul className="util">
             <li>
               <button

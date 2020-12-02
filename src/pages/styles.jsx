@@ -6,11 +6,12 @@ const Wrapper = styled.div`
   /* 메인 */
   & .main {
     overflow-x: hidden;
+    /* 각 섹션 */
     & .scroll_section {
       position: relative;
       padding-top: 50vh;
       color: #fff;
-      /*  */
+      /* 섹션 0 : 메세지 fade in/out 애니메이션 */
       &.scroll_section_0 {
         & h2 {
           position: relative;
@@ -23,6 +24,7 @@ const Wrapper = styled.div`
         }
         background: ${(props) => props.theme.main_orange};
       }
+      /* 섹션 1 : svg path 및 svg 로고 애니메이션 */
       &.scroll_section_1 {
         & h2 {
           position: relative;
@@ -32,14 +34,14 @@ const Wrapper = styled.div`
           text-align: center;
           font-weight: bold;
         }
-        /* 당근 svg */
+        /* 당근 logo svg */
         & .logo {
           left: 50%;
           top: 50%;
           width: 1500vw;
           transform: translate(-10%, -50%);
         }
-        /* 당근 stroke */
+        /* 당근 stroke svg */
         & .ribbon_path {
           left: 50%;
           top: 50%;
@@ -58,6 +60,7 @@ const Wrapper = styled.div`
           }
         }
       }
+      /* 섹션 2 : link button_wrap 및 밑 배경  */
       &.scroll_section_2 {
         position: relative;
         width: 100%;
@@ -129,7 +132,7 @@ const Wrapper = styled.div`
           }
         }
       }
-      /* scroll_section 컨텐츠들 */
+      /* scroll_section 공통 컨텐츠들 */
       /* 이벤트 메세지 */
       & .main_message {
         top: 40vh;
@@ -157,7 +160,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  /* 해당 애니메이션 씬일 때, 해당 컨텐츠 보이게 처리 */
+  /* 해당 애니메이션 씬일 때, 해당하는 컨텐츠 보이게 처리 */
 
   &#show_scene_0 .scroll_section_0 .sticky_elem {
     display: block;
@@ -173,13 +176,14 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
+    /* 메인 */
     & .main {
+      /* 각 섹션 */
       & .scroll_section {
         & h2 {
           font-size: 9vw !important;
         }
-        &.scroll_section_1 {
-        }
+        /* 이벤트 메세지 */
         & .main_message {
           font-size: 4vw;
           &.b {
@@ -190,7 +194,9 @@ const Wrapper = styled.div`
     }
   }
   @media (max-width: 600px) {
+    /* 메인 */
     & .main {
+      /* 섹션 2 */
       & .scroll_section_2 {
         & .btn_wrap {
           position: absolute;

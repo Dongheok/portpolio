@@ -14,6 +14,8 @@ import { UserContext } from "context";
 import Layout from "layout";
 import { MapApiComponent } from "common";
 
+// 프로필 소개 슬라이드 세팅 값
+
 var settings = {
   dots: false,
   arrows: false,
@@ -23,6 +25,8 @@ var settings = {
   slidesToScroll: 1,
   swipeToSlide: true,
 };
+
+// 소개 컴포넌트
 
 const AboutComponent = () => {
   const { state } = useContext(UserContext);
@@ -86,6 +90,8 @@ const AboutComponent = () => {
   );
 };
 
+// 스킬 컴포넌트
+
 const SkillComponent = () => {
   const { state } = useContext(UserContext);
   return (
@@ -110,6 +116,8 @@ const SkillComponent = () => {
     </Grid>
   );
 };
+
+// 교육 컴포넌트
 
 const EducationComponent = () => {
   const { state } = useContext(UserContext);
@@ -167,6 +175,8 @@ const EducationComponent = () => {
   );
 };
 
+// 커리어 컴포넌트
+
 const CareerComponent = () => {
   const { state } = useContext(UserContext);
   return (
@@ -191,6 +201,8 @@ const CareerComponent = () => {
     </Grid>
   );
 };
+
+// 문의하기 컴포넌트
 
 const ContactComponent = () => {
   const { state } = useContext(UserContext);

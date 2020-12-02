@@ -24,9 +24,11 @@ const UserContextProvider = ({ children }) => {
     main_project_data: projectData.main_project_data,
     sub_project_data: projectData.sub_project_data,
   });
+  // 다크모드 전역 상태 함수
   const modeDarkFunction = (boolen) => {
     setState({ ...state, modeDark: boolen });
   };
+  // 로딩 전역 상태 함수
   const isLoadingFunction = (boolen) => {
     setState({ ...state, isLoading: boolen });
   };

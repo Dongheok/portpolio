@@ -14,6 +14,7 @@ const Routes = () => {
   const history = useHistory();
 
   useEffect(() => {
+    // 뒤로가기 감지
     window.addEventListener("popstate", function (event) {
       window.location.reload();
       window.scrollTo(0, 0);
@@ -22,8 +23,11 @@ const Routes = () => {
   return (
     <BrowserRouter basename="/portpolio">
       <Switch>
+        {/* 메인 */}
         <Route path="/" exact component={Portpolio} />
+        {/* 프로젝트 */}
         <Route path="/project" exact component={Project} />
+        {/* 프로필 */}
         <Route path="/profile" exact component={Profile} />
 
         <Redirect from="*" to="/" />

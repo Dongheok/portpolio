@@ -7,25 +7,11 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-// import Slider from 'react-slick';
 import BackgroundImageOnLoad from "background-image-on-load";
 
 import { Wrapper, Mask, SkeletonWrap } from "./styles";
 import { UserContext } from "context";
 import Layout from "layout";
-
-// var settings = {
-//    dots: true,
-//    arrows: false,
-//    infinite: true,
-//    speed: 500,
-//    slidesToShow: 1,
-//    slidesToScroll: 1,
-//    swipeToSlide: true,
-//    autoplay: true,
-//    autoplaySpeed: 5000,
-//    // fade: true,
-// };
 
 const MainProjectComponent = (props) => {
   const { setMainLoading } = props;
@@ -45,76 +31,81 @@ const MainProjectComponent = (props) => {
   }, []);
 
   return (
-    <Grid className="main_project">
-      {/* <Slider {...settings}> */}
-      {mainProjectData.map((x, index) => {
-        return (
-          <Grid key={index} className="slide">
-            <Mask
-              className={x.loading ? "" : "on"}
-              height="600px"
-              speed={x.speed}
-              bgUrl={`${x.img}`}
-            >
-              <BackgroundImageOnLoad
-                src={mainProjectDelay ? x.img : ""}
-                onLoadBg={() => {
-                  let tempData = [...mainProjectData];
-                  tempData[index].loading = false;
-                  setMainProjectData(tempData);
-                  setMainLoading(false);
-                  console.log("메인 프로젝트 로드 완료");
-                }}
-              />
-            </Mask>
-            {x.loading && (
-              <SkeletonWrap>
-                <Skeleton variant="rect" animation="wave" height={600} />
-              </SkeletonWrap>
-            )}
-            {x.loading ? (
-              <SkeletonWrap margin="24px 0">
-                <Skeleton variant="rect" animation="wave" height={32} />
-              </SkeletonWrap>
-            ) : (
-              <Grid container justify="space-between" className="title">
-                <Grid item>{x.project_title}</Grid>
-                <Grid item>
-                  {x.git !== "" && (
-                    <Grid className="link git">
-                      <a href={x.git} target="blank">
-                        <GitHubIcon />
-                      </a>
-                    </Grid>
-                  )}
-                  {x.link !== "" && (
-                    <Grid className="link url">
-                      <a href={x.link} target="blank">
-                        <FontAwesomeIcon icon={faLink} />
-                      </a>
-                    </Grid>
-                  )}
+    <Grid className="main_project project">
+      <Grid className="project_container">
+        {mainProjectData.map((x, index) => {
+          return (
+            <Grid key={index} className="project_item">
+              <Mask
+                className={x.loading ? "" : "on"}
+                height="600px"
+                speed={x.speed}
+                bgUrl={`${x.img}`}
+              >
+                <BackgroundImageOnLoad
+                  src={mainProjectDelay ? x.img : ""}
+                  onLoadBg={() => {
+                    let tempData = [...mainProjectData];
+                    tempData[index].loading = false;
+                    setMainProjectData(tempData);
+                    setMainLoading(false);
+                    console.log("메인 프로젝트 로드 완료");
+                  }}
+                />
+              </Mask>
+              {x.loading && (
+                <SkeletonWrap>
+                  <Skeleton variant="rect" animation="wave" height={600} />
+                </SkeletonWrap>
+              )}
+              {x.loading ? (
+                <SkeletonWrap margin="24px 0">
+                  <Skeleton variant="rect" animation="wave" height={32} />
+                </SkeletonWrap>
+              ) : (
+                <Grid
+                  container
+                  justify="space-between"
+                  alignItems="center"
+                  className="title"
+                >
+                  <Grid item>{x.project_title}</Grid>
+                  <Grid item>
+                    {x.git !== "" && (
+                      <Grid className="link git">
+                        <a href={x.git} target="blank">
+                          <GitHubIcon />
+                        </a>
+                      </Grid>
+                    )}
+                    {x.link !== "" && (
+                      <Grid className="link url">
+                        <a href={x.link} target="blank">
+                          <FontAwesomeIcon icon={faLink} />
+                        </a>
+                      </Grid>
+                    )}
+                  </Grid>
                 </Grid>
-              </Grid>
-            )}
-            {x.loading ? (
-              <SkeletonWrap>
-                <Skeleton variant="rect" animation="wave" height={32} />
-              </SkeletonWrap>
-            ) : (
-              <Grid className="text_1 text">{x.project_text_1}</Grid>
-            )}
-            {x.loading ? (
-              <SkeletonWrap margin="16px 0 0 0">
-                <Skeleton variant="rect" animation="wave" height={40} />
-              </SkeletonWrap>
-            ) : (
-              <Grid className="text_2 text">{x.project_text_2}</Grid>
-            )}
-          </Grid>
-        );
-      })}
-      {/* </Slider> */}
+              )}
+              {x.loading ? (
+                <SkeletonWrap>
+                  <Skeleton variant="rect" animation="wave" height={32} />
+                </SkeletonWrap>
+              ) : (
+                <Grid className="text_1 text">{x.project_text_1}</Grid>
+              )}
+              {x.loading ? (
+                <SkeletonWrap margin="16px 0 0 0">
+                  <Skeleton variant="rect" animation="wave" height={40} />
+                </SkeletonWrap>
+              ) : (
+                <Grid className="text_2 text">{x.project_text_2}</Grid>
+              )}
+            </Grid>
+          );
+        })}
+      </Grid>
     </Grid>
   );
 };
@@ -136,73 +127,76 @@ const SubProjectComponent = (props) => {
     }, 4000);
   }, []);
   return (
-    <Grid className="sub_project">
-      <Grid container className="project">
+    <Grid className="sub_project project">
+      <Grid container className="project_container">
         {subProjectData.map((x, index) => {
           return (
             <Grid key={index} item sm={12} md={6} className="project_item">
-              <Grid className="item_wrap">
-                <Mask
-                  className={x.loading ? "" : "on"}
-                  height="300px"
-                  speed={x.speed}
-                  bgUrl={`${x.img}`}
+              <Mask
+                className={x.loading ? "" : "on"}
+                height="300px"
+                speed={x.speed}
+                bgUrl={`${x.img}`}
+              >
+                <BackgroundImageOnLoad
+                  src={!mainLoading && subProjectDelay ? x.img : ""}
+                  onLoadBg={() => {
+                    let tempData = [...subProjectData];
+                    tempData[index].loading = false;
+                    console.log(`서브 프로젝트${index} 로드 완료`);
+                    setSubProjectData(tempData);
+                  }}
+                />
+              </Mask>
+              {x.loading && (
+                <SkeletonWrap>
+                  <Skeleton variant="rect" animation="wave" height={300} />
+                </SkeletonWrap>
+              )}
+              {x.loading ? (
+                <SkeletonWrap margin="24px 0">
+                  <Skeleton variant="rect" animation="wave" height={24} />
+                </SkeletonWrap>
+              ) : (
+                <Grid
+                  container
+                  justify="space-between"
+                  alignItems="center"
+                  className="title"
                 >
-                  <BackgroundImageOnLoad
-                    src={!mainLoading && subProjectDelay ? x.img : ""}
-                    onLoadBg={() => {
-                      let tempData = [...subProjectData];
-                      tempData[index].loading = false;
-                      console.log(`서브 프로젝트${index} 로드 완료`);
-                      setSubProjectData(tempData);
-                    }}
-                  />
-                </Mask>
-                {x.loading && (
-                  <SkeletonWrap>
-                    <Skeleton variant="rect" animation="wave" height={300} />
-                  </SkeletonWrap>
-                )}
-                {x.loading ? (
-                  <SkeletonWrap margin="24px 0">
-                    <Skeleton variant="rect" animation="wave" height={24} />
-                  </SkeletonWrap>
-                ) : (
-                  <Grid container justify="space-between" className="title">
-                    <Grid item>{x.project_title}</Grid>
-                    <Grid item>
-                      {x.git !== "" && (
-                        <Grid className="link git">
-                          <a href={x.git} target="blank">
-                            <GitHubIcon />
-                          </a>
-                        </Grid>
-                      )}
-                      {x.link !== "" && (
-                        <Grid className="link url">
-                          <a href={x.link} target="blank">
-                            <FontAwesomeIcon icon={faLink} />
-                          </a>
-                        </Grid>
-                      )}
-                    </Grid>
+                  <Grid item>{x.project_title}</Grid>
+                  <Grid item>
+                    {x.git !== "" && (
+                      <Grid className="link git">
+                        <a href={x.git} target="blank">
+                          <GitHubIcon />
+                        </a>
+                      </Grid>
+                    )}
+                    {x.link !== "" && (
+                      <Grid className="link url">
+                        <a href={x.link} target="blank">
+                          <FontAwesomeIcon icon={faLink} />
+                        </a>
+                      </Grid>
+                    )}
                   </Grid>
-                )}
-                {x.loading ? (
-                  <SkeletonWrap margin="0 0 8px 0">
-                    <Skeleton variant="rect" animation="wave" height={24} />
-                  </SkeletonWrap>
-                ) : (
-                  <Grid className="text_1 text">{x.project_text_1}</Grid>
-                )}
-                {x.loading ? (
-                  <SkeletonWrap>
-                    <Skeleton variant="rect" animation="wave" height={50} />
-                  </SkeletonWrap>
-                ) : (
-                  <Grid className="text_2 text">{x.project_text_2}</Grid>
-                )}
-              </Grid>
+                </Grid>
+              )}
+              {x.loading ? (
+                <SkeletonWrap margin="0 0 8px 0">
+                  <Skeleton variant="rect" animation="wave" height={24} />
+                </SkeletonWrap>
+              ) : (
+                <Grid className="text_1 text">{x.project_text_1}</Grid>
+              )}
+              {x.loading ? (
+                <SkeletonWrap>
+                  <Skeleton variant="rect" animation="wave" height={50} />
+                </SkeletonWrap>
+              ) : (
+                <Grid className="text_2 text">{x.project_text_2}</Grid>
+              )}
             </Grid>
           );
         })}
