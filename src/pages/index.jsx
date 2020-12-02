@@ -395,16 +395,13 @@ const Portpolio = () => {
       }
     };
     // 렌더되면 세팅 처리
-    window.addEventListener("load", () => {
-      // 렌더되면 로딩 끝
+    setLayout();
+    // 이벤트들
+    window.addEventListener("resize", () => {
       setLayout();
-      // 이벤트들
-      window.addEventListener("resize", () => {
-        setLayout();
-      });
-      window.addEventListener("scroll", () => {
-        scrollLoop();
-      });
+    });
+    window.addEventListener("scroll", () => {
+      scrollLoop();
     });
   };
 

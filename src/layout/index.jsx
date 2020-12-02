@@ -25,7 +25,6 @@ const Layout = ({ children }) => {
           onClick={() => {
             history.push("/");
             window.scrollTo(0, 0);
-            window.location.reload();
           }}
         >
           로고

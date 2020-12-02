@@ -14,7 +14,7 @@ const Routes = () => {
   const history = useHistory();
 
   useEffect(() => {
-    // 뒤로가기 감지
+    // 앞으로가기,뒤로가기 감지
     window.addEventListener("popstate", function (event) {
       window.location.reload();
       window.scrollTo(0, 0);
