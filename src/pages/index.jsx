@@ -491,8 +491,8 @@ const Portpolio = () => {
                       if (x.value !== "Git") {
                         history.push(x.key);
                         // 라우팅 할 때, 브라우저가 이전 데이터를 기억하고있는 경우 에러가 나기 때문에 어쩔 수 없음
-                        window.location.reload();
-                        window.scrollTo(0, 0);
+                        // window.location.reload();
+                        // window.scrollTo(0, 0);
                       } else {
                         window.location.href =
                           "https://github.com/dev-donghyuk";
