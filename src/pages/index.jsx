@@ -453,7 +453,7 @@ const Portpolio = () => {
           <object
             ref={logoRef_1}
             className="sticky_elem logo"
-            data="/portpolio/images/orange_dg_logo.svg"
+            data="/images/orange_dg_logo.svg"
             type="image/svg+xml"
           >
             당근이랑 당근마켓
