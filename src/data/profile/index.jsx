@@ -5,17 +5,20 @@ export const profileData = {
     {
       key: 0,
       value:
-        "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_1.jpg",
+        // "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_1.jpg",
+        "",
     },
     {
       key: 1,
       value:
-        "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_2.jpg",
+        // "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_2.jpg",
+        "",
     },
     {
       key: 1,
       value:
-        "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_3.jpg",
+        // "http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_3.jpg",
+        "",
     },
   ],
   //  - 스킬 데이터
