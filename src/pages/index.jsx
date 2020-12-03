@@ -413,7 +413,8 @@ const Portpolio = () => {
       <Grid className="main">
         {/*  */}
         <Grid ref={containerRef_0} className="scroll_section scroll_section_0">
-          <h2>DongHyuk Portpolio</h2>
+          <h2>김동혁 포트폴리오</h2>
+          {/* <h2>DongHyuk Portpolio</h2> */}
           <Grid ref={messageARef_0} className="sticky_elem main_message">
             <p>안녕하세요.</p>
           </Grid>
@@ -441,7 +442,10 @@ const Portpolio = () => {
         </Grid>
         {/*  */}
         <Grid ref={containerRef_1} className="scroll_section scroll_section_1">
-          <h2>김동혁</h2>
+          <h2>
+            김동혁입니다.
+            <br />잘 부탁드립니다!
+          </h2>
           <object
             ref={logoRef_1}
             className="sticky_elem logo"
@@ -470,7 +474,7 @@ const Portpolio = () => {
             </svg>
           </span>
           <Grid ref={messageBRef_1} className="sticky_elem main_message b">
-            <p>입니다!</p>
+            <p>당근마켓</p>
           </Grid>
         </Grid>
         {/*  */}

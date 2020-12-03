@@ -30,7 +30,8 @@ const Wrapper = styled.div`
           position: relative;
           top: -10vh;
           z-index: 5;
-          font-size: 3.5rem;
+          line-height: 1.3;
+          font-size: 2.5rem;
           text-align: center;
           font-weight: bold;
         }
@@ -144,7 +145,7 @@ const Wrapper = styled.div`
         &.b {
           top: 50%;
           transform: translate3D(0, -50%, 0);
-          margin-top: -28px;
+          margin-top: -24px;
           font-size: 3.5rem;
         }
         /* 메인 메세지 안에 텍스트 */
@@ -183,8 +184,15 @@ const Wrapper = styled.div`
     & .main {
       /* 각 섹션 */
       & .scroll_section {
-        & h2 {
-          font-size: 9vw !important;
+        &.scroll_section_0 {
+          & h2 {
+            font-size: 9vw !important;
+          }
+        }
+        &.scroll_section_1 {
+          & h2 {
+            font-size: 4vw;
+          }
         }
         /* 이벤트 메세지 */
         & .main_message {
