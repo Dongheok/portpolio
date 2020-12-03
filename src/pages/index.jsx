@@ -373,10 +373,7 @@ const Portpolio = () => {
             </Grid>
             {/*  */}
             <Grid ref={containerRef_1} className="scroll_section scroll_section_1">
-               <h2>
-                  김동혁입니다.
-                  <br />잘 부탁드립니다!
-               </h2>
+               <h2>김동혁입니다.</h2>
                <object ref={logoRef_1} className="sticky_elem logo" data="/portpolio/images/orange_dg_logo.svg" type="image/svg+xml">
                   당근이랑 당근마켓
                </object>
