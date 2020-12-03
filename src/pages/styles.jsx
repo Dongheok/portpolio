@@ -186,7 +186,7 @@ const Wrapper = styled.div`
       & .scroll_section {
         &.scroll_section_0 {
           & h2 {
-            font-size: 9vw !important;
+            font-size: 7vw !important;
           }
         }
         &.scroll_section_1 {
