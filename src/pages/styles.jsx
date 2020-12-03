@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   background: ${(props) => props.theme.main_orange};
-  transition: all 0.3s;
+  transition: all 0.4s;
   /* 메인 */
   & .main {
     overflow-x: hidden;
@@ -69,14 +69,15 @@ const Wrapper = styled.div`
         background: url("http://sn237x.cafe24.com/web/portpolio_img/dg_bg.png")
           no-repeat center bottom;
         background-size: 100%;
-        transition: all 0.3s;
+        transition: all 0.4s;
         & > .btn_wrap {
           width: auto;
           height: 100%;
           margin: 0 auto;
           & > div {
             display: inline-block;
-            & button {
+            & button,
+            & a {
               overflow: hidden;
               position: relative;
               display: inline-block;
@@ -94,7 +95,7 @@ const Wrapper = styled.div`
                 font-weight: bold;
                 font-size: 24px;
                 color: ${(props) => props.theme.main_green};
-                transition: 0.5s;
+                transition: 0.4s;
               }
               & span {
                 position: absolute;
@@ -103,7 +104,7 @@ const Wrapper = styled.div`
                 height: 100%;
                 border-radius: 50%;
                 background: ${(props) => props.theme.main_green};
-                transition: 0.5s;
+                transition: 0.4s;
                 transform: translateY(150%);
                 &:nth-child(1) {
                   left: calc(0%);

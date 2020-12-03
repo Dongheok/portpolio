@@ -479,23 +479,33 @@ const Portpolio = () => {
             {state.btn_wrap.map((x, index) => {
               return (
                 <Grid key={index} item xs={12} sm={4}>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (x.value !== "Git") {
+                  {x.key !== "/git" ? (
+                    <button
+                      type="button"
+                      onClick={() => {
                         history.push(x.key);
-                      } else {
-                        window.location.href =
-                          "https://github.com/dev-donghyuk";
-                      }
-                    }}
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <em>{x.value}</em>
-                  </button>
+                        window.scrollTo(0, 0);
+                      }}
+                    >
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <em>{x.value}</em>
+                    </button>
+                  ) : (
+                    <a
+                      href="https://github.com/dev-donghyuk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <em>{x.value}</em>
+                    </a>
+                  )}
                 </Grid>
               );
             })}

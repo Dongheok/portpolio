@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   background-size: 50%;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.4s;
   &.on {
     visibility: visible;
     opacity: 1;

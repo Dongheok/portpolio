@@ -14,7 +14,10 @@ const Routes = () => {
   const history = useHistory();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // 앞으로가기,뒤로가기 감지
+    window.addEventListener("popstate", function (event) {
+      window.scrollTo(0, 0);
+    });
   }, [history]);
   return (
     <BrowserRouter basename="/portpolio">

@@ -3,6 +3,6 @@ export const mainData = {
   btn_wrap: [
     { key: "/profile", value: "Profile" },
     { key: "/project", value: "Project" },
-    { key: "git", value: "Git" },
+    { key: "/git", value: "Git" },
   ],
 };
