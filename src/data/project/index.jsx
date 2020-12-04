@@ -157,7 +157,7 @@ export const projectData = {
     },
     // 코로나맵
     {
-      project_title: "코로나맵 Clone",
+      project_title: "코로나맵 클론",
       project_text_1: "사용언어 : HTML5, CSS3, Javascript, Node.Js, Express",
       project_text_2:
         '["사용언어"]를 이용하여 구현한 코로나맵 클론 웹 사이트 입니다. 프로젝트를 하는 과정에서 Naver지도 API와 카카오 지도 API를 이용하여 마커표시, 검색표시 등등 공용지도API를 더 유연하게 쓸 수 있게 되었습니다.',
@@ -169,7 +169,7 @@ export const projectData = {
       loading: true,
     },
     {
-      project_title: "Apple Clone",
+      project_title: "애플 클론",
       project_text_1: "사용언어 : HTML5, CSS3, Javascript",
       project_text_2: `["사용언어"]를 이용하여 구현한 애플 인터렉티브 반응형 웹 사이트 클론입니다. 프로젝트를 하는 과정에서 더 세밀한 애니메이션처리와 스크롤 값에 따른 각 비디오의 애니메이션 처리, Canvas와 SVG를 사용해 본 프로젝트입니다.`,
       img:
