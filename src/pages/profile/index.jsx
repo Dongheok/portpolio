@@ -248,7 +248,7 @@ const Profile = () => {
          <Layout>
             <Grid className="profile">
                <Helmet>
-                  <title>DongHyuk Profile</title>
+                  <title>김동혁 프로필</title>
                </Helmet>
                {/* About */}
                <AboutComponent />
