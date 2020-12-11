@@ -332,7 +332,7 @@ const Portpolio = () => {
       window.addEventListener('scroll', scrollLoop);
       setTimeout(() => {
          isLoadingFunction(false);
-      }, 1000);
+      }, 2000);
       return () => {
          window.removeEventListener('resize', setLayout);
          window.removeEventListener('scroll', scrollLoop);

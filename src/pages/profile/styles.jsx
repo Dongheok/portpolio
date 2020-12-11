@@ -14,7 +14,7 @@ export const SkillItem = styled.div`
    padding: 4px;
    margin: 0 5px 10px;
    z-index: 1;
-   transition: all 0.4s ease !important;
+   transition: all 0.3s ease !important;
    /* 스킬 아이템 */
    & .skill_item {
       background: #202e38;
@@ -54,7 +54,7 @@ export const SkillItem = styled.div`
       border: 1px solid ${(props) => props.theme.main};
       background: ${(props) => props.theme.bg};
       opacity: 0;
-      transition: opacity 0.4s ease 0.4s, top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s !important;
+      transition: opacity 0.3s ease 0.3s, top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s !important;
    }
    /* 컬러 종류 */
    &.red {
