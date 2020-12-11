@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/portpolio/precache-manifest.e519a182a0a52d280a073dc709ee6ed4.js"
+  "/portpolio/precache-manifest.cabc5b26d90ba14a28ef9ec26a5706ce.js"
 );
 
 self.addEventListener('message', (event) => {
