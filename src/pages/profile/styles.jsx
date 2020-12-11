@@ -356,16 +356,20 @@ export const Wrapper = styled.div`
                   padding: 0 8px;
                   & .icon {
                      padding-bottom: 16px;
-                     &.git {
+                     &.link {
                         cursor: pointer;
                      }
                      & svg {
                         font-size: 48px;
                         color: ${(props) => props.theme.main};
                      }
+                     & img {
+                        width: 48px;
+                     }
                   }
                   & .text {
-                     font-size: 20px;
+                     word-break: break-all;
+                     font-size: 18px;
                      color: ${(props) => props.theme.main};
                   }
                }

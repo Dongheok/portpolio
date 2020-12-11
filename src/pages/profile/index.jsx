@@ -215,18 +215,19 @@ const ContactComponent = () => {
                {/*  */}
                {state.contact_data.map((x, index) => {
                   return (
-                     <Grid key={index} item xs={12} sm={4}>
+                     <Grid key={index} item xs={12} sm={3}>
                         <Grid
-                           className={index === 2 ? 'icon git' : 'icon'}
+                           className={x.link ? 'icon link' : 'icon'}
                            onClick={() => {
-                              if (index === 2) {
-                                 window.location.href = 'https://github.com/dev-donghyuk';
+                              if (x.link) {
+                                 window.location.href = x.link;
                               }
                            }}
                         >
                            {index === 0 && <CallIcon />}
                            {index === 1 && <MailIcon />}
                            {index === 2 && <GitHubIcon />}
+                           {index === 3 && <img src="/portpolio/images/notion_icon.png" alt="" />}
                         </Grid>
                         <p className="text">{x.value}</p>
                      </Grid>

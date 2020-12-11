@@ -219,6 +219,11 @@ export const profileData = {
    contact_data: [
       { key: 'Phone', value: '010-3395-4623' },
       { key: 'Email', value: 'piouy_@naver.com' },
-      { key: 'Git', value: 'https://github.com/dev-donghyuk' },
+      { key: 'Git', value: 'https://github.com/dev-donghyuk', link: 'https://github.com/dev-donghyuk' },
+      {
+         key: 'Notion',
+         value: 'https://www.notion.so/Donghyuk-Kim-6585ae54500946daa55004efbdea71c6',
+         link: 'https://www.notion.so/Donghyuk-Kim-6585ae54500946daa55004efbdea71c6',
+      },
    ],
 };
