@@ -83,7 +83,7 @@ export const profileData = {
          keyword: 'BB',
          lang: 'Babel',
          color: 'sub',
-         explanation: '바벨의 원리를 이해하고 기초를 이해하며, 직접 바벨을 사용해 프로젝트에 최적화된 환경을 구축해 본 경험이 있습니다..',
+         explanation: '바벨의 원리를 이해하고 기초를 이해하며, 직접 바벨을 사용해 프로젝트에 최적화된 환경을 구축해 본 경험이 있습니다.',
       },
       {
          keyword: 'RC',
