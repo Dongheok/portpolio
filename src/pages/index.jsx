@@ -365,7 +365,7 @@ const Portpolio = () => {
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
                   <p>
-                     보충역 산업기능요원
+                     산업기능요원 보충역(시력이슈)
                      <br />
                      신입 프론트엔드 개발자로 지원한
                   </p>
@@ -374,9 +374,13 @@ const Portpolio = () => {
             {/*  */}
             <Grid ref={containerRef_1} className="scroll_section scroll_section_1">
                <h2>김동혁입니다.</h2>
-               <object ref={logoRef_1} className="sticky_elem logo" data="/portpolio/images/orange_dg_logo.svg" type="image/svg+xml">
-                  당근이랑 당근마켓
-               </object>
+               <object
+                  ref={logoRef_1}
+                  className="sticky_elem logo"
+                  aria-label="logo"
+                  data="/portpolio/images/orange_dg_logo.svg"
+                  type="image/svg+xml"
+               />
                {/* 메세지 A */}
                <Grid ref={messageARef_1} className="sticky_elem main_message">
                   <p>!!!</p>
