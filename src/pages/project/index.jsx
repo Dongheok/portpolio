@@ -188,7 +188,7 @@ const Project = () => {
    return (
       <Wrapper>
          <Helmet>
-            <title>감동혁 프로젝트</title>
+            <title>김동혁 프로젝트</title>
          </Helmet>
          <Layout>
             <Grid className="project_wrap">
