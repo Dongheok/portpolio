@@ -43,15 +43,14 @@ const Wrapper = styled.div`
          height: 70px;
          border-radius: 50%;
          transform: translate(-50%, -50%);
+         background: #000;
          &.circle_1 {
             left: 20%;
-            background: #000;
             animation: ${loadingLeft} 2s ease infinite;
          }
          &.circle_2 {
             left: 80%;
             animation: ${loadingRight} 2s ease infinite;
-            background: blue;
          }
       }
    }
