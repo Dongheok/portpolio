@@ -4,18 +4,14 @@ export const profileData = {
    picture_data: [
       {
          key: 0,
-         value: 'http://sn237x.cafe24.com/web/portpolio_img/dg_icon.png',
-      },
-      {
-         key: 1,
          value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_1.jpg',
       },
       {
-         key: 2,
+         key: 1,
          value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_2.jpg',
       },
       {
-         key: 3,
+         key: 2,
          value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_3.jpg',
       },
    ],

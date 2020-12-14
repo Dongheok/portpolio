@@ -1,18 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
+import { Grid } from '@material-ui/core';
 
-import Wrapper from "./styles";
+import Wrapper from './styles';
 
 const LoadingBar = (props) => {
-  const { className } = props;
-  useEffect(() => {}, []);
-  return (
-    <Wrapper className={className}>
-      <svg className="loading_circle">
-        <circle cx="50%" cy="50%" r="25"></circle>
-      </svg>
-    </Wrapper>
-  );
+   const { className } = props;
+   useEffect(() => {}, []);
+   return (
+      <Wrapper className={className}>
+         <Grid container>
+            <Grid item className="circle circle_1"></Grid>
+            <Grid item className="circle circle_2"></Grid>
+         </Grid>
+      </Wrapper>
+   );
 };
 
 export default LoadingBar;

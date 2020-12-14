@@ -84,7 +84,7 @@ const Portpolio = () => {
             // 메세지B 애니메이션
             messageB_opacity_in: [0, 1, { start: 0.4, end: 0.5 }],
             messageB_opacity_out: [1, 0, { start: 0.6, end: 0.7 }],
-            // 당근로고 애니메이션
+            // 로고 애니메이션
             logo_width_in: [1500, 200, { start: 0.1, end: 0.4 }],
             logo_width_out: [200, 50, { start: 0.4, end: 0.8 }],
             logo_translateX_in: [-10, -20, { start: 0.2, end: 0.4 }],
@@ -243,8 +243,7 @@ const Portpolio = () => {
                if (scrollRatio > 0.2) {
                   wrap.style.background = `#fff`;
                } else {
-                  wrap.style.background = `#ff7e36`;
-                  // wrap.style.background = `#000`;
+                  wrap.style.background = `#0050ff`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -357,11 +356,7 @@ const Portpolio = () => {
                   </p>
                </Grid>
                <Grid ref={messageCRef_0} className="sticky_elem main_message">
-                  <p>
-                     당신 근처에
-                     <br />
-                     당근마켓의
-                  </p>
+                  <p>비바리퍼블리카에</p>
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
                   <p>
@@ -378,7 +373,7 @@ const Portpolio = () => {
                   ref={logoRef_1}
                   className="sticky_elem logo"
                   aria-label="logo"
-                  data="/portpolio/images/orange_dg_logo.svg"
+                  data="/portpolio/images/toss_logo.svg"
                   type="image/svg+xml"
                />
                {/* 메세지 A */}
@@ -396,7 +391,7 @@ const Portpolio = () => {
                   </svg>
                </span>
                <Grid ref={messageBRef_1} className="sticky_elem main_message logo_text">
-                  <p>당근마켓</p>
+                  <p>toss</p>
                </Grid>
             </Grid>
             {/*  */}

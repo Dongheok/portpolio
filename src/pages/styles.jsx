@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-   background: ${(props) => props.theme.main_orange};
+   background: ${(props) => props.theme.main_blue};
    transition: all 0.4s;
    /* 메인 */
    & .main {
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
       & .scroll_section {
          position: relative;
          padding-top: 50vh;
-         color: #fff;
+         color: ${(props) => props.theme.white};
          /* 섹션 0 : 메세지 fade in/out 애니메이션 */
          &.scroll_section_0 {
             & h2 {
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
                font-weight: bold;
                text-align: center;
             }
-            background: ${(props) => props.theme.main_orange};
+            background: ${(props) => props.theme.main_blue};
          }
          /* 섹션 1 : svg path 및 svg 로고 애니메이션 */
          &.scroll_section_1 {
@@ -35,14 +35,14 @@ const Wrapper = styled.div`
                text-align: center;
                font-weight: bold;
             }
-            /* 당근 logo svg */
+            /* logo svg */
             & .logo {
                left: 50%;
                top: 50%;
-               width: 1500vw;
+               width: 100vw;
                transform: translate(-10%, -50%);
             }
-            /* 당근 stroke svg */
+            /* stroke svg */
             & .ribbon_path {
                left: 50%;
                top: 50%;
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
                & svg {
                   & path {
                      fill: none;
-                     stroke: ${(props) => props.theme.main_green};
+                     stroke: ${(props) => props.theme.black};
                      stroke-width: 70;
                      stroke-linecap: round;
                      stroke-linejoin: round;
@@ -67,8 +67,6 @@ const Wrapper = styled.div`
             width: 100%;
             margin: 0 auto;
             padding: 0 20px;
-            background: url('http://sn237x.cafe24.com/web/portpolio_img/dg_bg.png') no-repeat center bottom;
-            background-size: 100%;
             transition: all 0.4s;
             & > .btn_wrap {
                width: auto;
@@ -83,7 +81,7 @@ const Wrapper = styled.div`
                      display: inline-block;
                      width: 100%;
                      height: 100px;
-                     border: 4px solid ${(props) => props.theme.main_green};
+                     border: 4px solid ${(props) => props.theme.main_blue};
                      border-radius: 8px;
                      text-transform: uppercase;
                      & em {
@@ -94,7 +92,7 @@ const Wrapper = styled.div`
                         transform: translate3D(-50%, -50%, 0);
                         font-weight: bold;
                         font-size: 24px;
-                        color: ${(props) => props.theme.main_green};
+                        color: ${(props) => props.theme.main_blue};
                         transition: 0.4s;
                      }
                      & span {
@@ -103,7 +101,7 @@ const Wrapper = styled.div`
                         width: 25%;
                         height: 100%;
                         border-radius: 50%;
-                        background: ${(props) => props.theme.main_green};
+                        background: ${(props) => props.theme.main_blue};
                         transition: 0.4s;
                         transform: translateY(150%);
                         &:nth-child(1) {
@@ -125,7 +123,7 @@ const Wrapper = styled.div`
                      }
                      &:hover {
                         & em {
-                           color: #fff;
+                           color: ${(props) => props.theme.white};
                         }
                         & span {
                            transform: translateY(0) scale(2.5);

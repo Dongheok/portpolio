@@ -94,10 +94,10 @@ export const SkillItem = styled.div`
       }
    }
    &.main {
-      background: linear-gradient(to bottom right, ${(props) => props.theme.main_orange} 0%, ${(props) => props.theme.sub_orange} 100%);
+      background: linear-gradient(to bottom right, ${(props) => props.theme.main_blue} 0%, ${(props) => props.theme.sub_blue} 100%);
       & > div {
          & > div {
-            background: -webkit-linear-gradient(${(props) => props.theme.main_orange}, ${(props) => props.theme.sub_orange});
+            background: -webkit-linear-gradient(${(props) => props.theme.main_blue}, ${(props) => props.theme.sub_blue});
             ${FnText}
          }
       }
