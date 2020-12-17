@@ -85,7 +85,7 @@ const Portpolio = () => {
             messageB_opacity_in: [0, 1, { start: 0.4, end: 0.5 }],
             messageB_opacity_out: [1, 0, { start: 0.6, end: 0.7 }],
             // 로고 애니메이션
-            logo_width_in: [1500, 200, { start: 0.1, end: 0.4 }],
+            logo_width_in: [1000, 200, { start: 0.1, end: 0.4 }],
             logo_width_out: [200, 50, { start: 0.4, end: 0.8 }],
             logo_translateX_in: [-10, -20, { start: 0.2, end: 0.4 }],
             logo_translateX_out: [-20, -50, { start: 0.4, end: 0.8 }],
@@ -243,7 +243,7 @@ const Portpolio = () => {
                if (scrollRatio > 0.2) {
                   wrap.style.background = `#fff`;
                } else {
-                  wrap.style.background = `#0050ff`;
+                  wrap.style.background = `#000`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -356,14 +356,10 @@ const Portpolio = () => {
                   </p>
                </Grid>
                <Grid ref={messageCRef_0} className="sticky_elem main_message">
-                  <p>비바리퍼블리카에</p>
+                  <p>산업기능요원 보충역(시력이슈)</p>
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
-                  <p>
-                     산업기능요원 보충역(시력이슈)
-                     <br />
-                     신입 프론트엔드 개발자로 지원한
-                  </p>
+                  <p>신입 프론트엔드 개발자로 지원한</p>
                </Grid>
             </Grid>
             {/*  */}
@@ -373,7 +369,7 @@ const Portpolio = () => {
                   ref={logoRef_1}
                   className="sticky_elem logo"
                   aria-label="logo"
-                  data="/portpolio/images/toss_logo.svg"
+                  data="/portpolio/images/main_logo.svg"
                   type="image/svg+xml"
                />
                {/* 메세지 A */}
@@ -391,7 +387,7 @@ const Portpolio = () => {
                   </svg>
                </span>
                <Grid ref={messageBRef_1} className="sticky_elem main_message logo_text">
-                  <p>toss</p>
+                  <p>김동혁</p>
                </Grid>
             </Grid>
             {/*  */}

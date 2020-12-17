@@ -5,10 +5,7 @@ export const theme = {
    white: '#fff',
    img_mask: '#444',
    shadow: ' 0 3px 3px -2px  rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12)',
-   main_blue: '#0050ff',
-   sub_blue: '#2f5fd2',
-   main_green: '#008068',
-   sub_green: '#00b493',
+   green: '#00b493',
 };
 
 export const darkTheme = {
@@ -18,8 +15,5 @@ export const darkTheme = {
    white: '#fff',
    img_mask: 'none',
    shadow: '0 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 2px 0 rgba(255, 255, 255, 0.44), 0 0 2px 0 rgba(255, 255, 255, 0.45), 0 0 2px 0',
-   main_blue: '#0050ff',
-   sub_blue: '#2f5fd2',
-   main_green: '#008068',
-   sub_green: '#00b493',
+   green: '#00b493',
 };
