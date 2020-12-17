@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbee55946b92a669352969ef4793c6d6",
+    "revision": "d24c2087f66bd85aef6efea71985a835",
     "url": "/portpolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portpolio/static/css/2.2c395745.chunk.css"
   },
   {
-    "revision": "9898105db6e3bc031489",
+    "revision": "cf6b637a602e72ccb01f",
     "url": "/portpolio/static/css/main.504fa86a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portpolio/static/js/2.4751f20c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9898105db6e3bc031489",
-    "url": "/portpolio/static/js/main.1fb737f6.chunk.js"
+    "revision": "cf6b637a602e72ccb01f",
+    "url": "/portpolio/static/js/main.e76e0191.chunk.js"
   },
   {
     "revision": "f7227a60207d6bb4e69f",
