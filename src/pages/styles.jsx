@@ -51,7 +51,7 @@ const Wrapper = styled.div`
                & svg {
                   & path {
                      fill: none;
-                     stroke: ${(props) => props.theme.green};
+                     stroke: ${(props) => props.theme.main_bg};
                      stroke-width: 70;
                      stroke-linecap: round;
                      stroke-linejoin: round;
