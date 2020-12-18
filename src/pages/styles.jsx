@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
    background: ${(props) => props.theme.black};
-   transition: all 0.4s;
+   transition: all 0.2s;
    /* 메인 */
    & .main {
       overflow-x: hidden;
