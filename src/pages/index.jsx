@@ -243,7 +243,7 @@ const Portpolio = () => {
                if (scrollRatio > 0.2) {
                   wrap.style.background = `#fff`;
                } else {
-                  wrap.style.background = `#000`;
+                  wrap.style.background = `#fd2d97`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -349,17 +349,17 @@ const Portpolio = () => {
                   <p>안녕하세요.</p>
                </Grid>
                <Grid ref={messageBRef_0} className="sticky_elem main_message">
-                  <p>
-                     코딩을 좋아하고
-                     <br />
-                     즐거운 분위기에서 일을 하고싶어
-                  </p>
+                  <p>새로운 웹 어플리케이션을 만들어 보고 겪으며</p>
                </Grid>
                <Grid ref={messageCRef_0} className="sticky_elem main_message">
-                  <p>산업기능요원 보충역(시력이슈)</p>
+                  <p>지그재그와 함께 성장하고 싶어</p>
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
-                  <p>신입 프론트엔드 개발자로 지원한</p>
+                  <p>
+                     산업기능요원 보충역
+                     <br />
+                     신입 프론트엔드 개발자로 지원한
+                  </p>
                </Grid>
             </Grid>
             {/*  */}
