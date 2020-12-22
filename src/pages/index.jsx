@@ -243,7 +243,7 @@ const Portpolio = () => {
                if (scrollRatio > 0.2) {
                   wrap.style.background = `#fff`;
                } else {
-                  wrap.style.background = `#fd2d97`;
+                  wrap.style.background = `#000`;
                }
                if (scrollRatio <= 0.25) {
                   // in
@@ -352,7 +352,7 @@ const Portpolio = () => {
                   <p>새로운 웹 어플리케이션을 만들어 보고 겪으며</p>
                </Grid>
                <Grid ref={messageCRef_0} className="sticky_elem main_message">
-                  <p>지그재그와 함께 성장하고 싶어</p>
+                  <p>함께 성장하고 싶어</p>
                </Grid>
                <Grid ref={messageDRef_0} className="sticky_elem main_message">
                   <p>
@@ -369,7 +369,7 @@ const Portpolio = () => {
                   ref={logoRef_1}
                   className="sticky_elem logo"
                   aria-label="logo"
-                  data="/portpolio/images/main_logo.svg"
+                  data="/portpolio/images/name_logo.svg"
                   type="image/svg+xml"
                />
                {/* 메세지 A */}
