@@ -14,7 +14,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "aws-amplify": "^3.0.10",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "background-image-on-load": "^1.1.0",
     "eslint-plugin-react-hooks": "^0.0.0-8e5adfbd7",
     "gh-pages": "^3.0.0",
