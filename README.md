@@ -1,6 +1,6 @@
 ### 산업기능요원 보충역 프론트엔드 개발자로 지원하는 김동혁입니다.
 
-사용언어 : React, Redux, Styled Component, Material UI,
+사용언어 : React, Redux, Styled Component, Material UI
 
 [Animation, SVG, Canvas등 CSS3 활용능력을 보여줄 수 있는 메인 페이지]
 
