@@ -213,7 +213,7 @@ export const profileData = {
    ],
    //  - 문의하기 데이터
    contact_data: [
-      { key: 'Phone', value: '010-3395-4623' },
+      { key: 'Phone', value: '010-4888-0330' },
       { key: 'Email', value: 'piouy_@naver.com' },
       { key: 'Git', value: 'https://github.com/dev-donghyuk', link: 'https://github.com/dev-donghyuk' },
       {
