@@ -1,66 +1,60 @@
 {
-  "name": "dev-donghyuk",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://dev-donghyuk.github.io/portpolio",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.13",
-    "@material-ui/core": "^4.9.12",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "aws-amplify": "^3.0.10",
-    "axios": "^0.19.2",
-    "background-image-on-load": "^1.1.0",
-    "eslint-plugin-react-hooks": "^0.0.0-8e5adfbd7",
-    "gh-pages": "^3.0.0",
-    "immutable": "^4.0.0-rc.12",
-    "npm-check-updates": "^10.2.2",
-    "open-color": "^1.7.0",
-    "react": "^16.13.1",
-    "react-app-polyfill": "^1.0.6",
-    "react-data-export": "^0.6.0",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-redux": "^7.2.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-slick": "^0.27.12",
-    "redux": "^4.0.5",
-    "redux-actions": "^2.6.5",
-    "redux-observable": "^1.2.0",
-    "serve": "^11.3.2",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^5.1.1",
-    "xlsx": "^0.16.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "react-scripts build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "ie 11",
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "dev-donghyuk",
+    "version": "1.0.0",
+    "homepage": "https://dev-donghyuk.github.io/portpolio",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "ie 11",
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "predeploy": "react-scripts build",
+        "deploy": "gh-pages -d build"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.32",
+        "@fortawesome/free-solid-svg-icons": "^5.15.1",
+        "@fortawesome/react-fontawesome": "^0.1.13",
+        "@material-ui/core": "^4.9.12",
+        "@material-ui/icons": "^4.9.1",
+        "@material-ui/lab": "^4.0.0-alpha.56",
+        "axios": "^0.21.1",
+        "background-image-on-load": "^1.1.0",
+        "express": "^4.17.1",
+        "gh-pages": "^3.0.0",
+        "react": "^16.13.1",
+        "react-app-polyfill": "^1.0.6",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.1.0",
+        "react-redux": "^7.2.0",
+        "react-router": "^5.1.2",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^4.0.3",
+        "react-slick": "^0.27.12",
+        "redux": "^4.0.5",
+        "redux-observable": "^1.2.0",
+        "slick-carousel": "^1.8.1",
+        "styled-components": "^5.1.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.29.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "eslint-react": "0.0.4",
+        "prettier": "^2.3.2"
+    }
 }
