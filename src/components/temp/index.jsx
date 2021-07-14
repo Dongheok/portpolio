@@ -1,9 +1,10 @@
 import React from 'react';
+import Wrapper from './styles';
 
 const Temp = () => (
-    <div>
+    <Wrapper>
         <div>임시</div>
-    </div>
+    </Wrapper>
 );
 
 export default Temp;
