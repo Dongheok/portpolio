@@ -6,7 +6,7 @@
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/60591071/113410399-48559580-93ee-11eb-97eb-c61e2d7c4887.gif)
 
-링크 : :  https://dev-donghyuk.github.io/portpolio/
+링크 : : https://dev-donghyuk.github.io/portpolio/
 
 [프로젝트 페이지]
 
