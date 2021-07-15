@@ -1,18 +1,20 @@
+import imgUrl from '../../../config';
+
 export const profileData = {
     // 프로필
     //  - 사진 데이터
     picture_data: [
         {
             key: 0,
-            value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_1.jpg',
+            value: `${imgUrl}/profile/profile_picture_1.jpg`,
         },
         {
             key: 1,
-            value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_2.jpg',
+            value: `${imgUrl}/profile/profile_picture_2.jpg`,
         },
         {
             key: 2,
-            value: 'http://sn237x.cafe24.com/web/portpolio_img/profile/profile_picture_3.jpg',
+            value: `${imgUrl}/profile/profile_picture_3.jpg`,
         },
     ],
     //  - 스킬 데이터
@@ -199,12 +201,12 @@ export const profileData = {
         {
             title: '웹디자인 기능사',
             date: '2019.09',
-            img: 'http://sn237x.cafe24.com/web/portpolio_img/profile/design_icon.png',
+            img: `${imgUrl}/profile/design_icon.png`,
         },
         {
             title: '정보처리 기능사',
             date: '2020.07',
-            img: 'http://sn237x.cafe24.com/web/portpolio_img/profile/code_icon.png',
+            img: `${imgUrl}/profile/code_icon.png`,
         },
     ],
     //  - 문의하기 데이터

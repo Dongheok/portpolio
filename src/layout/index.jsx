@@ -7,6 +7,7 @@ import Brightness7Icon from '@material-ui/icons/Brightness7';
 import { useHistory } from 'react-router';
 import { UserContext } from 'context';
 import Wrapper from './styles';
+import imgUrl from '../../config';
 
 const Layout = ({ children }) => {
     const history = useHistory();
@@ -35,10 +36,10 @@ const Layout = ({ children }) => {
                         {/* 글로벌 네비게이션 바 */}
                         <Grid item className="gnb_wrap">
                             <Grid container alignItems="center" className="gnb">
-                                {state.sidebar.map((x, index) => (
+                                {state.sidebar.map((x) => (
                                     <Grid
                                         item
-                                        key={index}
+                                        key={x.key}
                                         onClick={() => {
                                             history.push(x.key);
                                         }}
@@ -53,6 +54,7 @@ const Layout = ({ children }) => {
                             <Grid container alignItems="center" className="util">
                                 <Grid item>
                                     <button
+                                        type="button"
                                         onClick={() => {
                                             modeDarkFunction(!modeDark);
                                             setModeDark(!modeDark);
@@ -68,7 +70,7 @@ const Layout = ({ children }) => {
                                 </Grid>
                                 <Grid item>
                                     <a href="https://www.notion.so/Donghyuk-Kim-6585ae54500946daa55004efbdea71c6" target="_blank" rel="noopener noreferrer">
-                                        <img src="http://sn237x.cafe24.com/web/portpolio_img/notion_icon.png" alt="" />
+                                        <img src={`${imgUrl}/notion_icon.png`} alt="" />
                                     </a>
                                 </Grid>
                             </Grid>

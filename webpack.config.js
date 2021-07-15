@@ -63,6 +63,7 @@ const config = {
                 options: {
                     publicPath: './build/images',
                     name: '[name].[ext]',
+                    limit: 10000,
                 },
             },
         ],

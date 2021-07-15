@@ -1,9 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useRef } from 'react';
-import { Grid } from '@material-ui/core';
 import { useHistory } from 'react-router';
 import { UserContext } from 'context';
+
+import { Grid } from '@material-ui/core';
 import Wrapper from './styles';
+import imgUrl from '../../config';
 
 const Portpolio = () => {
     const { state, isLoadingFunction } = useContext(UserContext);
@@ -334,7 +336,7 @@ const Portpolio = () => {
                 {/*  */}
                 <Grid ref={containerRef_1} className="scroll_section scroll_section_1">
                     <h2>김동혁입니다.</h2>
-                    <object ref={logoRef_1} className="sticky_elem logo" aria-label="logo" data="http://sn237x.cafe24.com/web/portpolio_img/name_logo.svg" type="image/svg+xml" />
+                    <object ref={logoRef_1} className="sticky_elem logo" aria-label="logo" data={`${imgUrl}/name_logo.svg`} type="image/svg+xml" />
                     {/* 메세지 A */}
                     <Grid ref={messageARef_1} className="sticky_elem main_message">
                         <p>!!!</p>

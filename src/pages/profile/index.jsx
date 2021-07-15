@@ -13,6 +13,7 @@ import { UserContext } from 'context';
 import Layout from 'layout';
 import MapApiComponent from 'common';
 import { Wrapper, SkillItem } from './styles';
+import imgUrl from '../../../config';
 
 // 프로필 소개 슬라이드 세팅 값
 
@@ -46,8 +47,8 @@ const AboutComponent = () => {
                                 옆으로 넘겨주세요.
                             </span>
                         </Grid>
-                        {state.picture_data.map((x, index) => (
-                            <Grid key={index} className="slide picture">
+                        {state.picture_data.map((x) => (
+                            <Grid key={x.key} className="slide picture">
                                 <img src={`${x.value}`} alt="" />
                             </Grid>
                         ))}
@@ -104,8 +105,8 @@ const SkillComponent = () => {
                 <span>Ability</span>
             </Grid>
             <Grid className="skill">
-                {state.skill_data.map((x, index) => (
-                    <SkillItem key={index} className={x.color}>
+                {state.skill_data.map((x) => (
+                    <SkillItem key={x.keyword} className={x.color}>
                         {/*  */}
                         <Grid className="skill_item">
                             <Grid className="title">{x.keyword}</Grid>
@@ -132,8 +133,8 @@ const EducationComponent = () => {
                 <Grid item xs={12} className="certificate_wrap">
                     <h2># 자격증</h2>
                     <Grid container justify="center" direction="row">
-                        {state.certificate_data.map((x, index) => (
-                            <Grid item key={index}>
+                        {state.certificate_data.map((x) => (
+                            <Grid item key={x.date}>
                                 <Grid className="mask">
                                     <img src={`${x.img}`} alt="" />
                                 </Grid>
@@ -179,12 +180,12 @@ const CareerComponent = () => {
                 <span>Career</span>
             </Grid>
             <Grid className="career">
-                {state.history_data.map((x, index) => (
-                    <Grid key={index}>
+                {state.history_data.map((x) => (
+                    <Grid key={x.years}>
                         <h2>{x.years}</h2>
                         <ul>
-                            {x.history.map((x, i) => (
-                                <li key={i}>- {x}</li>
+                            {x.history.map((v) => (
+                                <li key={v}>- {v}</li>
                             ))}
                         </ul>
                     </Grid>
@@ -207,7 +208,7 @@ const ContactComponent = () => {
                 <Grid container className="info">
                     {/*  */}
                     {state.contact_data.map((x, index) => (
-                        <Grid key={index} item xs={12} sm={3}>
+                        <Grid key={x.key} item xs={12} sm={3}>
                             <Grid
                                 className={x.link ? 'icon link' : 'icon'}
                                 onClick={() => {
@@ -219,7 +220,7 @@ const ContactComponent = () => {
                                 {index === 0 && <CallIcon />}
                                 {index === 1 && <MailIcon />}
                                 {index === 2 && <GitHubIcon />}
-                                {index === 3 && <img src="http://sn237x.cafe24.com/web/portpolio_img/notion_icon.png" alt="" />}
+                                {index === 3 && <img src={`${imgUrl}/notion_icon.png`} alt="" />}
                             </Grid>
                             <p className="text">{x.value}</p>
                         </Grid>

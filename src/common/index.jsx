@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const { kakao } = window;
 
-const MapApiComponent = (props) => {
+const MapApiComponent = () => {
     const mapRef = useRef();
     useEffect(() => {
         const container = mapRef.current;
