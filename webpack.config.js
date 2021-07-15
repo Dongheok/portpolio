@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -11,6 +11,7 @@ const config = {
     devtool: !isDevelopment ? 'hidden-source-map' : 'eval',
     resolve: {
         extensions: ['.js', '.jsx', '.json'],
+        // 상대경로 => 절대경로
         modules: [path.join(__dirname, 'src'), 'node_modules'],
     },
     entry: {
@@ -44,18 +45,38 @@ const config = {
                 test: /\.css?$/,
                 use: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            publicPath: './build/images',
+                            name: '[name].[ext]',
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.(png|jpg|gif|svg|webp)$/,
+                loader: 'url-loader',
+                options: {
+                    publicPath: './build/images',
+                    name: '[name].[ext]',
+                },
+            },
         ],
     },
     plugins: [new webpack.EnvironmentPlugin({ NODE_ENV: isDevelopment ? 'development' : 'production' })],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'build'),
         filename: '[name].js',
-        publicPath: '/dist/',
+        publicPath: '/build/',
     },
     devServer: {
         historyApiFallback: true, // react router
         port: 3000,
-        publicPath: '/dist/',
+        publicPath: '/build/',
         contentBase: './public',
     },
 };
