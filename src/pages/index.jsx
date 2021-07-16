@@ -338,7 +338,7 @@ const Portpolio = () => {
                 {/*  */}
                 <Grid ref={containerRef1} className="scroll_section scroll_section_1">
                     <h2>김동혁입니다.</h2>
-                    <object ref={logoRef1} className="sticky_elem logo" aria-label="logo" data={`${imgUrl}/name_logo.svg`} type="image/svg+xml" />
+                    <object ref={logoRef1} className="sticky_elem logo" aria-label="logo" data="/portpolio/images/name_logo.svg" type="image/svg+xml" />
                     {/* 메세지 A */}
                     <Grid ref={messageARef1} className="sticky_elem main_message">
                         <p>!!!</p>
