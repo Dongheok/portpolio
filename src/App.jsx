@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useMemo } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { UserContext } from 'context';
 import { darkTheme, theme } from 'theme';
@@ -14,12 +14,34 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
     const { state } = useContext(UserContext);
+
+    const themeMode = useMemo(() => {
+        if (state.modeDark) {
+            return darkTheme;
+        }
+        return theme;
+    }, [state.modeDark]);
+
+    const isLoading = useMemo(() => {
+        if (state.isLoading) {
+            return 'on';
+        }
+        return '';
+    }, [state.isLoading]);
+
+    const isOverflow = useMemo(() => {
+        if (state.isLoading) {
+            return 'hidden';
+        }
+        return 'visible';
+    }, [state.isLoading]);
+
     return (
-        <ThemeProvider theme={state.modeDark ? darkTheme : theme}>
+        <ThemeProvider theme={themeMode}>
             {/* 로딩바 */}
-            <LoadingBar className={state.isLoading ? 'on' : ''} />
+            <LoadingBar className={isLoading} />
             {/* 전역 css 접근 */}
-            <GlobalStyle overflow={state.isLoading ? 'hidden' : 'visible'} />
+            <GlobalStyle overflow={isOverflow} />
             {/* 라우트 */}
             <Routes />
         </ThemeProvider>
