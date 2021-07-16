@@ -13,11 +13,30 @@ export const Mask = styled.div`
     background: url(${(props) => `${props.bgUrl}`}) no-repeat center top;
     background-size: cover;
     transition: background-position ${(props) => props.speed}s!important;
+    &.main_mask {
+        height: 600px;
+    }
+    &.sub_mask {
+        height: 400px;
+    }
     &:hover {
         background-position: center bottom;
     }
     &.on {
         display: block;
+    }
+    @media (max-width: 960px) {
+        &.main_mask {
+            height: 400px;
+        }
+    }
+    @media (max-width: 600px) {
+        &.main_mask {
+            height: 300px;
+        }
+        &.sub_mask {
+            height: 300px;
+        }
     }
 `;
 
@@ -155,6 +174,13 @@ export const Wrapper = styled.div`
                         }
                     }
                 }
+            }
+        }
+    }
+    @media (max-width: 960px) {
+        & .project_wrap {
+            & .main_project {
+                margin: 0 !important;
             }
         }
     }

@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 import { UserContext } from 'context';
 
 import { Grid } from '@material-ui/core';
-import { imgUrl } from 'config';
+// import { imgUrl } from 'config';
 import Wrapper from './styles';
 
 const Portpolio = () => {

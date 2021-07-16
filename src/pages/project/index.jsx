@@ -23,6 +23,7 @@ const MainProjectComponent = ({ setMainLoading }) => {
 
     useEffect(() => {
         setMainProjectData(state.main_project_data);
+        console.log(state.main_project_data);
         setTimeout(() => {
             setMainProjectDelay(true);
         }, 2000);
@@ -33,7 +34,7 @@ const MainProjectComponent = ({ setMainLoading }) => {
             <Grid className="project_container">
                 {mainProjectData.map((x, index) => (
                     <Grid key={x.project_title} className="project_item">
-                        <Mask className={x.loading ? '' : 'on'} height="600px" speed={x.speed} bgUrl={`${x.img}`}>
+                        <Mask className={x.loading ? 'main_mask' : 'main_mask on'} speed={x.speed} bgUrl={`${x.img}`}>
                             <BackgroundImageOnLoad
                                 src={mainProjectDelay ? x.img : ''}
                                 onLoadBg={() => {
@@ -116,7 +117,7 @@ const SubProjectComponent = (props) => {
             <Grid container className="project_container">
                 {subProjectData.map((x, index) => (
                     <Grid key={x.project_title} item sm={12} md={6} className="project_item">
-                        <Mask className={x.loading ? '' : 'on'} height="300px" speed={x.speed} bgUrl={`${x.img}`}>
+                        <Mask className={x.loading ? 'sub_mask' : 'sub_mask on'} speed={x.speed} bgUrl={`${x.img}`}>
                             <BackgroundImageOnLoad
                                 src={!mainLoading && subProjectDelay ? x.img : ''}
                                 onLoadBg={() => {

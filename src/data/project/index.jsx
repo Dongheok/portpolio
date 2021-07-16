@@ -5,6 +5,16 @@ export const projectData = {
     //  - 메인 프로젝트
     main_project_data: [
         {
+            project_title: 'TwitterClone',
+            project_text_1: '사용언어 : ',
+            project_text_2: `["사용언어"]를 이용하여`,
+            img: ``,
+            link: 'http://twitterclone.dev-donghyuk.site',
+            git: 'https://github.com/dev-donghyuk/twitter_clone',
+            speed: 20,
+            loading: true,
+        },
+        {
             project_title: 'Donflix',
             project_text_1: '사용언어 : TypeScript, React, Redux, Axios, Styled-Components, Material-UI',
             project_text_2: `["사용언어"]를 이용하여 구현한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화페이지 링크, 유튜브 영화 예고편까지 한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다. 프로젝트를 하는과정에서 검색 페이지에서 검색 후 새로고침을 하거나 뒤로가기를 해도 history를 저장하여 가져올 수 있게 되었고, React 환경에서의 Typescript를 접목시킨 첫 오픈 API를 이용한 React + TypeScript 프로젝트입니다.`,
