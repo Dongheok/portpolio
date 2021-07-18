@@ -6,9 +6,9 @@ export const projectData = {
     main_project_data: [
         {
             project_title: 'TwitterClone',
-            project_text_1: '사용언어 : ',
-            project_text_2: `["사용언어"]를 이용하여`,
-            img: ``,
+            project_text_1: '사용언어 : React, Next JS, Redux-Saga, Express, MySQL, Styled Component, Material-UI',
+            project_text_2: `["사용언어"]를 이용하여 로그인 기능, 이미지를 포함한 게시글 작성 및 수정, 게시글(좋아요, 댓글, 리트윗) 기능, 인피니트 스크롤링, (언)팔로우, 해쉬태그 검색, 유저검색 등이 가능한 풀스텍 트위터 클론 웹 어플리케이션입니다. 프론트(front)는 React, Styled Component, Material-UI를 이용하여 UI를 만들었고, Redux, Redux-Saga, Axios를 이용해 서버에서 데이터를 받아와 화면에 뿌려주었고, Next JS를 이용해 SEO가 되며 각 페이지마다 서버 사이드 렌더링을 해주었습니다. 백(back)은 express로 서버를 구축하고, sequelize를 이용하여 mysql에 접근하여 db를 구축했습니다.`,
+            img: `${imgUrl}/project/project_twitterclone.png`,
             link: 'http://twitterclone.dev-donghyuk.site',
             git: 'https://github.com/dev-donghyuk/twitter_clone',
             speed: 20,
@@ -17,7 +17,7 @@ export const projectData = {
         {
             project_title: 'Donflix',
             project_text_1: '사용언어 : TypeScript, React, Redux, Axios, Styled-Components, Material-UI',
-            project_text_2: `["사용언어"]를 이용하여 구현한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화페이지 링크, 유튜브 영화 예고편까지 한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다. 프로젝트를 하는과정에서 검색 페이지에서 검색 후 새로고침을 하거나 뒤로가기를 해도 history를 저장하여 가져올 수 있게 되었고, React 환경에서의 Typescript를 접목시킨 첫 오픈 API를 이용한 React + TypeScript 프로젝트입니다.`,
+            project_text_2: `["사용언어"]를 이용하여 구현한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화페이지 링크, 유튜브 영화 예고편까지 한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다. 프로젝트를 하는과정에서 검색 페이지에서 검색 후 새로고침을 하거나 뒤로가기를 해도 history를 저장하여 가져올 수 있게 되었고, React 환경에서의 Typescript를 접목시킨 첫 오픈 API를 이용한 React + TypeScript 웹 어플리케이션입니다.`,
             img: `${imgUrl}/project/project_dongflix.png`,
             link: 'https://dev-donghyuk.github.io/dongflix/',
             git: 'https://github.com/dev-donghyuk/dongflix',
